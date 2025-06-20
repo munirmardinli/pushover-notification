@@ -273,7 +273,7 @@ jobs:
 
       - name: Build npm package
         run: |
-          npx tsc -p tsconfig.npm.json
+          npm run npm
       - name: Publish to NPM
         run: npm publish --access public
         env:
