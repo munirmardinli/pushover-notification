@@ -247,7 +247,7 @@ jobs:
           -H "Authorization: JWT $TOKEN" \
           -d @-
       env:
-        TOKEN: ${{ secrets.DOCKERHUB_README_TOKEN }}
+        TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
 
  release:
   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
