@@ -90,7 +90,7 @@ jobs:
       npx typedoc
      env:
       NODE_ENV: production
-      GOTIFY_PORT: 9094
+      GOTIFY_PORT: 9095
    - name: Upload artifacts
      uses: actions/upload-artifact@v4
      with:
@@ -189,7 +189,7 @@ jobs:
       path: .
    - name: Prepare deployment
      run: |
-      rm -rf deploy-docs
+      mkdir -p deploy-docs
       cp -r dist/docs/* deploy-docs/
    - name: Setup Pages
      uses: actions/configure-pages@v5
