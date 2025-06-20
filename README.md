@@ -25,13 +25,9 @@ Enterprise-grade notification management system with Pushover integration, persi
 
 ```bash
 # Clone and setup
-git clone https://github.com/your-repo/notification-service.git
-cd notification-service
+git clone https://github.com/munirmardinli/pushover-notification.git
+cd pushover-notification
 npm install
-
-# Configuration
-cp .env.example .env
-nano .env  # Edit your settings
 ```
 
 ## ⚙️ Configuration
@@ -64,8 +60,7 @@ DATA_FILE=notifications.yaml
 ## 🔌 Pushover Integration Example
 
 ```ts
-import { PushoverService } from "./services/pushover.service";
-
+import { PushoverService } from '@munirmardinli_org/pushover-notification'
 // Initialize service
 const pushover = new PushoverService({
   userKey: process.env.PUSHOVER_USER_KEY,
