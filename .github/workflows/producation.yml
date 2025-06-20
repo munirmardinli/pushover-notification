@@ -270,7 +270,9 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
-
+      - name: dependencies
+        run: |
+          npm i
       - name: Build npm package
         run: |
           npm run npm
