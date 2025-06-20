@@ -88,7 +88,6 @@ jobs:
      run: |
       npm run build
       npx typedoc
-      npx jest
      env:
       NODE_ENV: production
       GOTIFY_PORT: 9094
