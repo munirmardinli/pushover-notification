@@ -23,6 +23,9 @@
 			"require": "./npm/index.js"
 		}
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "npm/index.js",
 	"types": "npm/index.d.ts",
 	"license": "MIT",
@@ -57,7 +60,9 @@
 		"build": "tsc",
 		"npm": "tsc -p tsconfig.npm.json",
 		"dev": "tsx watch src/index.ts",
-		"start": "node dist/src/index.js"
+		"start": "node dist/src/index.js",
+		"semantic-release": "semantic-release",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
@@ -72,6 +77,7 @@
 		"@types/node": "^24.0.3",
 		"@types/yamljs": "^0.2.31",
 		"conventional-changelog-conventionalcommits": "^9.0.0",
+		"husky": "^8.0.0",
 		"semantic-release": "^24.2.5",
 		"ts-node": "^10.9.2",
 		"tsx": "^4.20.3",
