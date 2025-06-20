@@ -1,6 +1,6 @@
 {
 	"name": "@munirmardinli_org/pushover-notification",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"private": false,
 	"sideEffects": false,
 	"type": "module",
