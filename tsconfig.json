@@ -1,0 +1,40 @@
+{
+ "compilerOptions": {
+  "rootDirs": ["src/index.ts"],
+  "outDir": "dist/src",
+  "lib": ["es2022", "dom"],
+  "target": "es2022",
+  "module": "nodenext",
+  "moduleResolution": "nodenext",
+  "noImplicitAny": true,
+  "strict": true,
+  "esModuleInterop": true,
+  "verbatimModuleSyntax": true,
+  "forceConsistentCasingInFileNames": true,
+  "noFallthroughCasesInSwitch": true,
+  "noUncheckedIndexedAccess": true,
+  "noPropertyAccessFromIndexSignature": true,
+  "skipLibCheck": true,
+  "useUnknownInCatchVariables": true,
+  "strictNullChecks": true,
+  "strictFunctionTypes": true,
+  "allowArbitraryExtensions": true,
+  "allowSyntheticDefaultImports": true,
+  "declaration": false,
+  "declarationMap": false,
+  "pretty": true,
+  "newLine": "lf",
+  "erasableSyntaxOnly": true,
+  "noEmit": false,
+  "removeComments": true,
+  "types": ["node", "jest"]
+ },
+ "include": ["node_modules/@types", "dotenv.d.ts"],
+ "files": [
+  "src/types/globals.ts",
+  "src/pushover.ts",
+  "src/index.ts",
+  "src/services/pushover.service.ts"
+ ],
+ "exclude": ["node_modules", "src/index.test.ts"]
+}

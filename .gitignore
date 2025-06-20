@@ -1,0 +1,18 @@
+# depencies
+node_modules/
+.npm
+
+# secrets
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.env
+
+# build
+dist
+assets
+
+# documentation
+docs
+coverage

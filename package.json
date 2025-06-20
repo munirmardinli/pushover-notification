@@ -1,0 +1,75 @@
+{
+	"name": "pushover-notification",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"description": "Pushover Notification API wrapper - Send mobile & desktop notifications via Pushover API with Node.js and TypeScript. DevOps tool for alerting and monitoring systems.",
+	"keywords": [
+		"munirmardinli",
+		"Munir Mardinli",
+		"pushover",
+		"notification",
+		"alerts",
+		"nodejs",
+		"typescript"
+	],
+	"license": "MIT",
+	"homepage": "https://munirmardinli.github.io/pushover-notification",
+	"bugs": {
+		"url": "https://github.com/munirmardinli/pushover-notification/issues",
+		"email": "Munir@Mardinli.de"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/munirmardinli/pushover-notification.git",
+		"directory": "Munir Mardinli DevOps Tools",
+		"homepage": "https://github.com/munirmardinli/pushover-notification#readme"
+	},
+	"author": {
+		"name": "Munir Mardinli",
+		"email": "Munir@Mardinli.de",
+		"url": "https://linktr.ee/munirmardinli"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://linktr.ee/munirmardinli"
+	},
+	"contributors": [
+		{
+			"name": "Munir Mardinli",
+			"email": "Munir@Mardinli.de",
+			"url": "https://linktr.ee/munirmardinli"
+		}
+	],
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsx watch src/index.ts",
+		"start": "node dist/src/index.js"
+	},
+	"devDependencies": {
+		"@types/cookie-parser": "^1.4.9",
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.3",
+		"@types/jest": "^30.0.0",
+		"@types/node": "^24.0.3",
+		"@types/yamljs": "^0.2.31",
+		"jest": "^30.0.0",
+		"ts-jest": "^29.4.0",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.20.3",
+		"typedoc": "^0.28.5",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"axios": "^1.10.0",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"dayjs": "^1.11.10",
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"yamljs": "^0.3.0"
+	},
+	"tsdocsOptions": {
+		"changelog": true
+	}
+}
