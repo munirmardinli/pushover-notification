@@ -1,13 +1,17 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Versionsvergleich: package.json aktuell vs letzter Commit
 current_version=$(node -p "require('./package.json').version")
-last_version=$(git show HEAD:package.json 2>/dev/null | node -p "JSON.parse(require('fs').readFileSync(0, 'utf-8')).version" || echo "")
 
-if [ "$last_version" != "" ] && [ "$current_version" != "$last_version" ]; then
-  echo "🚫 Bitte versioniere NICHT manuell in package.json. Verwende semantic-release."
-  echo "Letzte Version: $last_version, Aktuelle Version: $current_version"
+last_version=$(git show HEAD:package.json 2>/dev/null | node -p "JSON.parse(require('fs').readFileSync(0, 'utf-8')).version" 2>/dev/null || echo "")
+
+if [ -n "$last_version" ] && [ "$current_version" != "$last_version" ]; then
+  echo ""
+  echo "❌ Die Version in package.json wurde manuell verändert!"
+  echo "   Aktuelle Version: $current_version"
+  echo "   Letzte Version   : $last_version"
+  echo ""
+  echo "🚫 Bitte verwende semantic-release für Versionierung und keine manuelle Änderung."
   exit 1
 fi
 
