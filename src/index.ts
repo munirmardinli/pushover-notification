@@ -43,13 +43,13 @@ class NotificationStore {
 	constructor(dataFile: string, pushoverConfig?: PushoverConfig) {
 		this.dataFile = dataFile;
 		try {
-			this.ensureDataFileExists(); // Ensure file exists before loading
-			this.notifications = this.loadNotifications();
+			this.ensureDataFileExists();
+			this.notifications = this.loadNotifications(); // First call
 		} catch (err) {
 			console.error('Initialization error:', err);
-			this.notifications = []; // Fallback to empty array
+			this.notifications = [];
 		}
-		this.notifications = this.loadNotifications();
+		this.notifications = this.loadNotifications(); // Second call (remove this)
 		this.pushoverService = new PushoverService(pushoverConfig ?? { userKey: '', apiToken: '' });
 	}
 
@@ -62,18 +62,23 @@ class NotificationStore {
 		try {
 			const dataDir = path.dirname(this.dataFile);
 
-			// Create directory if it doesn't exist
+			// Korrekte Syntax für existsSync Prüfung
 			if (!fs.existsSync(dataDir)) {
 				fs.mkdirSync(dataDir, { recursive: true });
 			}
 
-			// Create empty YAML file if it doesn't exist
-			if (!fs.existsSync(this.dataFile)) {
-				fs.writeFileSync(this.dataFile, '[]'); // Initialize with empty array
+			// Überprüfen ob der Pfad ein Verzeichnis ist
+			if (fs.existsSync(this.dataFile)) {
+				const stats = fs.statSync(this.dataFile);
+				if (stats.isDirectory()) {
+					throw new Error(`Path ${this.dataFile} is a directory, expected a file`);
+				}
+			} else {
+				fs.writeFileSync(this.dataFile, yaml.stringify([]));
 			}
 		} catch (err) {
 			console.error('Error ensuring data file exists:', err);
-			throw err; // Re-throw to handle in constructor
+			throw err;
 		}
 	}
 	/**
@@ -432,7 +437,19 @@ class App {
 			this.notificationController.deleteNotification(req, res));
 
 		this.app.get('/health', (req, res) => {
-			res.status(200).json({ status: 'ok' });
+			try {
+				fs.accessSync(DATA_FILE, fs.constants.R_OK | fs.constants.W_OK);
+				res.status(200).json({
+					status: 'ok',
+					storage: 'accessible'
+				});
+			} catch (err) {
+				res.status(500).json({
+					status: 'error',
+					error: 'Storage inaccessible',
+					details: (err as Error).message
+				});
+			}
 		});
 	}
 
