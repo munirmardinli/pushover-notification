@@ -234,45 +234,58 @@ jobs:
      uses: actions/deploy-pages@v4
 
  release:
-  if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-  needs:
-   - docker-prod
-   - deploy-docs
-   - build-prod
-  runs-on: ubuntu-latest
-  permissions:
-   contents: write
-  steps:
-   - name: Checkout code
-     uses: actions/checkout@v4
-     with:
-      fetch-depth: 0
-   - name: Get version from package.json
-     id: version
-     run: |
-      echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
-   - name: Create Release
-     uses: softprops/action-gh-release@v2
-     with:
-      tag_name: v${{ steps.version.outputs.version }}
-      name: Release v${{ steps.version.outputs.version }}
-      body: |
-       - Production release
-       - Docker image pushed to GHCR
-       - Documentation deployed to GitHub Pages
-       - Contributors updated
-       - Changelog generated
-       See [CHANGELOG.md](CHANGELOG.md) for details
-      draft: false
-      prerelease: false
-      files: |
-       dist/**/*
-       package.json
-       CHANGELOG.md
-       CONTRIBUTORS.md
-   - name: Update README with workflow badge
-     run: |
-      sed -i "s|\[!\[CI/CD Pipeline\].*|\[!\[CI/CD Pipeline\](https://github.com/${{ github.repository }}/workflows/Production%20CI\/CD%20Pipeline/badge.svg)](https://github.com/${{ github.repository }}/actions/workflows/prod.yml)|" README.md
-      git add README.md
-      git commit -m "docs: update workflow status badge [skip ci]" || echo "No badge changes"
-      git push || echo "Nothing to push"
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs:
+      - docker-prod
+      - deploy-docs
+      - publish-npm
+      - build-prod
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Get version from package.json
+        id: version
+        run: |
+          echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: Release v${{ steps.version.outputs.version }}
+          body: |
+            ## 🚀 Production Release v${{ steps.version.outputs.version }}
+
+            ### 📦 Package Distribution
+            - **NPM Package**: [@munirmardinli_org/pushover-notification](https://www.npmjs.com/package/@munirmardinli_org/pushover-notification)
+            - **Docker Image**: [docker.io/${{ env.DOCKER_IMAGE_NAME }}](https://hub.docker.com/r/mardinlimunir/pushover-notification)
+
+            ### 📚 Documentation
+            - [GitHub Pages Documentation](https://munirmardinli.github.io/pushover-notification/)
+
+            ### 🔧 Changes
+            - Production release
+            - Docker image pushed to Docker Hub
+            - Documentation deployed to GitHub Pages
+            - NPM package published
+            - Contributors updated
+            - Changelog generated
+
+            See [CHANGELOG.md](CHANGELOG.md) for detailed changes
+          draft: false
+          prerelease: false
+          files: |
+            dist/**/*
+            package.json
+            CHANGELOG.md
+            CONTRIBUTORS.md
+      - name: Update README with workflow badge
+        run: |
+          sed -i "s|\[!\[CI/CD Pipeline\].*|\[!\[CI/CD Pipeline\](https://github.com/${{ github.repository }}/workflows/Production%20CI\/CD%20Pipeline/badge.svg)](https://github.com/${{ github.repository }}/actions/workflows/prod.yml)|" README.md
+          git add README.md
+          git commit -m "docs: update workflow status badge [skip ci]" || echo "No badge changes"
+          git push || echo "Nothing to push"
