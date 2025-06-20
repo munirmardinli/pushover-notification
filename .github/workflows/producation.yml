@@ -233,6 +233,22 @@ jobs:
      id: deployment
      uses: actions/deploy-pages@v4
 
+ upload-readme:
+  needs: docker-prod
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+
+    - name: Upload README.md to Docker Hub
+      run: |
+        echo "{\"full_description\": $(jq -Rs . < README.md)}" | \
+        curl --fail -X PATCH https://hub.docker.com/v2/repositories/${{ secrets.DOCKERHUB_USERNAME }}/pushover-notification/ \
+          -H "Content-Type: application/json" \
+          -H "Authorization: JWT $TOKEN" \
+          -d @-
+      env:
+        TOKEN: ${{ secrets.DOCKERHUB_README_TOKEN }}
+
  release:
   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
   needs:
