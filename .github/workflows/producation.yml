@@ -190,9 +190,7 @@ jobs:
    - name: Prepare deployment
      run: |
       rm -rf deploy-docs
-      mkdir -p deploy-docs/coverage
       cp -r dist/docs/* deploy-docs/
-      cp -r dist/coverage/. deploy-docs/coverage/
    - name: Setup Pages
      uses: actions/configure-pages@v5
    - name: Upload artifact
