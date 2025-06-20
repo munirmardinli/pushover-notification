@@ -23,9 +23,6 @@
 			"require": "./npm/index.js"
 		}
 	},
-	"publishConfig": {
-		"access": "public"
-	},
 	"main": "npm/index.js",
 	"types": "npm/index.d.ts",
 	"license": "MIT",
