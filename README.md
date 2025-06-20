@@ -9,10 +9,6 @@
 
 Enterprise-grade notification management system with Pushover integration, persistent YAML storage, and REST API for cross-platform alerts.
 
-<a href="https://www.buymeacoffee.com/munirmardinli" target="_blank">
-  <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=munirmardinli&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
-</a>
-
 ## ✨ Features
 
 | Feature | Description |
