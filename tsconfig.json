@@ -27,7 +27,7 @@
   "erasableSyntaxOnly": true,
   "noEmit": false,
   "removeComments": true,
-  "types": ["node", "jest"]
+  "types": ["node"]
  },
  "include": ["node_modules/@types", "dotenv.d.ts"],
  "files": [
