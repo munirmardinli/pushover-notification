@@ -1,7 +1,8 @@
 {
-	"name": "pushover-notification",
+	"name": "@munirmardinli_org/pushover-notification",
 	"version": "0.0.1",
-	"private": true,
+	"private": false,
+	"sideEffects": false,
 	"type": "module",
 	"description": "Pushover Notification API wrapper - Send mobile & desktop notifications via Pushover API with Node.js and TypeScript. DevOps tool for alerting and monitoring systems.",
 	"keywords": [
@@ -13,6 +14,17 @@
 		"nodejs",
 		"typescript"
 	],
+	"files": [
+		"npm"
+	],
+	"exports": {
+		".": {
+			"import": "./npm/index.js",
+			"require": "./npm/index.js"
+		}
+	},
+	"main": "npm/index.js",
+	"types": "npm/index.d.ts",
 	"license": "MIT",
 	"homepage": "https://munirmardinli.github.io/pushover-notification",
 	"bugs": {
@@ -43,6 +55,7 @@
 	],
 	"scripts": {
 		"build": "tsc",
+		"npm": "tsc -p tsconfig.npm.json",
 		"dev": "tsx watch src/index.ts",
 		"start": "node dist/src/index.js"
 	},

@@ -98,6 +98,37 @@ jobs:
       path: |
        dist
        node_modules
+   - name: Upload node_modules separately
+     uses: actions/upload-artifact@v4
+     with:
+      name: prod-dependencies
+      path: node_modules
+
+ publish-npm:
+    needs: build-prod
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download node_modules
+        uses: actions/download-artifact@v4
+        with:
+          name: prod-dependencies
+          path: node_modules
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Build npm package
+        run: |
+          npm run npm
+          ls -la npm/
+
+      - name: Publish to NPM
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
  docker-prod:
   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
