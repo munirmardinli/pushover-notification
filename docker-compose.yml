@@ -53,9 +53,8 @@ services:
      target: /etc/localtime
      read_only: true
    - type: bind
-     source: ./notifications.yaml
-     target: /home/node/app/dist/assets/notifications.yaml
-     read_only: true
+     source: ./assets
+     target: /home/node/app/dist/assets
   networks:
    dockerization:
   labels:
