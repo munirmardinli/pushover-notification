@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/munirmardinli/pushover-notification/compare/v0.1.2...v0.1.3) (2025-06-20)
+
+
+### Bug Fixes
+
+* delete duplicate ([aad80fc](https://github.com/munirmardinli/pushover-notification/commit/aad80fcf4023dc9fa57f6094173d5e1b127033e0))
+
 ## [0.1.2](https://github.com/munirmardinli/pushover-notification/compare/v0.1.1...v0.1.2) (2025-06-20)
 
 
