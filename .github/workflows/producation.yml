@@ -86,7 +86,7 @@ jobs:
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Build application
      run: |
-      npm run build
+      npx tsc
       npx typedoc
      env:
       NODE_ENV: production
@@ -103,30 +103,6 @@ jobs:
      with:
       name: prod-dependencies
       path: node_modules
-
- publish-npm:
-    needs: build-prod
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Download node_modules
-        uses: actions/download-artifact@v4
-        with:
-          name: prod-dependencies
-          path: node_modules
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Build npm package
-        run: |
-          npm run npm
-      - name: Publish to NPM
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
  docker-prod:
   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -252,7 +228,6 @@ jobs:
   needs:
     - docker-prod
     - deploy-docs
-    - publish-npm
     - build-prod
   runs-on: ubuntu-latest
   permissions:
@@ -277,5 +252,29 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        #NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: npx semantic-release
+
+ publish-npm:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download node_modules
+        uses: actions/download-artifact@v4
+        with:
+          name: prod-dependencies
+          path: node_modules
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Build npm package
+        run: |
+          npx tsc -p tsconfig.npm.json
+      - name: Publish to NPM
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
