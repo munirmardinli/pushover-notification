@@ -42,10 +42,40 @@ class NotificationStore {
  */
 	constructor(dataFile: string, pushoverConfig?: PushoverConfig) {
 		this.dataFile = dataFile;
+		try {
+			this.ensureDataFileExists(); // Ensure file exists before loading
+			this.notifications = this.loadNotifications();
+		} catch (err) {
+			console.error('Initialization error:', err);
+			this.notifications = []; // Fallback to empty array
+		}
 		this.notifications = this.loadNotifications();
 		this.pushoverService = new PushoverService(pushoverConfig ?? { userKey: '', apiToken: '' });
 	}
 
+	/**
+* @method ensureDataFileExists
+* @private
+* @description Ensures the YAML data file exists, creates it if not
+*/
+	private ensureDataFileExists(): void {
+		try {
+			const dataDir = path.dirname(this.dataFile);
+
+			// Create directory if it doesn't exist
+			if (!fs.existsSync(dataDir)) {
+				fs.mkdirSync(dataDir, { recursive: true });
+			}
+
+			// Create empty YAML file if it doesn't exist
+			if (!fs.existsSync(this.dataFile)) {
+				fs.writeFileSync(this.dataFile, '[]'); // Initialize with empty array
+			}
+		} catch (err) {
+			console.error('Error ensuring data file exists:', err);
+			throw err; // Re-throw to handle in constructor
+		}
+	}
 	/**
  * @method loadNotifications
  * @private
@@ -420,7 +450,7 @@ class App {
 
 // Application bootstrap
 const PORT = parseInt(process.env.PORT || '9095');
-const DATA_FILE = path.resolve(process.cwd(), 'assets', process.env.DATA_FILE || 'notifications.yaml');
+const DATA_FILE = path.join(process.cwd(), 'assets', 'notifications.yaml');
 
 const app = new App(PORT, DATA_FILE);
 app.start();
