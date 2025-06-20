@@ -11,7 +11,6 @@
           { "type": "perf", "release": "patch" },
           { "type": "refactor", "release": "patch" },
           { "type": "fix", "release": "patch" },
-          { "type": "style", "release": "patch" },
           { "type": "test", "release": "patch" }
         ],
         "parserOpts": {
