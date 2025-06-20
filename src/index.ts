@@ -9,6 +9,7 @@
  * @since 0.0.1
  */
 import express, { type Request, type Response } from 'express';
+import rateLimit from 'express-rate-limit';
 import 'dotenv/config'
 import bodyParser from 'body-parser';
 import cors from 'cors';
@@ -413,6 +414,16 @@ class App {
 	private initializeMiddlewares(): void {
 		this.app.use(cors());
 		this.app.use(bodyParser.json());
+
+		const apiLimiter = rateLimit({
+			windowMs: 15 * 60 * 1000,
+			max: 100,
+			standardHeaders: true,
+			legacyHeaders: false,
+			message: 'Too many requests from this IP, please try again later'
+		});
+		this.app.use('/notifications', apiLimiter);
+		this.app.use('/health', apiLimiter);
 		this.app.use((req, res, next) => {
 			console.log(`${req.method} ${req.path}`);
 			next();
