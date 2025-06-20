@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:18-alpine
+    user: node
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace
+    ports:
+      - 9095:9095
+    environment:
+      - NODE_ENV=development
+      - PUSHOVER_USER_KEY=${PUSHOVER_USER_KEY:-}
+      - PUSHOVER_API_TOKEN=${PUSHOVER_API_TOKEN:-}
+      - PORT=9095
+      - DATA_FILE=notifications.yaml
+    command: sleep infinity
+    healthcheck:
+      test: ["CMD", "node", "--version"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
