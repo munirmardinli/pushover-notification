@@ -5,7 +5,6 @@
 [![TypeScript](https://img.shields.io/badge/lang-typescript-3178C6.svg)](https://www.typescriptlang.org/)
 [![Docs](https://img.shields.io/badge/docs-typedoc-blueviolet.svg)](https://munirmardinli.github.io/pushover-notification//)
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-UI%20Image-blue?logo=docker&logoColor=white)](https://hub.docker.com/r/mardinlimunir/pushover-notification)
-[![npm](https://img.shields.io/npm/v/pushover-notification.svg?color=cb3837&label=npm&logo=npm)](https://www.npmjs.com/package/@munirmardinli_org/pushover-notification)
 
 Enterprise-grade notification management system with Pushover integration, persistent YAML storage, and REST API for cross-platform alerts.
 
@@ -60,7 +59,6 @@ DATA_FILE=notifications.yaml
 ## 🔌 Pushover Integration Example
 
 ```ts
-import { PushoverService } from '@munirmardinli_org/pushover-notification'
 // Initialize service
 const pushover = new PushoverService({
   userKey: process.env.PUSHOVER_USER_KEY,
