@@ -123,10 +123,8 @@ jobs:
       - name: Build npm package
         run: |
           npm run npm
-          ls -la npm/
-
       - name: Publish to NPM
-        run: npm publish --access public
+        run: npm publish --access public --ignore-scripts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
