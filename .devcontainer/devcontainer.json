@@ -5,12 +5,6 @@
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
   "remoteUser": "node",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1.6.3": {
-      "version": "18",
-      "nodePackageManager": "npm"
-    }
-  },
   "postCreateCommand": "npm install && npm run build",
   "customizations": {
     "vscode": {
@@ -27,7 +21,13 @@
         "editor.tabSize": 2,
         "typescript.tsdk": "/workspace/node_modules/typescript/lib",
         "typescript.enablePromptUseWorkspaceTsdk": true,
-        "eslint.workingDirectories": ["/workspace"]
+        "eslint.workingDirectories": ["/workspace"],
+        "terminal.integrated.defaultProfile.linux": "sh",
+        "terminal.integrated.profiles.linux": {
+          "sh": {
+            "path": "/bin/sh"
+          }
+        }
       }
     }
   },
