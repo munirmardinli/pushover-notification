@@ -61,8 +61,6 @@
 		"dev": "tsx watch src/index.ts",
 		"start": "node dist/src/index.js",
 		"npm": "tsc -p tsconfig.npm.json",
-		"preversion": "husky install",
-		"version": "npm run build && git add -A .",
 		"prepare": "husky"
 	},
 	"devDependencies": {
