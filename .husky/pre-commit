@@ -1,1 +1,14 @@
-npm version --no-git-tag-version --allow-same-version
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Lese die letzte Commit-Nachricht
+COMMIT_MSG=$(git log -1 --pretty=%B)
+
+# Entscheide, ob die Version erhöht werden soll
+if echo "$COMMIT_MSG" | grep -qE '^(feat|fix|chore|docs|perf|refactor)(\(.+\))?:'; then
+  echo "🔸 Commit-Typ erkannt – erhöhe Version..."
+  npm version patch --no-git-tag-version --allow-same-version
+  git add package.json package-lock.json
+else
+  echo "🔹 Kein Version-Update (Commit-Typ nicht relevant)."
+fi

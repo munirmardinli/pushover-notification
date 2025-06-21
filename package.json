@@ -1,6 +1,6 @@
 {
 	"name": "@munirmardinli_org/pushover-notification",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"private": false,
 	"sideEffects": false,
 	"type": "module",
@@ -62,7 +62,8 @@
 		"start": "node dist/src/index.js",
 		"npm": "tsc -p tsconfig.npm.json",
 		"preversion": "husky install",
-		"version": "npm run build && git add -A ."
+		"version": "npm run build && git add -A .",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
