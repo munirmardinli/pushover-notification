@@ -1,3 +1,10 @@
+## [0.1.11](https://github.com/munirmardinli/pushover-notification/compare/v0.1.10...v0.1.11) (2025-06-21)
+
+
+### Bug Fixes
+
+* bug fix npm package ([57999b5](https://github.com/munirmardinli/pushover-notification/commit/57999b5966060ee14a90ca63914636e2f1b2067f))
+
 ## [0.1.10](https://github.com/munirmardinli/pushover-notification/compare/v0.1.9...v0.1.10) (2025-06-21)
 
 
