@@ -175,6 +175,7 @@ jobs:
       mv /tmp/.buildx-cache-new /tmp/.buildx-cache
 
  deploy-docs:
+  needs: build-prod
   runs-on: ubuntu-latest
   if: >
     github.event_name == 'push' &&
