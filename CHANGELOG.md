@@ -1,3 +1,10 @@
+## [0.1.23](https://github.com/munirmardinli/pushover-notification/compare/v0.1.22...v0.1.23) (2025-06-21)
+
+
+### Bug Fixes
+
+* Bug fix dev env ([421fdea](https://github.com/munirmardinli/pushover-notification/commit/421fdeaafa5e39f6b1c907057884f0fa36f89d9b))
+
 ## [0.1.22](https://github.com/munirmardinli/pushover-notification/compare/v0.1.21...v0.1.22) (2025-06-21)
 
 ## [0.1.21](https://github.com/munirmardinli/pushover-notification/compare/v0.1.20...v0.1.21) (2025-06-21)
