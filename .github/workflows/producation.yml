@@ -175,8 +175,12 @@ jobs:
       mv /tmp/.buildx-cache-new /tmp/.buildx-cache
 
  deploy-docs:
-  needs: build-prod  # Wir brauchen immer noch den Build, aber nicht die Docs darin
-  if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  needs: build-prod
+  if: >
+    github.event_name == 'push' &&
+    github.ref == 'refs/heads/main' &&
+    !contains(github.event.head_commit.message, '[skip ci]') &&
+    !startsWith(github.event.head_commit.message, 'chore(release):')
   runs-on: ubuntu-latest
   permissions:
     pages: write
@@ -216,6 +220,7 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
+
  upload-readme:
   needs: docker-prod
   runs-on: ubuntu-latest
