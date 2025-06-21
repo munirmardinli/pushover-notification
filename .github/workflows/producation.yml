@@ -175,48 +175,25 @@ jobs:
       mv /tmp/.buildx-cache-new /tmp/.buildx-cache
 
  deploy-docs:
-  needs: build-prod
+  runs-on: ubuntu-latest
   if: >
     github.event_name == 'push' &&
     github.ref == 'refs/heads/main' &&
-    !contains(github.event.head_commit.message, '[skip ci]') &&
     !startsWith(github.event.head_commit.message, 'chore(release):')
-  runs-on: ubuntu-latest
-  permissions:
-    pages: write
-    id-token: write
-  environment:
-    name: github-pages
-    url: ${{ steps.deployment.outputs.page_url }}
   steps:
     - uses: actions/checkout@v4
-
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 20
-        cache: 'npm'
-
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Generate Documentation
-      run: |
-        rm -rf docs || true
-        npx typedoc --options typedoc.json
-
-    - name: Setup Pages
-      uses: actions/configure-pages@v5
-
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+    - run: npm ci
+    - run: npx typedoc --options typedoc.json
+    - name: Deploy to gh-pages branch
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        path: "docs"
-        retention-days: 1
-
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        publish_branch: gh-pages
 
  upload-readme:
   needs: docker-prod
