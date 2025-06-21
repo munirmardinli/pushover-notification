@@ -1,3 +1,10 @@
+## [0.1.10](https://github.com/munirmardinli/pushover-notification/compare/v0.1.9...v0.1.10) (2025-06-21)
+
+
+### Bug Fixes
+
+* Fix merge conflict with changelog ([5ff8fea](https://github.com/munirmardinli/pushover-notification/commit/5ff8fea65991cbefa158766245136a7a66d735cd))
+
 ## [0.1.9](https://github.com/munirmardinli/pushover-notification/compare/v0.1.8...v0.1.9) (2025-06-21)
 
 
