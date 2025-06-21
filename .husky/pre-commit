@@ -1,10 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Lese die letzte Commit-Nachricht
 COMMIT_MSG=$(git log -1 --pretty=%B)
 
-# Entscheide, ob die Version erhöht werden soll
 if echo "$COMMIT_MSG" | grep -qE '^(feat|fix|chore|docs|perf|refactor)(\(.+\))?:'; then
   echo "🔸 Commit-Typ erkannt – erhöhe Version..."
   npm version patch --no-git-tag-version --allow-same-version

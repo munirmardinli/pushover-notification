@@ -57,11 +57,8 @@
 		}
 	],
 	"scripts": {
-		"build": "tsc",
 		"dev": "tsx watch src/index.ts",
-		"start": "node dist/src/index.js",
-		"npm": "tsc -p tsconfig.npm.json",
-		"prepare": "husky"
+		"npm": "tsc -p tsconfig.npm.json"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
