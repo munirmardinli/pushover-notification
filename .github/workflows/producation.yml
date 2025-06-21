@@ -87,7 +87,6 @@ jobs:
    - name: Build application
      run: |
       npx tsc
-      npx typedoc
      env:
       NODE_ENV: production
       GOTIFY_PORT: 9095
@@ -176,43 +175,47 @@ jobs:
       mv /tmp/.buildx-cache-new /tmp/.buildx-cache
 
  deploy-docs:
-  needs: build-prod
+  needs: build-prod  # Wir brauchen immer noch den Build, aber nicht die Docs darin
   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
   runs-on: ubuntu-latest
   permissions:
-   pages: write
-   id-token: write
+    pages: write
+    id-token: write
   environment:
-   name: github-pages
-   url: ${{ steps.deployment.outputs.page_url }}
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
   steps:
-   - uses: actions/checkout@v4
-   - name: Download artifacts
-     uses: actions/download-artifact@v4
-     with:
-      name: dist-prod
-      path: .
-   - name: Prepare deployment
-     run: |
-        mkdir -p deploy-docs
-        if [ -d "docs" ] && [ "$(ls -A docs)" ]; then
-          cp -r docs/* deploy-docs/
-        else
-          echo "Warning: docs directory is empty or doesn't exist"
-          touch deploy-docs/index.html  # Create a minimal file if docs are empty
-          echo "<h1>Documentation</h1><p>Docs will be available soon.</p>" > deploy-docs/index.html
-        fi
-   - name: Setup Pages
-     uses: actions/configure-pages@v5
-   - name: Upload artifact
-     uses: actions/upload-pages-artifact@v3
-     with:
-      path: "deploy-docs"
-      retention-days: 1
-   - name: Deploy to GitHub Pages
-     id: deployment
-     uses: actions/deploy-pages@v4
+    - uses: actions/checkout@v4
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Generate Documentation
+      run: |
+        rm -rf docs || true
+        # Generiere neue Dokumentation
+        npx typedoc --options typedoc.json
+        # Verifiziere die Generierung
+        ls -la docs/
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: "docs"
+        retention-days: 1
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
  upload-readme:
   needs: docker-prod
   runs-on: ubuntu-latest
