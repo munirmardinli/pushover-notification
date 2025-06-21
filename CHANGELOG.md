@@ -1,3 +1,11 @@
+## [0.1.16](https://github.com/munirmardinli/pushover-notification/compare/v0.1.15...v0.1.16) (2025-06-21)
+
+
+### Bug Fixes
+
+* change gh-page point ([6960a2a](https://github.com/munirmardinli/pushover-notification/commit/6960a2ac0d0be94c22bcfc1edaef4b870dcc5af2))
+* restore gh ([d0acc97](https://github.com/munirmardinli/pushover-notification/commit/d0acc97e8427a6889fb34cbe4fe8b2f63d95e087))
+
 ## [0.1.15](https://github.com/munirmardinli/pushover-notification/compare/v0.1.14...v0.1.15) (2025-06-21)
 
 ## [0.1.14](https://github.com/munirmardinli/pushover-notification/compare/v0.1.13...v0.1.14) (2025-06-21)
