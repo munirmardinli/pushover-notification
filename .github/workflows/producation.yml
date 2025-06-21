@@ -194,8 +194,14 @@ jobs:
       path: .
    - name: Prepare deployment
      run: |
-      rm -r deploy-docs && mkdir -p deploy-docs
-      cp -r docs/* deploy-docs/
+        mkdir -p deploy-docs
+        if [ -d "docs" ] && [ "$(ls -A docs)" ]; then
+          cp -r docs/* deploy-docs/
+        else
+          echo "Warning: docs directory is empty or doesn't exist"
+          touch deploy-docs/index.html  # Create a minimal file if docs are empty
+          echo "<h1>Documentation</h1><p>Docs will be available soon.</p>" > deploy-docs/index.html
+        fi
    - name: Setup Pages
      uses: actions/configure-pages@v5
    - name: Upload artifact
