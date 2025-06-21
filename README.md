@@ -6,8 +6,13 @@
 [![Docs](https://img.shields.io/badge/docs-typedoc-blueviolet.svg)](https://munirmardinli.github.io/pushover-notification//)
 [![Docker Hub](https://img.shields.io/badge/docker%20-Image-blue?logo=docker&logoColor=white)](https://hub.docker.com/r/mardinlimunir/pushover-notification)
 [![Postman](https://img.shields.io/badge/Postman-API-orange?logo=postman&logoColor=white)](https://www.postman.com/munirmardinli-team/api-reference/collection/9aqkw6v/pushover-notification-api?action=share&creator=45781554)
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-Codesandbox-black?logo=codesandbox&logoColor=white)](https://codesandbox.io/p/github/munirmardinli/pushover-notification/main?import=true)
 
 Enterprise-grade notification management system with Pushover integration, persistent YAML storage, and REST API for cross-platform alerts.
+
+<a href="https://www.buymeacoffee.com/munirmardinli" target="_blank">
+  <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=munirmardinli&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
+</a>
 
 ## 📖 Table of Contents
 - [✨ Features](#-features)
