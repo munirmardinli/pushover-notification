@@ -48,7 +48,7 @@ jobs:
         run: npm ci
 
       - name: Build project
-        run: npm run build
+        run: npx tsc
         continue-on-error: false
 
       - name: Perform CodeQL Analysis
