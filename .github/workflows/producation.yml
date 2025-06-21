@@ -194,8 +194,8 @@ jobs:
       path: .
    - name: Prepare deployment
      run: |
-      mkdir -p deploy-docs
-      cp -r dist/docs/* deploy-docs/
+      [ -d "deploy-docs" ] && rm -r deploy-docs; mkdir -p deploy-docs
+      cp -r docs/* deploy-docs/
    - name: Setup Pages
      uses: actions/configure-pages@v5
    - name: Upload artifact
