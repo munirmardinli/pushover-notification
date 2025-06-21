@@ -1,6 +1,0 @@
-.npmrc
-src
-dist
-docker-compose.yml
-tsconfig.json
-typedoc.json
