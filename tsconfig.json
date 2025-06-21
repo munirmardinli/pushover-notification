@@ -29,12 +29,6 @@
   "removeComments": true,
   "types": ["node"]
  },
- "include": ["node_modules/@types", "dotenv.d.ts"],
- "files": [
-  "src/types/globals.ts",
-  "src/pushover.ts",
-  "src/index.ts",
-  "src/services/pushover.service.ts"
- ],
+ "include": ["src/**/*.ts", "dotenv.d.ts"],
  "exclude": ["node_modules"]
 }

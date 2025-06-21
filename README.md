@@ -9,6 +9,18 @@
 
 Enterprise-grade notification management system with Pushover integration, persistent YAML storage, and REST API for cross-platform alerts.
 
+## 📖 Table of Contents
+- [✨ Features](#-features)
+- [🚀 Installation](#-installation)
+- [⚙️ Configuration](#️-configuration)
+- [💻 Node.js Usage](#-nodejs-usage)
+- [📡 API Reference](#-api-reference)
+- [🔌 Pushover Integration Example](#-pushover-integration-example)
+- [🏗 System Architecture](#-system-architecture)
+- [🛠 Development](#-development)
+- [📄 License](#-license)
+- [ℹ️ Trademark Notice](#ℹ️-trademark-notice)
+
 ## ✨ Features
 
 | Feature | Description |
@@ -42,6 +54,23 @@ PORT=9095
 PUSHOVER_USER_KEY=your_user_key
 PUSHOVER_API_TOKEN=your_api_token
 
+```
+
+## 💻 Node.js Usage
+
+```typescript
+import { App } from '@munirmardinli_org/pushover-notification';
+
+// Initialize with custom port and storage path
+const app = new App(
+  parseInt(process.env.PORT || '9095'),
+  './notifications.yaml'
+);
+
+// Start the notification service
+app.start()
+  .then(() => console.log('Notification service running'))
+  .catch(err => console.error('Service failed:', err));
 ```
 
 ## 📡 API Reference

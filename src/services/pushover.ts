@@ -21,7 +21,7 @@ import {
 	type MessagePayload,
 	type ImageFile,
 	type SoundMap
-} from './types/globals.js'
+} from '../types/globals.js'
 
 /**
  * @class Pushover

@@ -8,7 +8,7 @@
  * @license MIT
  * @since 0.0.1
  */
-import { Pushover } from '../pushover.js';
+import { Pushover } from './pushover.js';
 import { type PushoverConfig, type PushoverMessage, type PushoverResponse } from '../types/globals.js';
 
 /**

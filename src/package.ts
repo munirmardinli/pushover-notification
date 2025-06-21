@@ -1,5 +1,5 @@
 import { App, NotificationController, NotificationStore } from './index.js';
-import { Pushover } from './pushover.js';
+import { Pushover } from './services/pushover.js';
 import { PushoverService } from './services/pushover.service.js';
 import {
 	type NotificationData,
@@ -17,11 +17,11 @@ export {
 	App,
 	Pushover,
 	PushoverService,
-	PushoverConfig,
-	PushoverMessage,
-	PushoverResponse,
-	NotificationData,
-	MessagePayload,
-	ImageFile,
-	SoundMap
+	type PushoverConfig,
+	type PushoverMessage,
+	type PushoverResponse,
+	type NotificationData,
+	type MessagePayload,
+	type ImageFile,
+	type SoundMap
 }
