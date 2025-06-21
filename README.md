@@ -42,8 +42,6 @@ PORT=9095
 PUSHOVER_USER_KEY=your_user_key
 PUSHOVER_API_TOKEN=your_api_token
 
-# Storage Settings
-DATA_FILE=notifications.yaml
 ```
 
 ## 📡 API Reference
