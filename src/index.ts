@@ -31,7 +31,7 @@ import { type NotificationData, type PushoverConfig } from './types/globals.js';
  *   apiToken: 'pushover-api-token'
  * });
  */
-class NotificationStore {
+export class NotificationStore {
 	private notifications: NotificationData[];
 	private readonly dataFile: string;
 	private pushoverService: PushoverService;
@@ -236,7 +236,7 @@ class NotificationStore {
  * @de API Controller
  * @de REST Schnittstelle
  */
-class NotificationController {
+export class NotificationController {
 	private readonly notificationStore: NotificationStore
 
 	constructor(notificationStore: NotificationStore) {
@@ -366,7 +366,7 @@ class NotificationController {
  * @de Hauptanwendung
  * @de Server Konfiguration
  */
-class App {
+export class App {
 	private app: express.Application;
 	private readonly port: number;
 	private notificationStore: NotificationStore;

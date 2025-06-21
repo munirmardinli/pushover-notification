@@ -1,6 +1,6 @@
 {
 	"name": "@munirmardinli_org/pushover-notification",
-	"version": "0.1.10",
+	"version": "0.1.11",
 	"private": false,
 	"sideEffects": false,
 	"type": "module",
@@ -19,8 +19,8 @@
 	],
 	"exports": {
 		".": {
-			"import": "./npm/index.js",
-			"require": "./npm/index.js"
+			"import": "./npm/package.js",
+			"require": "./npm/package.js"
 		}
 	},
 	"config": {
@@ -28,8 +28,8 @@
 			"path": "./node_modules/cz-conventional-changelog"
 		}
 	},
-	"main": "npm/index.js",
-	"types": "npm/index.d.ts",
+	"main": "npm/package.js",
+	"types": "npm/package.d.ts",
 	"license": "MIT",
 	"homepage": "https://munirmardinli.github.io/pushover-notification",
 	"bugs": {
@@ -57,7 +57,7 @@
 		}
 	],
 	"scripts": {
-		"dev": "tsx watch src/index.ts",
+		"dev": "tsx watch src/package.ts",
 		"npm": "tsc -p tsconfig.npm.json"
 	},
 	"devDependencies": {
