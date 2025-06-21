@@ -1,28 +1,38 @@
 {
-  "name": "Pushover Notification Service",
-  "dockerComposeFile": "docker-compose.yml",
+  "name": "Pushover Notification API Dev Container",
+  "dockerComposeFile": "../docker-compose.dev.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
+
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
         "streetsidesoftware.code-spell-checker",
-        "eamodio.gitlens",
-        "github.vscode-github-actions",
-        "ms-azuretools.vscode-docker"
+        "editorconfig.editorconfig"
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "eslint.validate": ["javascript", "typescript"],
-        "typescript.tsdk": "node_modules/typescript/lib"
+        "editor.tabSize": 2,
+        "typescript.tsdk": "/workspace/node_modules/typescript/lib",
+        "typescript.enablePromptUseWorkspaceTsdk": true,
+        "eslint.workingDirectories": ["/workspace"]
       }
     }
   },
+
   "forwardPorts": [9095],
-  "postCreateCommand": "npm install",
-  "remoteUser": "node"
+  "postCreateCommand": "npm install && npm run build",
+  "remoteUser": "node",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18",
+      "nodePackageManager": "npm"
+    }
+  }
 }
