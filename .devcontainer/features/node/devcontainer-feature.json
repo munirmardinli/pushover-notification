@@ -1,0 +1,7 @@
+{
+  "id": "pushover-notification-dev",
+  "version": "0.0.1",
+  "name": "pushover-notification-dev",
+  "description": "Installs Node.js using NVM",
+  "install.sh": "./install.sh"
+}

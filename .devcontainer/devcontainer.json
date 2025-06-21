@@ -1,18 +1,25 @@
 {
-  "name": "Pushover Notification API Dev Container",
-  "dockerComposeFile": "../docker-compose.dev.yml",
+  "name": "Pushover Notification Dev Container",
+  "dockerComposeFile": "docker-compose.dev.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
-
+  "remoteUser": "node",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1.6.3": {
+      "version": "18",
+      "nodePackageManager": "npm"
+    }
+  },
+  "postCreateCommand": "npm install && npm run build",
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
+        "editorconfig.editorconfig",
         "ms-vscode.vscode-typescript-next",
-        "streetsidesoftware.code-spell-checker",
-        "editorconfig.editorconfig"
+        "streetsidesoftware.code-spell-checker"
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -24,15 +31,5 @@
       }
     }
   },
-
-  "forwardPorts": [9095],
-  "postCreateCommand": "npm install && npm run build",
-  "remoteUser": "node",
-
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "18",
-      "nodePackageManager": "npm"
-    }
-  }
+  "forwardPorts": [9095]
 }
