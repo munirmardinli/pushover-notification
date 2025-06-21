@@ -1,11 +1,18 @@
 {
   "name": "Pushover Notification Dev Container",
-  "dockerComposeFile": "docker-compose.dev.yml",
-  "service": "app",
-  "workspaceFolder": "/workspace",
-  "shutdownAction": "stopCompose",
+  "dockerComposeFile": "sandbox.yml",
+  "service": "pushover-notification-dev",
+  "workspaceFolder": "/home/node/app",
+  "forwardPorts": [9095],
+  "runArgs": [
+    "--volume", "${localWorkspaceFolder}/src:/home/node/app/src",
+    "--volume", "${localWorkspaceFolder}/assets:/home/node/app/assets",
+    "--volume", "${localWorkspaceFolder}/dist:/home/node/app/dist",
+    "--env", "PUSHOVER_API_TOKEN=${localEnv:PUSHOVER_API_TOKEN}",
+    "--env", "PUSHOVER_USER_KEY=${localEnv:PUSHOVER_USER_KEY}",
+    "--env", "NODE_ENV=development"
+  ],
   "remoteUser": "node",
-  "postCreateCommand": "npm install && npm run build",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -19,17 +26,20 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
         "editor.tabSize": 2,
-        "typescript.tsdk": "/workspace/node_modules/typescript/lib",
+        "typescript.tsdk": "/home/node/app/node_modules/typescript/lib",
         "typescript.enablePromptUseWorkspaceTsdk": true,
-        "eslint.workingDirectories": ["/workspace"],
-        "terminal.integrated.defaultProfile.linux": "sh",
+        "eslint.workingDirectories": ["/home/node/app"],
+        "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash",
+            "icon": "terminal-bash"
+          },
           "sh": {
             "path": "/bin/sh"
           }
         }
       }
     }
-  },
-  "forwardPorts": [9095]
+  }
 }

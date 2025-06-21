@@ -1,0 +1,41 @@
+FROM node:18-alpine AS builder
+
+WORKDIR /home/node/app
+
+# 1. Abhängigkeiten installieren
+COPY package.json package-lock.json ./
+RUN npm ci
+
+# 2. Quellcode kopieren und builden
+COPY src ./src
+COPY dotenv.d.ts tsconfig.json ./
+RUN npx tsc && \
+    npm prune --production
+
+# Runtime Stage
+FROM node:18-alpine
+
+WORKDIR /home/node/app
+
+# 1. Assets-Verzeichnis mit korrekten Rechten erstellen
+RUN mkdir -p /home/node/app/assets && \
+    chown node:node /home/node/app/assets && \
+    mkdir -p /home/node/app/dist/assets && \
+    chown node:node /home/node/app/dist/assets
+
+# 2. Nur notwendige Dateien kopieren
+COPY --from=builder --chown=node:node /home/node/app/package.json .
+COPY --from=builder --chown=node:node /home/node/app/package-lock.json .
+COPY --from=builder --chown=node:node /home/node/app/node_modules ./node_modules
+COPY --from=builder --chown=node:node /home/node/app/dist ./dist
+
+# 3. Runtime Konfiguration
+USER node
+ENV NODE_ENV=production
+EXPOSE 9095
+
+# Health Check
+HEALTHCHECK --interval=30s --timeout=3s \
+  CMD node -e "require('http').get('http://localhost:9095/health', (r) => {if(r.statusCode !== 200) throw new Error()})"
+
+CMD ["node", "dist/src/index.js"]
