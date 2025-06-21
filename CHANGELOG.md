@@ -1,3 +1,10 @@
+## [0.1.9](https://github.com/munirmardinli/pushover-notification/compare/v0.1.8...v0.1.9) (2025-06-21)
+
+
+### Bug Fixes
+
+* Duplicate release npm ([5d7ac2e](https://github.com/munirmardinli/pushover-notification/commit/5d7ac2e988188fc6339cd4721a87cc79b90dfcd3))
+
 ## [0.1.8](https://github.com/munirmardinli/pushover-notification/compare/v0.1.7...v0.1.8) (2025-06-21)
 
 ## [0.1.7](https://github.com/munirmardinli/pushover-notification/compare/v0.1.6...v0.1.7) (2025-06-20)
