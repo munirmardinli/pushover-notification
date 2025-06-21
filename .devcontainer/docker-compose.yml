@@ -2,22 +2,24 @@ version: '3.8'
 
 services:
   app:
-    image: node:18-alpine
-    user: node
-    working_dir: /workspace
+    build:
+      context: ..
+      dockerfile: .github/Dockerfile
+      args:
+        NODE_ENV: development
+        BUILD_TIMESTAMP: ${BUILD_TIMESTAMP}
+        BRANCH: ${BRANCH:-main}
     volumes:
-      - ..:/workspace
+      - ../:/workspace
+      - ../assets:/home/node/app/dist/assets
     ports:
-      - 9095:9095
+      - "9095:9095"
     environment:
       - NODE_ENV=development
+      - PORT=9095
       - PUSHOVER_USER_KEY=${PUSHOVER_USER_KEY:-}
       - PUSHOVER_API_TOKEN=${PUSHOVER_API_TOKEN:-}
-      - PORT=9095
-      - DATA_FILE=notifications.yaml
-    command: sleep infinity
-    healthcheck:
-      test: ["CMD", "node", "--version"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
+    working_dir: /workspace
+    user: node
+    stdin_open: true
+    tty: true
