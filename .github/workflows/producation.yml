@@ -1,0 +1,263 @@
+name: Production CI/CD Pipeline
+on:
+ push:
+  branches:
+   - main
+ pull_request:
+  branches:
+   - main
+
+env:
+ DOCKER_USERNAME: mardinlimunir
+ DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+ DOCKER_IMAGE_NAME: mardinlimunir/${{ github.event.repository.name }}
+ NPM_REGISTRY_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+permissions:
+ contents: write
+ packages: write
+ pages: write
+ id-token: write
+
+jobs:
+ prepare:
+  runs-on: ubuntu-latest
+  outputs:
+   node_modules_cache: ${{ steps.set-cache-output.outputs.cache-hit }}
+  steps:
+   - uses: actions/checkout@v4
+   - name: Cache node modules
+     id: cache-node-modules
+     uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+      restore-keys: ${{ runner.os }}-node-
+   - name: Install dependencies
+     run: npm ci
+   - name: Set cache output
+     id: set-cache-output
+     run: echo "cache-hit=$(ls node_modules | wc -l | tr -d ' ')" >> $GITHUB_OUTPUT
+
+ lint:
+  needs: prepare
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - name: Restore cache
+     uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Typecheck
+     run: npx tsc --noEmit
+
+ quality-assurance:
+  needs: prepare
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout code
+     uses: actions/checkout@v4
+   - name: Set up Node.js
+     uses: actions/setup-node@v4
+     with:
+      node-version: 20
+   - name: Install dependencies
+     run: npm ci
+   - name: Run npm audit
+     run: npm audit --audit-level=moderate
+
+ build-prod:
+  needs:
+   - lint
+   - quality-assurance
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - name: Restore cache
+     uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Build application
+     run: |
+      npx tsc
+     env:
+      NODE_ENV: production
+      PORT: 9095
+   - name: Upload artifacts
+     uses: actions/upload-artifact@v4
+     with:
+      name: dist-prod
+      path: |
+       dist
+       node_modules
+   - name: Upload node_modules separately
+     uses: actions/upload-artifact@v4
+     with:
+      name: prod-dependencies
+      path: node_modules
+
+ docker-prod:
+  if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  needs: build-prod
+  runs-on: ubuntu-latest
+  permissions:
+   contents: read
+  steps:
+   - uses: actions/checkout@v4
+
+   - name: Download artifacts
+     uses: actions/download-artifact@v4
+     with:
+      name: dist-prod
+      path: .
+
+   - name: Cache Docker layers
+     uses: actions/cache@v4
+     with:
+      path: /tmp/.buildx-cache
+      key: ${{ runner.os }}-buildx-${{ github.sha }}
+      restore-keys: |
+       ${{ runner.os }}-buildx-
+
+   - name: Set up Docker Buildx
+     uses: docker/setup-buildx-action@v3
+
+   - name: Log in to Docker Hub
+     uses: docker/login-action@v3
+     with:
+      username: ${{ env.DOCKER_USERNAME }}
+      password: ${{ env.DOCKER_PASSWORD }}
+
+   - name: Push Docker Hub description
+     uses: peter-evans/dockerhub-description@v3
+     with:
+      username: ${{ env.DOCKER_USERNAME }}
+      password: ${{ env.DOCKER_PASSWORD }}
+      repository: ${{ env.DOCKER_IMAGE_NAME }}
+      readme-filepath: ./README.md
+      short-description: |
+       ${{ github.event.repository.description }}
+       Category: ${{ github.event.repository.topics }}
+
+
+   - name: Extract metadata for Docker Hub
+     id: meta
+     uses: docker/metadata-action@v5
+     with:
+      images: ${{ env.DOCKER_IMAGE_NAME }}
+      tags: |
+       type=raw,value=latest
+      flavor: |
+        latest=true
+   - name: Build and push Docker image to Docker Hub
+     uses: docker/build-push-action@v6
+     with:
+      context: .
+      file: .github/Dockerfile
+      push: true
+      tags: ${{ steps.meta.outputs.tags }}
+      labels: ${{ steps.meta.outputs.labels }}
+      cache-from: type=local,src=/tmp/.buildx-cache
+      cache-to: type=local,dest=/tmp/.buildx-cache-new
+      build-args: |
+       NODE_ENV=production
+       BRANCH=${{ github.ref_name }}
+       BUILD_TIMESTAMP=${{ github.event.repository.updated_at }}
+       GITHUB_REPO=${{ github.repository }}
+       IMAGE_TITLE=${{ github.event.repository.name }}
+       GITHUB_OWNER=${{ github.repository_owner }}
+       GITHUB_REF_NAME=${{ github.ref_name }}
+       IMAGE_DESCRIPTION=${{ github.event.repository.description }}
+       GITHUB_SHA=${{ github.sha }}
+       REPO_LICENSE=${{ github.event.repository.license }}
+       REPO_CATEGORIES=${{ github.event.repository.topics }}
+   - name: Move cache
+     run: |
+      rm -rf /tmp/.buildx-cache
+      mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+ deploy-docs:
+  needs: build-prod
+  runs-on: ubuntu-latest
+  if: >
+   github.event_name == 'push' &&
+   github.ref == 'refs/heads/main' &&
+   !startsWith(github.event.head_commit.message, 'chore(release):')
+  steps:
+   - uses: actions/checkout@v4
+   - name: Setup Node.js
+     uses: actions/setup-node@v4
+     with:
+      node-version: 20
+   - run: npm ci
+   - run: npx typedoc --options typedoc.json
+   - name: Deploy to gh-pages branch
+     uses: peaceiris/actions-gh-pages@v3
+     with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      publish_dir: ./docs
+      publish_branch: gh-pages
+
+ release:
+  if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  needs:
+   - build-prod
+  runs-on: ubuntu-latest
+  permissions:
+   contents: write
+   issues: write
+   pull-requests: write
+  steps:
+   - name: Checkout code
+     uses: actions/checkout@v4
+     with:
+      fetch-depth: 0
+
+   - name: Use Node.js
+     uses: actions/setup-node@v4
+     with:
+      node-version: 20
+
+   - name: Install dependencies
+     run: npm ci
+
+   - name: Run Semantic Release
+     env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+     run: npx semantic-release
+
+ publish-npm:
+  needs:
+   - docker-prod
+   - deploy-docs
+   - release
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - name: Download node_modules
+     uses: actions/download-artifact@v4
+     with:
+      name: prod-dependencies
+      path: node_modules
+   - name: Set up Node.js
+     uses: actions/setup-node@v4
+     with:
+      node-version: 20
+      registry-url: "https://registry.npmjs.org"
+   - name: Build npm package
+     run: |
+      npm run npm
+   - name: Publish to NPM
+     run: npm publish --access public
+     env:
+      NODE_AUTH_TOKEN: ${{ env.NPM_REGISTRY_TOKEN }}

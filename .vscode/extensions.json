@@ -1,0 +1,15 @@
+{
+ "recommendations": [
+  "CodeSandbox-io.codesandbox-projects",
+  "ms-vscode-remote.remote-containers",
+  "ms-azuretools.vscode-docker",
+  "brittanychiang.halcyon-vscode",
+  "ms-vscode-remote.remote-ssh",
+  "psulek-solo.typedoc-live-preview",
+  "yedhat.vscode-yaml",
+  "streetsidesoftware.code-spell-checker",
+  "vscode-icons-team.vscode-icons",
+  "yzhang.markdown-all-in-one",
+  "log-formatter.log-formatter"
+ ]
+}

@@ -1,0 +1,247 @@
+{
+	"git.postCommitCommand": "sync",
+	"workbench.colorTheme": "Default Dark Modern",
+	"redhat.telemetry.enabled": true,
+	"terminal.integrated.fontSize": 20,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"window.zoomLevel": 1,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"prettier.singleQuote": true,
+	"prettier.endOfLine": "auto",
+	"prettier.useTabs": true,
+	"workbench.tree.indent": 12,
+	"editor.minimap.enabled": false,
+	"editor.stickyScroll.enabled": false,
+	"editor.guides.bracketPairs": "active",
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.renderLineHighlight": "gutter",
+	"editor.accessibilitySupport": "on",
+	"editor.guides.bracketPairsHorizontal": "active",
+	"editor.fontFamily": "'Fira Code', 'Courier New', Courier, monospace",
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.lineNumbers": "on",
+	"editor.fontLigatures": true,
+	"editor.renderControlCharacters": false,
+	"editor.fontSize": 24,
+	"editor.lineHeight": 1.6,
+	"editor.renderWhitespace": "none",
+	"editor.suggestSelection": "first",
+	"editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+	"editor.codeLens": false,
+	"editor.insertSpaces": false,
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "expand",
+	"editor.cursorStyle": "line-thin",
+	"editor.cursorWidth": 3,
+	"editor.mouseWheelZoom": true,
+	"editor.mouseWheelScrollSensitivity": 1.5,
+	"editor.fastScrollSensitivity": 2.5,
+	"editor.scrollBeyondLastLine": true,
+	"editor.codeActionsOnSave": {},
+	"zenMode.fullScreen": true,
+	"zenMode.hideLineNumbers": false,
+	"javascript.suggest.autoImports": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"files.autoSave": "afterDelay",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.preferences.useAliasesForRenames": false,
+	"typescript.preferences.useAliasesForRenames": false,
+	"typescript.preferences.importModuleSpecifier": "relative",
+	"glassit.alpha": 230,
+	"glassit.step": 10,
+	"glassit.force_sway": false,
+	"path-autocomplete.pathMappings": {
+		"@src": "${workspace}/src"
+	},
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#599a43",
+		"activityBar.activeBorder": "#599a43",
+		"activityBar.background": "#391bfa",
+		"activityBar.foreground": "#e7e7e7",
+		"activityBar.inactiveForeground": "#e7e7e799",
+		"activityBarBadge.background": "#599a43",
+		"activityBarBadge.foreground": "#e7e7e7",
+		"statusBar.background": "#391bfa",
+		"statusBar.foreground": "#e7e7e7",
+		"statusBarItem.hoverBackground": "#391bfa",
+		"titleBar.activeBackground": "#391bfa",
+		"titleBar.activeForeground": "#e7e7e7",
+		"titleBar.inactiveBackground": "#391bfa",
+		"titleBar.inactiveForeground": "#e7e7e799",
+		"sash.hoverBorder": "#391bfa",
+		"statusBarItem.remoteBackground": "#599a43",
+		"statusBarItem.remoteForeground": "#e7e7e7",
+		"commandCenter.border": "#e7e7e799"
+	},
+	"path-autocomplete.triggerOutsideStrings": true,
+	"path-autocomplete.extensionOnImport": true,
+	"[javascript][typescript][javascriptreact][typescriptreact]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		}
+	},
+	"[dockercompose]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.iconTheme": "vscode-icons",
+	"git.autofetch": true,
+	"explorer.confirmDelete": false,
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"explorer.confirmDragAndDrop": false,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.startupEditor": "none",
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one",
+		"editor.formatOnSave": true
+	},
+
+	"terminal.integrated.profiles.windows": {
+		"Git Bash": {
+			"source": "Git Bash",
+			"path": "C:\\downlaod\\Git\\bin\\bash.exe",
+			"args": ["--login", "-i"]
+		},
+		"Ubuntu-20.04 (WSL)": {
+			"path": "C:\\WINDOWS\\System32\\wsl.exe",
+			"args": ["-d", "Ubuntu-20.04"],
+			"icon": "terminal-bash"
+		}
+	},
+	"breadcrumbs.enabled": false,
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.tabs.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"terminal.integrated.defaultLocation": "editor",
+	"zenMode.showTabs": "single",
+	"[graphql]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "keyword.operator",
+				"settings": {
+					"foreground": "#A9A9A9",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": [
+					"keyword.operator.equal",
+					"keyword.operator.identity",
+					"keyword.operator.arrow"
+				],
+				"settings": {
+					"foreground": "#A9A9A9",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "constant.numeric",
+				"settings": {
+					"foreground": "#A9A9A9",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "constant.language",
+				"settings": {
+					"foreground": "#A9A9A9",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "entity.name.class",
+				"settings": {
+					"foreground": "#A9A9A9",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "entity.name.function",
+				"settings": {
+					"foreground": "#A9A9A9",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "keyword",
+				"settings": {
+					"foreground": "#FF5722"
+				}
+			},
+			{
+				"scope": "variable",
+				"settings": {
+					"foreground": "#af7c4c"
+				}
+			},
+			{
+				"scope": "string",
+				"settings": {
+					"foreground": "#FFEB3B"
+				}
+			},
+			{
+				"scope": "comment",
+				"settings": {
+					"foreground": "#A9A9A9"
+				}
+			},
+			{
+				"scope": "invalid",
+				"settings": {
+					"foreground": "#FF0000",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "warning",
+				"settings": {
+					"foreground": "#FFA500",
+					"fontStyle": "italic"
+				}
+			}
+		]
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"[log]": {
+		"editor.defaultFormatter": "log-formatter.log-formatter"
+	}
+}

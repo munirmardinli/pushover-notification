@@ -1,0 +1,20 @@
+{
+ "name": "Pushover Notification Dev Container",
+ "dockerComposeFile": "sandbox.yml",
+ "service": "pushover-notification-dev",
+ "workspaceFolder": "/home/node/app",
+ "forwardPorts": [9095],
+ "runArgs": [
+  "--volume",
+  "${localWorkspaceFolder}/assets:/home/node/app/assets",
+  "--volume",
+  "${localWorkspaceFolder}/dist:/home/node/app/dist",
+  "--env",
+  "PUSHOVER_API_TOKEN=${localEnv:PUSHOVER_API_TOKEN}",
+  "--env",
+  "PUSHOVER_USER_KEY=${localEnv:PUSHOVER_USER_KEY}",
+  "--env",
+  "NODE_ENV=development"
+ ],
+ "remoteUser": "node"
+}
