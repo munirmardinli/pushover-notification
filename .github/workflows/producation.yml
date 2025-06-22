@@ -137,7 +137,7 @@ jobs:
       password: ${{ env.DOCKER_PASSWORD }}
 
    - name: Push Docker Hub description
-     uses: peter-evans/dockerhub-description@v3
+     uses: peter-evans/dockerhub-description@v4
      with:
       username: ${{ env.DOCKER_USERNAME }}
       password: ${{ env.DOCKER_PASSWORD }}
