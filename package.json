@@ -1,6 +1,6 @@
 {
 	"name": "@munirmardinli_org/pushover-notification",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"private": false,
 	"sideEffects": false,
 	"type": "module",
@@ -57,7 +57,8 @@
 		}
 	],
 	"scripts": {
-		"npm": "tsc -p tsconfig.npm.json"
+		"npm": "tsc -p tsconfig.npm.json",
+		"husky": "husky install"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
