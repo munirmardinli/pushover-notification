@@ -1,5 +1,5 @@
 
-FROM node:18-alpine
+FROM node:22-alpine
 
 ARG NODE_ENV
 ARG BUILD_TIMESTAMP
