@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/munirmardinli/pushover-notification/compare/v1.0.3...v1.0.4) (2025-06-25)
+
+
+### Performance Improvements
+
+* prune devDependencies ([236b043](https://github.com/munirmardinli/pushover-notification/commit/236b043c48ac7794e0997ada60a0871a86835c3b))
+
 ## [1.0.3](https://github.com/munirmardinli/pushover-notification/compare/v1.0.2...v1.0.3) (2025-06-25)
 
 ## [1.0.2](https://github.com/munirmardinli/pushover-notification/compare/v1.0.1...v1.0.2) (2025-06-23)
