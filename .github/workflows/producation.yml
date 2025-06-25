@@ -118,7 +118,8 @@ jobs:
      with:
       name: dist-prod
       path: .
-
+   - name: Prune production dependencies
+     run: npm prune --production
    - name: Cache Docker layers
      uses: actions/cache@v4
      with:
