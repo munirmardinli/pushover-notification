@@ -1,3 +1,19 @@
+# [1.1.0](https://github.com/munirmardinli/pushover-notification/compare/v1.0.4...v1.1.0) (2025-07-01)
+
+
+### Bug Fixes
+
+* bug fix restore cache ([e57d6ce](https://github.com/munirmardinli/pushover-notification/commit/e57d6ced288162feaadf3232271bdd589aecd8b0))
+* cache error ([548f0c9](https://github.com/munirmardinli/pushover-notification/commit/548f0c970700cd9a773c1df7ab7076172812056b))
+* catch error ([16fc4ab](https://github.com/munirmardinli/pushover-notification/commit/16fc4ab871ddf3db8568b11ae1f6777a29eb77b9))
+* delete node type ([99845d5](https://github.com/munirmardinli/pushover-notification/commit/99845d54d9a06d5cfd98a8836663f9bbabeb80c5))
+* node type dependices ([6ba62b9](https://github.com/munirmardinli/pushover-notification/commit/6ba62b9684361766aa83e007f6af4ac4c837e1fa))
+
+
+### Features
+
+* add cursor and reuse cache ([be6502c](https://github.com/munirmardinli/pushover-notification/commit/be6502cb942c0773cd213d8d150e1b41c2d17682))
+
 ## [1.0.4](https://github.com/munirmardinli/pushover-notification/compare/v1.0.3...v1.0.4) (2025-06-25)
 
 
