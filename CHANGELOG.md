@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/munirmardinli/pushover-notification/compare/v1.3.0...v1.3.1) (2025-07-01)
+
+
+### Bug Fixes
+
+* cp gitguardian to workflow ([04051e0](https://github.com/munirmardinli/pushover-notification/commit/04051e05f5054cd2ff026c8eeac94fc9d12f4f41))
+
 # [1.3.0](https://github.com/munirmardinli/pushover-notification/compare/v1.2.1...v1.3.0) (2025-07-01)
 
 
