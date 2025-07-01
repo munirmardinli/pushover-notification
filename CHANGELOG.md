@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/munirmardinli/pushover-notification/compare/v1.2.0...v1.2.1) (2025-07-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency dotenv to v17.0.1 ([94fceba](https://github.com/munirmardinli/pushover-notification/commit/94fceba819a6e4e8c9dc13ee1de8a61e0ade7092))
+
 # [1.2.0](https://github.com/munirmardinli/pushover-notification/compare/v1.1.4...v1.2.0) (2025-07-01)
 
 
