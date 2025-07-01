@@ -26,8 +26,7 @@
   "newLine": "lf",
   "erasableSyntaxOnly": true,
   "noEmit": false,
-  "removeComments": true,
-  "types": ["node"]
+  "removeComments": true
  },
  "include": ["src/**/*.ts", "dotenv.d.ts"],
  "exclude": ["node_modules"]
