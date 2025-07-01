@@ -27,7 +27,7 @@ jobs:
  prepare:
   runs-on: ubuntu-latest
   outputs:
-   node_modules_cache: ${{ steps.set-cache-output.outputs.cache-hit }}
+   node_modules_cache: ${{ steps.cache-node-modules.outputs.cache-hit }}
   steps:
    - uses: actions/checkout@v4
    - name: Cache node modules
@@ -38,12 +38,8 @@ jobs:
        node_modules
        .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-      restore-keys: ${{ runner.os }}-node-
    - name: Install dependencies
      run: npm ci
-   - name: Set cache output
-     id: set-cache-output
-     run: echo "cache-hit=$(ls node_modules | wc -l | tr -d ' ')" >> $GITHUB_OUTPUT
 
  lint:
   needs: prepare
