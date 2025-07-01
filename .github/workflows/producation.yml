@@ -54,7 +54,7 @@ jobs:
        .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Typecheck
-     run: npx tsc --noEmit
+     run: ls -la && npx tsc --noEmit
 
  quality-assurance:
   needs: prepare

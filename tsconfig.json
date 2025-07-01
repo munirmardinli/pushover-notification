@@ -26,7 +26,9 @@
   "newLine": "lf",
   "erasableSyntaxOnly": true,
   "noEmit": false,
-  "removeComments": true
+  "removeComments": true,
+  "types": ["node"],
+	"typeRoots": ["node_modules/@types","src/types/globals.ts"]
  },
  "include": ["src/**/*.ts", "dotenv.d.ts"],
  "exclude": ["node_modules"]
