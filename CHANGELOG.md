@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/munirmardinli/pushover-notification/compare/v1.1.4...v1.2.0) (2025-07-01)
+
+
+### Features
+
+* add slug ([e09289c](https://github.com/munirmardinli/pushover-notification/commit/e09289c75e58dd7e4eb04eed074b15e4ab0986ce))
+
 ## [1.1.4](https://github.com/munirmardinli/pushover-notification/compare/v1.1.3...v1.1.4) (2025-07-01)
 
 ## [1.1.3](https://github.com/munirmardinli/pushover-notification/compare/v1.1.2...v1.1.3) (2025-07-01)
