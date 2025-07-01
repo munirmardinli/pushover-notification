@@ -51,9 +51,6 @@
 	"javascript.preferences.useAliasesForRenames": false,
 	"typescript.preferences.useAliasesForRenames": false,
 	"typescript.preferences.importModuleSpecifier": "relative",
-	"glassit.alpha": 230,
-	"glassit.step": 10,
-	"glassit.force_sway": false,
 	"path-autocomplete.pathMappings": {
 		"@src": "${workspace}/src"
 	},
@@ -99,7 +96,6 @@
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"workbench.startupEditor": "none",
 	"[typescript]": {
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "vscode.typescript-language-features"
@@ -125,13 +121,8 @@
 	"terminal.integrated.profiles.windows": {
 		"Git Bash": {
 			"source": "Git Bash",
-			"path": "C:\\downlaod\\Git\\bin\\bash.exe",
+			"path": "C:\\winserver\\Git\\bin\\bash.exe",
 			"args": ["--login", "-i"]
-		},
-		"Ubuntu-20.04 (WSL)": {
-			"path": "C:\\WINDOWS\\System32\\wsl.exe",
-			"args": ["-d", "Ubuntu-20.04"],
-			"icon": "terminal-bash"
 		}
 	},
 	"breadcrumbs.enabled": false,

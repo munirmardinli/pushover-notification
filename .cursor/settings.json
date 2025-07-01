@@ -1,0 +1,26 @@
+{
+  // Theme & Editor
+  "workbench.colorTheme": "Default Dark Modern",
+  "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+
+  // Prettier
+  "prettier.singleQuote": true,
+  "prettier.useTabs": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // Cursor-settings
+  "cursor.ai.model": "gpt-4-turbo",
+  "cursor.experimental.sync": true,
+
+  // Git
+  "git.autofetch": true,
+  "git.postCommitCommand": "sync"
+}
