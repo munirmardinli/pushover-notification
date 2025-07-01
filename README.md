@@ -6,6 +6,7 @@
 [![Docs](https://img.shields.io/badge/docs-typedoc-blueviolet.svg)](https://munirmardinli.github.io/pushover-notification//)
 [![Docker Hub](https://img.shields.io/badge/docker%20-Image-blue?logo=docker&logoColor=white)](https://hub.docker.com/r/mardinlimunir/pushover-notification)
 [![Postman](https://img.shields.io/badge/Postman-API-orange?logo=postman&logoColor=white)](https://www.postman.com/munirmardinli-team/api-reference/collection/9aqkw6v/pushover-notification-api?action=share&creator=45781554)
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/munirmardinli/pushover-notification?utm_source=oss&utm_medium=github&utm_campaign=munirmardinli%2Fpushover-notification&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 [![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-Codesandbox-black?logo=codesandbox&logoColor=white)](https://codesandbox.io/p/github/munirmardinli/pushover-notification/main?import=true)
 [![npm](https://img.shields.io/npm/v/@munirmardinli_org/pushover-notification)](https://www.npmjs.com/package/@munirmardinli_org/pushover-notification)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mardinlimunir/pushover-notification)](https://hub.docker.com/r/mardinlimunir/pushover-notification)
@@ -16,9 +17,10 @@
 
 Enterprise-grade notification management system with Pushover integration, persistent YAML storage, and REST API for cross-platform alerts.
 
-<a href="https://www.buymeacoffee.com/munirmardinli" target="_blank">
-  <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=munirmardinli&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
-</a>
+<p align="center">
+  <a href="https://www.buymeacoffee.com/munirmardinli" target="_blank"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" /></a>
+  <a href="https://github.com/sponsors/munirmardinli"><img alt="Sponsor" src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=%23white" /></a>
+</p>
 
 ## 📖 Table of Contents
 - [✨ Features](#-features)
