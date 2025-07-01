@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/munirmardinli/pushover-notification/compare/v1.2.1...v1.3.0) (2025-07-01)
+
+
+### Features
+
+* add gitguardian workflow ([6e8d502](https://github.com/munirmardinli/pushover-notification/commit/6e8d502a295bfcc0fc104c4e8fd3b331b8f23a98))
+
 ## [1.2.1](https://github.com/munirmardinli/pushover-notification/compare/v1.2.0...v1.2.1) (2025-07-01)
 
 
