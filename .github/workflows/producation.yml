@@ -34,9 +34,7 @@ jobs:
      id: cache-node-modules
      uses: actions/cache@v4
      with:
-      path: |
-       node_modules
-       .npm
+      path: .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Install dependencies
      run: npm ci
@@ -49,10 +47,10 @@ jobs:
    - name: Restore cache
      uses: actions/cache@v4
      with:
-      path: |
-       node_modules
-       .npm
+      path: .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Clean install dependencies
+     run: npm ci
    - name: Typecheck
      run: ls -la && npx tsc --noEmit
 
@@ -63,9 +61,7 @@ jobs:
    - uses: actions/checkout@v4
    - uses: actions/cache@v4
      with:
-      path: |
-       node_modules
-       .npm
+      path: .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Run npm audit
      run: npm audit --audit-level=moderate
@@ -80,10 +76,10 @@ jobs:
    - name: Restore cache
      uses: actions/cache@v4
      with:
-      path: |
-       node_modules
-       .npm
+      path: .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Clean install dependencies
+     run: npm ci
    - name: Build application
      run: |
       npx tsc
@@ -102,9 +98,7 @@ jobs:
    - name: Restore cache
      uses: actions/cache@v4
      with:
-      path: |
-       node_modules
-       .npm
+      path: .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Download artifacts
      run: npx tsc
@@ -186,9 +180,7 @@ jobs:
    - name: Restore cache
      uses: actions/cache@v4
      with:
-      path: |
-       node_modules
-       .npm
+      path: .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - run: npx typedoc --options typedoc.json
    - name: Deploy to gh-pages branch
@@ -221,10 +213,11 @@ jobs:
    - name: Restore cache
      uses: actions/cache@v4
      with:
-      path: |
-       node_modules
-       .npm
+      path: .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+
+   - name: Clean install dependencies
+     run: npm ci
 
    - name: Run Semantic Release
      env:
@@ -250,10 +243,10 @@ jobs:
    - name: Restore cache
      uses: actions/cache@v4
      with:
-      path: |
-       node_modules
-       .npm
+      path: .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Clean install dependencies
+     run: npm ci
    - name: Build npm package
      run: |
       npm run npm
