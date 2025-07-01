@@ -60,14 +60,13 @@ jobs:
   needs: prepare
   runs-on: ubuntu-latest
   steps:
-   - name: Checkout code
-     uses: actions/checkout@v4
-   - name: Set up Node.js
-     uses: actions/setup-node@v4
+   - uses: actions/checkout@v4
+   - uses: actions/cache@v4
      with:
-      node-version: 20
-   - name: Install dependencies
-     run: npm ci
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Run npm audit
      run: npm audit --audit-level=moderate
 
@@ -91,18 +90,6 @@ jobs:
      env:
       NODE_ENV: production
       PORT: 9095
-   - name: Upload artifacts
-     uses: actions/upload-artifact@v4
-     with:
-      name: dist-prod
-      path: |
-       dist
-       node_modules
-   - name: Upload node_modules separately
-     uses: actions/upload-artifact@v4
-     with:
-      name: prod-dependencies
-      path: node_modules
 
  docker-prod:
   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -112,12 +99,15 @@ jobs:
    contents: read
   steps:
    - uses: actions/checkout@v4
-
-   - name: Download artifacts
-     uses: actions/download-artifact@v4
+   - uses: actions/cache@v4
      with:
-      name: dist-prod
-      path: .
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Build application
+     run: |
+      npx tsc
    - name: Prune production dependencies
      run: npm prune --production
    - name: Cache Docker layers
@@ -198,7 +188,12 @@ jobs:
      uses: actions/setup-node@v4
      with:
       node-version: 20
-   - run: npm ci
+   - uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - run: npx typedoc --options typedoc.json
    - name: Deploy to gh-pages branch
      uses: peaceiris/actions-gh-pages@v4
@@ -227,8 +222,12 @@ jobs:
      with:
       node-version: 20
 
-   - name: Install dependencies
-     run: npm ci
+   - uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
 
    - name: Run Semantic Release
      env:
@@ -245,11 +244,12 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
-   - name: Download node_modules
-     uses: actions/download-artifact@v4
+   - uses: actions/cache@v4
      with:
-      name: prod-dependencies
-      path: node_modules
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Set up Node.js
      uses: actions/setup-node@v4
      with:
