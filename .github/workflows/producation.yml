@@ -278,7 +278,13 @@ jobs:
      run: npx semantic-release
 
  publish-npm:
-  needs: release
+  needs:
+   - release
+   - docker-prod
+   - deploy-docs
+   - check-audit-prod
+   - trivy-scans-prod
+   - git_guardian-prod
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v4

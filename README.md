@@ -72,7 +72,7 @@ PUSHOVER_API_TOKEN=your_api_token
 ## 💻 Node.js Usage
 
 ```typescript
-import { App } from '@munirmardinli_org/pushover-notification';
+import { App } from '@munirmardinli/pushover-notification';
 
 // Initialize with custom port and storage path
 const app = new App(
