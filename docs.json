@@ -125,7 +125,7 @@
 										"type": "reference",
 										"target": 58,
 										"name": "App",
-										"package": "@munirmardinli_org/pushover-notification"
+										"package": "@munirmardinli/pushover-notification"
 									}
 								}
 							]
@@ -294,7 +294,7 @@
 												"type": "reference",
 												"target": 2,
 												"name": "NotificationStore",
-												"package": "@munirmardinli_org/pushover-notification"
+												"package": "@munirmardinli/pushover-notification"
 											}
 										}
 									],
@@ -302,7 +302,7 @@
 										"type": "reference",
 										"target": 33,
 										"name": "NotificationController",
-										"package": "@munirmardinli_org/pushover-notification"
+										"package": "@munirmardinli/pushover-notification"
 									}
 								}
 							]
@@ -1027,7 +1027,7 @@
 												"type": "reference",
 												"target": 136,
 												"name": "PushoverConfig",
-												"package": "@munirmardinli_org/pushover-notification"
+												"package": "@munirmardinli/pushover-notification"
 											}
 										}
 									],
@@ -1035,7 +1035,7 @@
 										"type": "reference",
 										"target": 2,
 										"name": "NotificationStore",
-										"package": "@munirmardinli_org/pushover-notification"
+										"package": "@munirmardinli/pushover-notification"
 									}
 								}
 							]
@@ -1200,7 +1200,7 @@
 														"type": "reference",
 														"target": 145,
 														"name": "NotificationData",
-														"package": "@munirmardinli_org/pushover-notification"
+														"package": "@munirmardinli/pushover-notification"
 													},
 													{
 														"type": "union",
@@ -1245,7 +1245,7 @@
 												"type": "reference",
 												"target": 145,
 												"name": "NotificationData",
-												"package": "@munirmardinli_org/pushover-notification"
+												"package": "@munirmardinli/pushover-notification"
 											}
 										],
 										"name": "Promise",
@@ -1435,7 +1435,7 @@
 											"type": "reference",
 											"target": 145,
 											"name": "NotificationData",
-											"package": "@munirmardinli_org/pushover-notification"
+											"package": "@munirmardinli/pushover-notification"
 										}
 									}
 								}
@@ -1536,7 +1536,7 @@
 												"type": "reference",
 												"target": 145,
 												"name": "NotificationData",
-												"package": "@munirmardinli_org/pushover-notification"
+												"package": "@munirmardinli/pushover-notification"
 											}
 										]
 									}
@@ -1638,7 +1638,7 @@
 												"type": "reference",
 												"target": 145,
 												"name": "NotificationData",
-												"package": "@munirmardinli_org/pushover-notification"
+												"package": "@munirmardinli/pushover-notification"
 											}
 										]
 									}
@@ -2053,7 +2053,7 @@
 												"type": "reference",
 												"target": 154,
 												"name": "PushoverOptions",
-												"package": "@munirmardinli_org/pushover-notification",
+												"package": "@munirmardinli/pushover-notification",
 												"highlightedProperties": {
 													"token": [
 														{
@@ -2099,7 +2099,7 @@
 										"type": "reference",
 										"target": 89,
 										"name": "Pushover",
-										"package": "@munirmardinli_org/pushover-notification"
+										"package": "@munirmardinli/pushover-notification"
 									}
 								}
 							]
@@ -2187,7 +2187,7 @@
 												"type": "reference",
 												"target": 183,
 												"name": "SoundMap",
-												"package": "@munirmardinli_org/pushover-notification"
+												"package": "@munirmardinli/pushover-notification"
 											}
 										]
 									}
@@ -2294,7 +2294,7 @@
 												"type": "reference",
 												"target": 167,
 												"name": "MessagePayload",
-												"package": "@munirmardinli_org/pushover-notification"
+												"package": "@munirmardinli/pushover-notification"
 											}
 										},
 										{
@@ -2584,7 +2584,7 @@
 												"type": "reference",
 												"target": 136,
 												"name": "PushoverConfig",
-												"package": "@munirmardinli_org/pushover-notification",
+												"package": "@munirmardinli/pushover-notification",
 												"highlightedProperties": {
 													"userKey": [
 														{
@@ -2606,7 +2606,7 @@
 										"type": "reference",
 										"target": 77,
 										"name": "PushoverService",
-										"package": "@munirmardinli_org/pushover-notification"
+										"package": "@munirmardinli/pushover-notification"
 									}
 								}
 							]
@@ -2794,7 +2794,7 @@
 												"type": "reference",
 												"target": 139,
 												"name": "PushoverMessage",
-												"package": "@munirmardinli_org/pushover-notification",
+												"package": "@munirmardinli/pushover-notification",
 												"highlightedProperties": {
 													"message": [
 														{
@@ -3217,7 +3217,7 @@
 										"type": "reference",
 										"target": 179,
 										"name": "ImageFile",
-										"package": "@munirmardinli_org/pushover-notification"
+										"package": "@munirmardinli/pushover-notification"
 									}
 								]
 							}
@@ -4835,8 +4835,8 @@
 			]
 		}
 	],
-	"packageName": "@munirmardinli_org/pushover-notification",
-	"packageVersion": "1.0.14",
+	"packageName": "@munirmardinli/pushover-notification",
+	"packageVersion": "0.0.2",
 	"readme": [
 		{
 			"kind": "text",
@@ -4949,747 +4949,747 @@
 	],
 	"symbolIdMap": {
 		"1": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": ""
 		},
 		"2": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore"
 		},
 		"3": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.__constructor"
 		},
 		"4": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore"
 		},
 		"5": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "dataFile"
 		},
 		"6": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "pushoverConfig"
 		},
 		"16": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.create"
 		},
 		"17": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.create"
 		},
 		"18": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "notification"
 		},
 		"19": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.getAll"
 		},
 		"20": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.getAll"
 		},
 		"21": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "recipient"
 		},
 		"22": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.getById"
 		},
 		"23": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.getById"
 		},
 		"24": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "id"
 		},
 		"25": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.markAsRead"
 		},
 		"26": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.markAsRead"
 		},
 		"27": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "id"
 		},
 		"28": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.delete"
 		},
 		"29": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.delete"
 		},
 		"30": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "id"
 		},
 		"31": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.clearAll"
 		},
 		"32": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationStore.clearAll"
 		},
 		"33": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController"
 		},
 		"34": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.__constructor"
 		},
 		"35": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController"
 		},
 		"36": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "notificationStore"
 		},
 		"38": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.createNotification"
 		},
 		"39": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.createNotification"
 		},
 		"40": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "req"
 		},
 		"41": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "res"
 		},
 		"42": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.getNotifications"
 		},
 		"43": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.getNotifications"
 		},
 		"44": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "req"
 		},
 		"45": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "res"
 		},
 		"46": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.getNotification"
 		},
 		"47": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.getNotification"
 		},
 		"48": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "req"
 		},
 		"49": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "res"
 		},
 		"50": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.updateNotificationStatus"
 		},
 		"51": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.updateNotificationStatus"
 		},
 		"52": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "req"
 		},
 		"53": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "res"
 		},
 		"54": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.deleteNotification"
 		},
 		"55": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "NotificationController.deleteNotification"
 		},
 		"56": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "req"
 		},
 		"57": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "res"
 		},
 		"58": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "App"
 		},
 		"59": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "App.__constructor"
 		},
 		"60": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "App"
 		},
 		"61": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "port"
 		},
 		"62": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "dataFile"
 		},
 		"73": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "App.start"
 		},
 		"74": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "App.start"
 		},
 		"75": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": ""
 		},
 		"76": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": ""
 		},
 		"77": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "PushoverService"
 		},
 		"78": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "PushoverService.__constructor"
 		},
 		"79": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "PushoverService"
 		},
 		"80": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "config"
 		},
 		"83": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "PushoverService.sendNotification"
 		},
 		"84": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "PushoverService.sendNotification"
 		},
 		"85": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "message"
 		},
 		"86": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "PushoverService.isEnabled"
 		},
 		"87": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.service.ts",
 			"qualifiedName": "PushoverService.isEnabled"
 		},
 		"88": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": ""
 		},
 		"89": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "Pushover"
 		},
 		"91": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "Pushover.__constructor"
 		},
 		"92": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "Pushover"
 		},
 		"93": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "opts"
 		},
 		"124": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "Pushover.getSounds"
 		},
 		"125": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "Pushover.getSounds"
 		},
 		"126": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "Pushover.send"
 		},
 		"127": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "Pushover.send"
 		},
 		"128": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "payload"
 		},
 		"129": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "callback"
 		},
 		"130": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "__type"
 		},
 		"131": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "__type"
 		},
 		"132": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "err"
 		},
 		"133": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "body"
 		},
 		"134": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/services/pushover.ts",
 			"qualifiedName": "res"
 		},
 		"135": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": ""
 		},
 		"136": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverConfig"
 		},
 		"137": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverConfig.userKey"
 		},
 		"138": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverConfig.apiToken"
 		},
 		"139": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverMessage"
 		},
 		"140": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverMessage.message"
 		},
 		"141": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverMessage.title"
 		},
 		"142": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverMessage.sound"
 		},
 		"143": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverMessage.priority"
 		},
 		"144": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverMessage.timestamp"
 		},
 		"145": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData"
 		},
 		"146": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData.id"
 		},
 		"147": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData.title"
 		},
 		"148": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData.message"
 		},
 		"149": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData.recipient"
 		},
 		"150": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData.read"
 		},
 		"151": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData.createdAt"
 		},
 		"152": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData.pushoverSent"
 		},
 		"153": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "NotificationData.pushoverReceipt"
 		},
 		"154": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverOptions"
 		},
 		"155": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverOptions.token"
 		},
 		"156": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverOptions.user"
 		},
 		"157": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverOptions.debug"
 		},
 		"158": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverOptions.onerror"
 		},
 		"159": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "__type"
 		},
 		"160": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "__type"
 		},
 		"161": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "err"
 		},
 		"162": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "res"
 		},
 		"163": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverOptions.httpOptions"
 		},
 		"164": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "__type"
 		},
 		"165": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "__type.proxy"
 		},
 		"166": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverOptions.update_sounds"
 		},
 		"167": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload"
 		},
 		"168": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.token"
 		},
 		"169": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.user"
 		},
 		"170": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.message"
 		},
 		"171": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.device"
 		},
 		"172": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.title"
 		},
 		"173": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.url"
 		},
 		"174": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.url_title"
 		},
 		"175": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.priority"
 		},
 		"176": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.timestamp"
 		},
 		"177": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.sound"
 		},
 		"178": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "MessagePayload.file"
 		},
 		"179": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "ImageFile"
 		},
 		"180": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "ImageFile.name"
 		},
 		"181": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "ImageFile.data"
 		},
 		"182": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "ImageFile.type"
 		},
 		"183": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "SoundMap"
 		},
 		"184": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "SoundMap.__index"
 		},
 		"186": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverResponse"
 		},
 		"187": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverResponse.status"
 		},
 		"188": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverResponse.request"
 		},
 		"189": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverResponse.receipt"
 		},
 		"190": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverResponse.errors"
 		},
 		"191": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types/globals.ts",
 			"qualifiedName": "PushoverResponse.__index"
 		},
 		"193": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "NotificationStore"
 		},
 		"194": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "NotificationController"
 		},
 		"195": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "App"
 		},
 		"196": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "Pushover"
 		},
 		"197": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "PushoverService"
 		},
 		"198": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "PushoverConfig"
 		},
 		"199": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "PushoverMessage"
 		},
 		"200": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "PushoverResponse"
 		},
 		"201": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "NotificationData"
 		},
 		"202": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "MessagePayload"
 		},
 		"203": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "ImageFile"
 		},
 		"204": {
-			"packageName": "@munirmardinli_org/pushover-notification",
+			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/package.ts",
 			"qualifiedName": "SoundMap"
 		}
