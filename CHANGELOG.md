@@ -1,3 +1,10 @@
+## [1.4.8](https://github.com/munirmardinli/pushover-notification/compare/v1.4.7...v1.4.8) (2025-08-04)
+
+
+### Bug Fixes
+
+* correct Dockerfile path in docker-prod job ([fc14d92](https://github.com/munirmardinli/pushover-notification/commit/fc14d92c8aed494df19d96ed8a2daecfd11cc6c9))
+
 ## [1.4.7](https://github.com/munirmardinli/pushover-notification/compare/v1.4.6...v1.4.7) (2025-08-04)
 
 ## [1.4.6](https://github.com/munirmardinli/pushover-notification/compare/v1.4.5...v1.4.6) (2025-07-28)
