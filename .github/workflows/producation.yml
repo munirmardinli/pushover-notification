@@ -299,15 +299,8 @@ jobs:
       run: npx tsc
     - name: Verify package version
       run: |
-        echo "Current package version: $(node -p "require('./package.json').version")"
-        npm version patch --no-git-tag-version
-        NEW_VERSION=$(node -p "require('./package.json').version")
-        echo "New package version: $NEW_VERSION"
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        git add package.json
-        git commit -m "Bump version to $NEW_VERSION [skip ci]"
-        git push
+        echo "Package version from package.json: $(node -p "require('./package.json').version")"
+        echo "Package name: $(node -p "require('./package.json').name")"
     - name: Publish package to GitHub Packages
       run: npm publish --access public
       env:
