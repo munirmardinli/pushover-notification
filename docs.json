@@ -4860,7 +4860,7 @@
 		},
 		{
 			"kind": "code",
-			"text": "```typescript\nimport { App } from '@munirmardinli_org/pushover-notification';\n\n// Initialize with custom port and storage path\nconst app = new App(\n  parseInt(process.env.PORT || '9095'),\n  './notifications.yaml'\n);\n\n// Start the notification service\napp.start()\n  .then(() => console.log('Notification service running'))\n  .catch(err => console.error('Service failed:', err));\n```"
+			"text": "```typescript\nimport { App } from '@munirmardinli/pushover-notification';\n\n// Initialize with custom port and storage path\nconst app = new App(\n  parseInt(process.env.PORT || '9095'),\n  './notifications.yaml'\n);\n\n// Start the notification service\napp.start()\n  .then(() => console.log('Notification service running'))\n  .catch(err => console.error('Service failed:', err));\n```"
 		},
 		{
 			"kind": "text",
