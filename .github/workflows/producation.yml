@@ -26,6 +26,8 @@ permissions:
  pages: write
  id-token: write
  actions: write
+ issues: write
+ pull-requests: write
 
 jobs:
  prepare:
@@ -256,10 +258,6 @@ jobs:
   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
   needs: build-prod
   runs-on: ubuntu-latest
-  permissions:
-   contents: write
-   issues: write
-   pull-requests: write
   steps:
    - name: Checkout code
      uses: actions/checkout@v4
@@ -297,10 +295,6 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
     - name: Build application
       run: npx tsc
-    - name: Verify package version
-      run: |
-        echo "Package version from package.json: $(node -p "require('./package.json').version")"
-        echo "Package name: $(node -p "require('./package.json').name")"
     - name: Publish package to GitHub Packages
       run: npm publish --access public
       env:
