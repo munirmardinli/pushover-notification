@@ -1,3 +1,5 @@
+## [1.4.13](https://github.com/munirmardinli/pushover-notification/compare/v1.4.12...v1.4.13) (2025-08-11)
+
 ## [1.4.12](https://github.com/munirmardinli/pushover-notification/compare/v1.4.11...v1.4.12) (2025-08-04)
 
 ## [1.4.11](https://github.com/munirmardinli/pushover-notification/compare/v1.4.10...v1.4.11) (2025-08-04)
