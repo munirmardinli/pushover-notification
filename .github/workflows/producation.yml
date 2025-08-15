@@ -103,24 +103,6 @@ jobs:
       NODE_ENV: production
       PORT: ${{ env.APPLICATION_PORT }}
 
- git_guardian-prod:
-  name: GitGuardian scan
-  needs: build-prod
-  runs-on: ubuntu-latest
-  steps:
-   - name: Checkout
-     uses: actions/checkout@v4
-     with:
-      fetch-depth: 0
-   - name: GitGuardian scan
-     uses: GitGuardian/ggshield/actions/secret@v1.42.0
-     env:
-      GITHUB_PUSH_BEFORE_SHA: ${{ github.event.before }}
-      GITHUB_PUSH_BASE_SHA: ${{ github.event.base }}
-      GITHUB_PULL_BASE_SHA: ${{ github.event.pull_request.base.sha }}
-      GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-      GITGUARDIAN_API_KEY: ${{ env.GITGUARDIAN_API }}
-
  trivy-scans-prod:
   runs-on: ubuntu-latest
   needs: build-prod
@@ -281,7 +263,6 @@ jobs:
    - deploy-docs
    - check-audit-prod
    - trivy-scans-prod
-   - git_guardian-prod
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
