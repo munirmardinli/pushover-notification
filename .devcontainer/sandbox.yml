@@ -1,24 +1,30 @@
 services:
-  pushover-notification-dev:
-    build:
-      context: ..
-      dockerfile: .devcontainer/Dockerfile.Dev
-    container_name: pushover-notification-dev
-    hostname: pushover-notification-dev
-    restart: always
-    healthcheck:
-      test: ["CMD", "node", "-e", "require('http').get('http://localhost:9095/health', r => {if(r.statusCode !== 200) throw new Error()})"]
-      interval: 30s
-      timeout: 3s
-      retries: 3
-    environment:
-      NODE_ENV: development
-      PUSHOVER_API_TOKEN: ${PUSHOVER_API_TOKEN}
-      PUSHOVER_USER_KEY: ${PUSHOVER_USER_KEY}
-      PORT: 9095
-    ports:
-      - "9095:9095"
-   # env_file:
-   #   - .env.development
-    volumes:
-      - ../dist/assets:/home/node/app/dist/assets
+ pushover-notification-dev:
+  build:
+   context: ..
+   dockerfile: .devcontainer/Dockerfile.Dev
+  container_name: pushover-notification-dev
+  hostname: pushover-notification-dev
+  restart: always
+  healthcheck:
+   test:
+    [
+     "CMD",
+     "node",
+     "-e",
+     "require('http').get('http://localhost:9095/health', r => {if(r.statusCode !== 200) throw new Error()})",
+    ]
+   interval: 30s
+   timeout: 3s
+   retries: 3
+  environment:
+   NODE_ENV: development
+   PUSHOVER_API_TOKEN: ${PUSHOVER_API_TOKEN}
+   PUSHOVER_USER_KEY: ${PUSHOVER_USER_KEY}
+   PORT: 9095
+  ports:
+   - "9095:9095"
+  # env_file:
+  #   - .env.development
+  volumes:
+   - ../dist/assets:/home/node/app/dist/assets

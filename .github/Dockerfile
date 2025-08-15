@@ -1,5 +1,7 @@
 
-FROM node:22-alpine
+ARG NODE_VERSION=22
+
+FROM node:${NODE_VERSION}-alpine
 
 ARG NODE_ENV
 ARG BUILD_TIMESTAMP
@@ -9,15 +11,15 @@ RUN apk add --no-cache wget ca-certificates
 
 RUN mkdir -p \
 	/home/node/app/node_modules \
-	/home/node/app/dist/assets
+	/home/node/app/lib/assets
 
 WORKDIR /home/node/app
 
 COPY --chown=node:node package.json /home/node/app/package.json
 COPY --chown=node:node node_modules /home/node/app/node_modules
-COPY --chown=node:node dist/src /home/node/app/dist/src
+COPY --chown=node:node lib/src /home/node/app/lib/src
 
-VOLUME /home/node/app/dist/assets
+VOLUME /home/node/app/lib/assets
 
 USER node
 
@@ -59,4 +61,4 @@ LABEL com.docker.extension.legal-url="https://github.com/${GITHUB_REPO}/blob/${B
 
 LABEL com.centurylinklabs.watchtower.enable="true"
 
-CMD ["sh", "-c", "cd dist && node src/index.js"]
+CMD ["sh", "-c", "cd lib && node src/index.js"]

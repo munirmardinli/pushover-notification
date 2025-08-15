@@ -1,7 +1,7 @@
 {
  "compilerOptions": {
-  "rootDirs": ["src/index.ts"],
-  "outDir": "dist/src",
+  "rootDir": "src",
+  "outDir": "lib/src",
   "lib": ["es2022", "dom"],
   "target": "es2022",
   "module": "nodenext",
@@ -20,15 +20,16 @@
   "strictFunctionTypes": true,
   "allowArbitraryExtensions": true,
   "allowSyntheticDefaultImports": true,
-  "declaration": false,
   "declarationMap": false,
   "pretty": true,
   "newLine": "lf",
   "erasableSyntaxOnly": true,
   "noEmit": false,
   "removeComments": true,
+  "declaration": true,
+  "declarationDir": "lib/src",
   "types": ["node"],
-	"typeRoots": ["node_modules/@types","src/types/globals.ts"]
+  "typeRoots": ["node_modules/@types", "src/types/globals.ts"]
  },
  "include": ["src/**/*.ts", "dotenv.d.ts"],
  "exclude": ["node_modules"]

@@ -8,17 +8,14 @@ on:
    - main
 
 env:
-  GITGUARDIAN_API: ${{ secrets.GITGUARDIAN_API_KEY }}
-  NPM_VERSION: "22"
-  REGISTRY_URL: "https://npm.pkg.github.com"
-  PYTHON_VERSION: "3.13"
-  TRIVY_VERSION: "0.64.1"
-  DEPLOYMENT_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
-  REPO_NAME: ${{ github.event.repository.name }}
-  IMAGE_TAG: latest
-  DOCKER_IMAGE_NAME: ${{ github.repository_owner }}/${{ github.event.repository.name }}
-  DOCKER_REGISTRY: ghcr.io
-  APPLICATION_PORT: 9095
+ GITGUARDIAN_API: ${{ secrets.GITGUARDIAN_API_KEY }}
+ NPM_VERSION: "22"
+ REGISTRY_URL: "https://npm.pkg.github.com"
+ TRIVY_VERSION: "0.64.1"
+ IMAGE_TAG: latest
+ DOCKER_IMAGE_NAME: ${{ github.repository_owner }}/${{ github.event.repository.name }}
+ DOCKER_REGISTRY: ghcr.io
+ APPLICATION_PORT: 9095
 
 permissions:
  contents: write
@@ -107,84 +104,84 @@ jobs:
       PORT: ${{ env.APPLICATION_PORT }}
 
  git_guardian-prod:
-    name: GitGuardian scan
-    needs: build-prod
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: GitGuardian scan
-        uses: GitGuardian/ggshield/actions/secret@v1.42.0
-        env:
-          GITHUB_PUSH_BEFORE_SHA: ${{ github.event.before }}
-          GITHUB_PUSH_BASE_SHA: ${{ github.event.base }}
-          GITHUB_PULL_BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-          GITGUARDIAN_API_KEY: ${{ env.GITGUARDIAN_API }}
+  name: GitGuardian scan
+  needs: build-prod
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout
+     uses: actions/checkout@v4
+     with:
+      fetch-depth: 0
+   - name: GitGuardian scan
+     uses: GitGuardian/ggshield/actions/secret@v1.42.0
+     env:
+      GITHUB_PUSH_BEFORE_SHA: ${{ github.event.before }}
+      GITHUB_PUSH_BASE_SHA: ${{ github.event.base }}
+      GITHUB_PULL_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      GITGUARDIAN_API_KEY: ${{ env.GITGUARDIAN_API }}
 
  trivy-scans-prod:
-    runs-on: ubuntu-latest
-    needs: build-prod
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/cache@v4
-        with:
-          path: |
-            node_modules
-            .npm
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-      - name: Build application for Trivy
-        run: |
-          npx tsc
-      - name: Install Trivy
-        uses: aquasecurity/setup-trivy@v0.2.3
-        with:
-          version: v${{ env.TRIVY_VERSION }}
-      - name: Update Trivy DB
-        run: trivy image --download-db-only
-      - name: Scan npm vulnerabilities
-        run: |
-          trivy fs --scanners vuln \
-          --severity HIGH,CRITICAL \
-          --ignore-unfixed \
-          --format table \
-          --exit-code 1 \
-          --dependency-tree \
-          package-lock.json
-      - name: Scan Dockerfile
-        run: |
-          trivy config .github/Dockerfile \
-          --severity HIGH,CRITICAL \
-          --format table \
-          --exit-code 1
-      - name: Build Docker image
-        run: docker build -f .github/Dockerfile -t homelab-cli .
-      - name: Scan Docker image
-        run: |
-          trivy image homelab-cli \
-          --scanners vuln \
-          --severity HIGH,CRITICAL \
-          --ignore-unfixed \
-          --format table \
-          --exit-code 1
+  runs-on: ubuntu-latest
+  needs: build-prod
+  steps:
+   - uses: actions/checkout@v4
+   - uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Build application for Trivy
+     run: |
+      npx tsc
+   - name: Install Trivy
+     uses: aquasecurity/setup-trivy@v0.2.3
+     with:
+      version: v${{ env.TRIVY_VERSION }}
+   - name: Update Trivy DB
+     run: trivy image --download-db-only
+   - name: Scan npm vulnerabilities
+     run: |
+      trivy fs --scanners vuln \
+      --severity HIGH,CRITICAL \
+      --ignore-unfixed \
+      --format table \
+      --exit-code 1 \
+      --dependency-tree \
+      package-lock.json
+   - name: Scan Dockerfile
+     run: |
+      trivy config .github/Dockerfile \
+      --severity HIGH,CRITICAL \
+      --format table \
+      --exit-code 1
+   - name: Build Docker image
+     run: docker build -f .github/Dockerfile -t homelab-cli .
+   - name: Scan Docker image
+     run: |
+      trivy image homelab-cli \
+      --scanners vuln \
+      --severity HIGH,CRITICAL \
+      --ignore-unfixed \
+      --format table \
+      --exit-code 1
 
  check-audit-prod:
-    needs: build-prod
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
-      - uses: actions/cache@v4
-        with:
-          path: |
-            node_modules
-            .npm
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-      - name: Run npm audit
-        run: npm audit --audit-level=moderate
-        working-directory: ${{ github.workspace }}
+  needs: build-prod
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - uses: actions/checkout@v4
+   - uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Run npm audit
+     run: npm audit --audit-level=moderate
+     working-directory: ${{ github.workspace }}
 
  deploy-docs:
   needs: build-prod
@@ -198,7 +195,7 @@ jobs:
    - name: Setup Node.js
      uses: actions/setup-node@v4
      with:
-      node-version: 20
+      node-version: ${{ env.NPM_VERSION }}
    - uses: actions/cache@v4
      with:
       path: |
@@ -217,43 +214,43 @@ jobs:
   needs: build-prod
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v4
-    - uses: actions/cache@v4
-      with:
-        path: |
-          node_modules
-          .npm
-        key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-    - name: Build application
-      run: npx tsc
-    - name: Prune Dependencies
-      run: npm prune --production
-    - name: Log in to GitHub Container Registry
-      uses: docker/login-action@v3
-      with:
-        registry: ${{ env.DOCKER_REGISTRY }}
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-    - name: Build and push Docker image
-      uses: docker/build-push-action@v6
-      with:
-        context: .
-        file: .github/Dockerfile
-        push: true
-        tags: ${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.IMAGE_TAG }}
-        labels: ${{ steps.meta.outputs.labels }}
-        build-args: |
-          NODE_ENV=production
-          BRANCH=${{ github.ref_name }}
-          BUILD_TIMESTAMP=${{ github.event.repository.updated_at }}
-          GITHUB_REPO=${{ github.repository }}
-          IMAGE_TITLE=${{ github.event.repository.name }}
-          GITHUB_OWNER=${{ github.repository_owner }}
-          GITHUB_REF_NAME=${{ github.ref_name }}
-          IMAGE_DESCRIPTION=${{ github.event.repository.description }}
-          GITHUB_SHA=${{ github.sha }}
-          REPO_LICENSE=${{ github.event.repository.license }}
-          REPO_CATEGORIES=${{ github.event.repository.topics }}
+   - uses: actions/checkout@v4
+   - uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Build application
+     run: npx tsc
+   - name: Prune Dependencies
+     run: npm prune --production
+   - name: Log in to GitHub Container Registry
+     uses: docker/login-action@v3
+     with:
+      registry: ${{ env.DOCKER_REGISTRY }}
+      username: ${{ github.actor }}
+      password: ${{ secrets.GITHUB_TOKEN }}
+   - name: Build and push Docker image
+     uses: docker/build-push-action@v6
+     with:
+      context: .
+      file: .github/Dockerfile
+      push: true
+      tags: ${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+      labels: ${{ steps.meta.outputs.labels }}
+      build-args: |
+       NODE_ENV=production
+       BRANCH=${{ github.ref_name }}
+       BUILD_TIMESTAMP=${{ github.event.repository.updated_at }}
+       GITHUB_REPO=${{ github.repository }}
+       IMAGE_TITLE=${{ github.event.repository.name }}
+       GITHUB_OWNER=${{ github.repository_owner }}
+       GITHUB_REF_NAME=${{ github.ref_name }}
+       IMAGE_DESCRIPTION=${{ github.event.repository.description }}
+       GITHUB_SHA=${{ github.sha }}
+       REPO_LICENSE=${{ github.event.repository.license }}
+       REPO_CATEGORIES=${{ github.event.repository.topics }}
  release:
   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
   needs: build-prod
@@ -287,21 +284,21 @@ jobs:
    - git_guardian-prod
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v4
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ env.NPM_VERSION }}
-        registry-url: ${{ env.REGISTRY_URL }}
-    - uses: actions/cache@v4
-      with:
-        path: |
-          node_modules
-          .npm
-        key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-    - name: Build application
-      run: npx tsc
-    - name: Publish package to GitHub Packages
-      run: npm publish --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   - uses: actions/checkout@v4
+   - name: Set up Node.js
+     uses: actions/setup-node@v4
+     with:
+      node-version: ${{ env.NPM_VERSION }}
+      registry-url: ${{ env.REGISTRY_URL }}
+   - uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Build application
+     run: npx tsc
+   - name: Publish package to GitHub Packages
+     run: npm publish --access public
+     env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

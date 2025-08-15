@@ -23,6 +23,7 @@ Enterprise-grade notification management system with Pushover integration, persi
 </p>
 
 ## 📖 Table of Contents
+
 - [✨ Features](#-features)
 - [🚀 Installation](#-installation)
 - [⚙️ Configuration](#️-configuration)
@@ -36,23 +37,21 @@ Enterprise-grade notification management system with Pushover integration, persi
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| **📱 Multi-channel Delivery** | Send to iOS, Android & desktop via Pushover API |
-| **💾 Persistent Storage** | YAML-backed notification history with read/unread status |
-| **🔌 RESTful API** | Fully documented JSON API with Swagger support |
-| **⚠️ Priority System** | Emergency (-2) to High (+2) priority levels |
-| **🔊 Sound Library** | 20+ built-in sounds with automatic updates |
-| **📎 File Attachments** | Send images and documents with notifications |
-| **🩺 Health Monitoring** | Built-in system diagnostics endpoint |
+| Feature                       | Description                                              |
+| ----------------------------- | -------------------------------------------------------- |
+| **📱 Multi-channel Delivery** | Send to iOS, Android & desktop via Pushover API          |
+| **💾 Persistent Storage**     | YAML-backed notification history with read/unread status |
+| **🔌 RESTful API**            | Fully documented JSON API with Swagger support           |
+| **⚠️ Priority System**        | Emergency (-2) to High (+2) priority levels              |
+| **🔊 Sound Library**          | 20+ built-in sounds with automatic updates               |
+| **📎 File Attachments**       | Send images and documents with notifications             |
+| **🩺 Health Monitoring**      | Built-in system diagnostics endpoint                     |
 
 ## 🚀 Installation
 
 ```bash
 # Clone and setup
-git clone https://github.com/munirmardinli/pushover-notification.git
-cd pushover-notification
-npm install
+npm install @munirmardinli/pushover-notification@0.0.7 # or other version
 ```
 
 ## ⚙️ Configuration
@@ -72,18 +71,19 @@ PUSHOVER_API_TOKEN=your_api_token
 ## 💻 Node.js Usage
 
 ```typescript
-import { App } from '@munirmardinli/pushover-notification';
+import { App } from "@munirmardinli/pushover-notification";
 
 // Initialize with custom port and storage path
 const app = new App(
-  parseInt(process.env.PORT || '9095'),
-  './notifications.yaml'
+  parseInt(process.env.PORT || "9095"),
+  "./notifications.yaml",
 );
 
 // Start the notification service
-app.start()
-  .then(() => console.log('Notification service running'))
-  .catch(err => console.error('Service failed:', err));
+app
+  .start()
+  .then(() => console.log("Notification service running"))
+  .catch((err) => console.error("Service failed:", err));
 ```
 
 ## 📡 API Reference
@@ -125,14 +125,12 @@ try {
 
 ```text
 src/
-├── services/            # Service layer
-│   ├── pushover.service.ts  # High-level API wrapper
-│   └── pushover.ts      # Low-level HTTP client
-├── types/               # Type definitions
-│   └── globals.ts     # Shared interfaces
-├── index.ts             # Express application
-└── assets/              # Persistent storage
-    └── notifications.yaml  # YAML data store
+├── services/                 # Service layer
+│   ├── pushover.service.ts   # High-level API wrapper
+│   └── pushover.ts           # Low-level HTTP client
+├── types/                    # Type definitions
+│   └── globals.ts            # Shared interfaces
+└── index.ts                  # Express application
 ```
 
 ## 🛠 Development
@@ -175,6 +173,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
 </details>
 
 ## ℹ️ Trademark Notice
@@ -185,14 +184,16 @@ SOFTWARE.
 **Trademark Disclaimer:**
 ℹ️ **Pushover**® is a registered trademark of Superblock, Inc.
 ⚠️ This project is an **independent, third-party** implementation:
+
 - Not affiliated with Superblock, Inc.
 - Not officially endorsed by Pushover
 - Not an official Pushover product
 
 **Proper Usage Guidelines:**
+
 - ✅ May refer to "Pushover API" for technical accuracy
 - ✅ May state "compatible with Pushover"
 - ❌ Cannot use Pushover logos or branding
 - ❌ Cannot imply official partnership
 
-*For official Pushover services, visit: [pushover.net](https://pushover.net)*
+_For official Pushover services, visit: [pushover.net](https://pushover.net)_

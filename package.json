@@ -1,95 +1,95 @@
 {
-	"name": "@munirmardinli/pushover-notification",
-	"version": "0.0.7",
-	"private": false,
-	"sideEffects": false,
-	"type": "module",
-	"description": "Pushover Notification API wrapper - Send mobile & desktop notifications via Pushover API with Node.js and TypeScript. DevOps tool for alerting and monitoring systems.",
-	"keywords": [
-		"munirmardinli",
-		"Munir Mardinli",
-		"pushover",
-		"notification",
-		"alerts",
-		"nodejs",
-		"typescript"
-	],
-	"files": [
-		"npm"
-	],
-	"exports": {
-		".": {
-			"import": "./npm/package.js",
-			"require": "./npm/package.js"
-		}
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	},
-	"main": "npm/package.js",
-	"types": "npm/package.d.ts",
-	"license": "MIT",
-	"homepage": "https://munirmardinli.github.io/pushover-notification",
-	"bugs": {
-		"url": "https://github.com/munirmardinli/pushover-notification/issues",
-		"email": "Munir@Mardinli.de"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/munirmardinli/pushover-notification.git"
-	},
-	"author": {
-		"name": "Munir Mardinli",
-		"email": "Munir@Mardinli.de",
-		"url": "https://linktr.ee/munirmardinli"
-	},
-	"funding": {
-		"type": "individual",
-		"url": "https://linktr.ee/munirmardinli"
-	},
-	"contributors": [
-		{
-			"name": "Munir Mardinli",
-			"email": "Munir@Mardinli.de",
-			"url": "https://linktr.ee/munirmardinli"
-		}
-	],
-	"scripts": {
-		"npm": "tsc -p tsconfig.npm.json",
-		"husky": "husky install"
-	},
-	"devDependencies": {
-		"@semantic-release/changelog": "^6.0.3",
-		"@semantic-release/commit-analyzer": "^13.0.1",
-		"@semantic-release/git": "^10.0.1",
-		"@semantic-release/github": "^11.0.4",
-		"@semantic-release/release-notes-generator": "^14.0.3",
-		"@types/cookie-parser": "^1.4.9",
-		"@types/cors": "^2.8.19",
-		"@types/express": "^5.0.3",
-		"@types/node": "^24.2.1",
-		"@types/yamljs": "^0.2.31",
-		"commitizen": "^4.3.1",
-		"conventional-changelog-conventionalcommits": "^9.0.0",
-		"cz-conventional-changelog": "^3.3.0",
-		"husky": "^9.1.7",
-		"semantic-release": "^24.2.5",
-		"ts-node": "^10.9.2",
-		"tsx": "^4.20.3",
-		"typedoc": "^0.28.5",
-		"typescript": "^5.8.3"
-	},
-	"dependencies": {
-		"cookie-parser": "^1.4.7",
-		"cors": "^2.8.5",
-		"dotenv": "^17.0.0",
-		"express": "^5.1.0",
-		"express-rate-limit": "^8.0.1",
-		"yamljs": "^0.3.0"
-	},
-	"tsdocsOptions": {
-		"changelog": true
-	}
+ "name": "@munirmardinli/pushover-notification",
+ "version": "0.0.9",
+ "private": false,
+ "sideEffects": false,
+ "type": "module",
+ "description": "Pushover Notification API wrapper - Send mobile & desktop notifications via Pushover API with Node.js and TypeScript. DevOps tool for alerting and monitoring systems.",
+ "keywords": [
+  "munirmardinli",
+  "Munir Mardinli",
+  "pushover",
+  "notification",
+  "alerts",
+  "nodejs",
+  "typescript"
+ ],
+ "files": [
+  "lib"
+ ],
+ "exports": {
+  ".": {
+   "import": "./lib/index.js",
+   "require": "./lib/index.js"
+  }
+ },
+ "config": {
+  "commitizen": {
+   "path": "./node_modules/cz-conventional-changelog"
+  }
+ },
+ "main": "lib/index.js",
+ "types": "lib/index.d.ts",
+ "license": "MIT",
+ "homepage": "https://munirmardinli.github.io/pushover-notification",
+ "bugs": {
+  "url": "https://github.com/munirmardinli/pushover-notification/issues",
+  "email": "Munir@Mardinli.de"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/munirmardinli/pushover-notification.git"
+ },
+ "author": {
+  "name": "Munir Mardinli",
+  "email": "Munir@Mardinli.de",
+  "url": "https://linktr.ee/munirmardinli"
+ },
+ "funding": {
+  "type": "individual",
+  "url": "https://linktr.ee/munirmardinli"
+ },
+ "contributors": [
+  {
+   "name": "Munir Mardinli",
+   "email": "Munir@Mardinli.de",
+   "url": "https://linktr.ee/munirmardinli"
+  }
+ ],
+ "scripts": {
+  "npm": "tsc -p tsconfig.npm.json",
+  "husky": "husky install"
+ },
+ "devDependencies": {
+  "@semantic-release/changelog": "^6.0.3",
+  "@semantic-release/commit-analyzer": "^13.0.1",
+  "@semantic-release/git": "^10.0.1",
+  "@semantic-release/github": "^11.0.3",
+  "@semantic-release/release-notes-generator": "^14.0.3",
+  "@types/cookie-parser": "^1.4.9",
+  "@types/cors": "^2.8.19",
+  "@types/express": "^5.0.3",
+  "@types/node": "^24.2.1",
+  "@types/yamljs": "^0.2.31",
+  "commitizen": "^4.3.1",
+  "conventional-changelog-conventionalcommits": "^9.0.0",
+  "cz-conventional-changelog": "^3.3.0",
+  "husky": "^9.1.7",
+  "semantic-release": "^24.2.5",
+  "ts-node": "^10.9.2",
+  "tsx": "^4.20.3",
+  "typedoc": "^0.28.5",
+  "typescript": "^5.8.3"
+ },
+ "dependencies": {
+  "cookie-parser": "^1.4.7",
+  "cors": "^2.8.5",
+  "dotenv": "^17.0.0",
+  "express": "^5.1.0",
+  "express-rate-limit": "^8.0.1",
+  "yamljs": "^0.3.0"
+ },
+ "tsdocsOptions": {
+  "changelog": true
+ }
 }
