@@ -5,22 +5,21 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import fs from "node:fs";
 import path from "node:path";
+
 import { PushoverService } from "./pushover.js";
 
-export class App {
+export class App extends PushoverService {
  private app: express.Application;
  private readonly port: number;
- private pushoverService: PushoverService;
 
- constructor(port: number, dataFile: string) {
-  this.app = express();
-  this.port = port;
-
-  this.pushoverService = new PushoverService({
-   userKey: process.env.PUSHOVER_USER_KEY || "",
-   apiToken: process.env.PUSHOVER_API_TOKEN || "",
-   dataFile,
+ constructor() {
+  super({
+   userKey: process.env.PUSHOVER_USER_KEY!,
+   apiToken: process.env.PUSHOVER_API_TOKEN!,
+   dataFile: path.join(process.cwd(), "assets", "notifications.yaml"),
   });
+  this.app = express();
+  this.port = parseInt(process.env.PORT || "9095");
   this.initializeMiddlewares();
   this.initializeRoutes();
  }
@@ -46,27 +45,24 @@ export class App {
 
  private initializeRoutes(): void {
   this.app.post("/notifications", (req, res) =>
-   this.pushoverService.handleCreateNotification(req, res),
+   this.handleCreateNotification(req, res),
   );
   this.app.get("/notifications/:recipient", (req, res) =>
-   this.pushoverService.handleGetNotifications(req, res),
+   this.handleGetNotifications(req, res),
   );
   this.app.get("/notifications/single/:id", (req, res) =>
-   this.pushoverService.handleGetNotification(req, res),
+   this.handleGetNotification(req, res),
   );
   this.app.patch("/notifications/:id/read", (req, res) =>
-   this.pushoverService.handleUpdateNotificationStatus(req, res),
+   this.handleUpdateNotificationStatus(req, res),
   );
   this.app.delete("/notifications/:id", (req, res) =>
-   this.pushoverService.handleDeleteNotification(req, res),
+   this.handleDeleteNotification(req, res),
   );
 
   this.app.get("/health", (req, res) => {
    try {
-    fs.accessSync(
-     this.pushoverService.dataFile,
-     fs.constants.R_OK | fs.constants.W_OK,
-    );
+    fs.accessSync(this.dataFile, fs.constants.R_OK | fs.constants.W_OK);
     res.status(200).json({
      status: "ok",
      storage: "accessible",
@@ -84,16 +80,9 @@ export class App {
  public start(): void {
   this.app.listen(this.port, () => {
    console.log(`Server running on port ${this.port}`);
-   console.log(
-    `Pushover service ${this.pushoverService.isEnabled() ? "enabled" : "disabled"}`,
-   );
+   console.log(`Pushover service ${this.isEnabled() ? "enabled" : "disabled"}`);
   });
  }
 }
 
-// Application bootstrap
-const PORT = parseInt(process.env.PORT || "9095");
-const DATA_FILE = path.join(process.cwd(), "assets", "notifications.yaml");
-
-const app = new App(PORT, DATA_FILE);
-app.start();
+new App().start();

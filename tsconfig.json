@@ -34,10 +34,6 @@
    "pushover-types": ["./src/types.d.ts"]
   }
  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "dotenv.d.ts"
-  ],
+ "include": ["src/**/*.ts", "src/**/*.d.ts", "dotenv.d.ts"],
  "exclude": ["node_modules"]
 }
