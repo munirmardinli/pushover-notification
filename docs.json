@@ -81,9 +81,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 35,
+									"line": 36,
 									"character": 17,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L35"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L36"
 								}
 							],
 							"type": {
@@ -108,9 +108,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 507,
+									"line": 508,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L507"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L508"
 								}
 							],
 							"signatures": [
@@ -133,9 +133,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 507,
+											"line": 508,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L507"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L508"
 										}
 									],
 									"type": {
@@ -167,9 +167,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 412,
+									"line": 413,
 									"character": 14,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L412"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L413"
 								}
 							],
 							"signatures": [
@@ -203,9 +203,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 412,
+											"line": 413,
 											"character": 14,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L412"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L413"
 										}
 									],
 									"parameters": [
@@ -313,9 +313,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 494,
+									"line": 495,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L494"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L495"
 								}
 							],
 							"signatures": [
@@ -349,9 +349,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 494,
+											"line": 495,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L494"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L495"
 										}
 									],
 									"parameters": [
@@ -404,9 +404,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 467,
+									"line": 468,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L467"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L468"
 								}
 							],
 							"signatures": [
@@ -440,9 +440,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 467,
+											"line": 468,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L467"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L468"
 										}
 									],
 									"parameters": [
@@ -507,9 +507,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 454,
+									"line": 455,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L454"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L455"
 								}
 							],
 							"signatures": [
@@ -543,9 +543,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 454,
+											"line": 455,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L454"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L455"
 										}
 									],
 									"parameters": [
@@ -604,9 +604,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 237,
+									"line": 238,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L237"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L238"
 								}
 							],
 							"signatures": [
@@ -640,9 +640,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 237,
+											"line": 238,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L237"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L238"
 										}
 									],
 									"type": {
@@ -686,9 +686,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 513,
+									"line": 514,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L513"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L514"
 								}
 							],
 							"signatures": [
@@ -703,9 +703,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 513,
+											"line": 514,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L513"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L514"
 										}
 									],
 									"parameters": [
@@ -775,9 +775,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 582,
+									"line": 583,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L582"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L583"
 								}
 							],
 							"signatures": [
@@ -792,9 +792,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 582,
+											"line": 583,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L582"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L583"
 										}
 									],
 									"parameters": [
@@ -864,9 +864,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 546,
+									"line": 547,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L546"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L547"
 								}
 							],
 							"signatures": [
@@ -881,9 +881,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 546,
+											"line": 547,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L546"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L547"
 										}
 									],
 									"parameters": [
@@ -953,9 +953,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 532,
+									"line": 533,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L532"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L533"
 								}
 							],
 							"signatures": [
@@ -970,9 +970,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 532,
+											"line": 533,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L532"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L533"
 										}
 									],
 									"parameters": [
@@ -1042,9 +1042,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 564,
+									"line": 565,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L564"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L565"
 								}
 							],
 							"signatures": [
@@ -1059,9 +1059,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 564,
+											"line": 565,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L564"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L565"
 										}
 									],
 									"parameters": [
@@ -1131,9 +1131,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 245,
+									"line": 246,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L245"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L246"
 								}
 							],
 							"signatures": [
@@ -1167,9 +1167,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 245,
+											"line": 246,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L245"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L246"
 										}
 									],
 									"type": {
@@ -1201,9 +1201,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 478,
+									"line": 479,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L478"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L479"
 								}
 							],
 							"signatures": [
@@ -1237,9 +1237,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 478,
+											"line": 479,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L478"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L479"
 										}
 									],
 									"parameters": [
@@ -1304,9 +1304,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 286,
+									"line": 287,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L286"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L287"
 								}
 							],
 							"signatures": [
@@ -1329,9 +1329,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 286,
+											"line": 287,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L286"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L287"
 										}
 									],
 									"parameters": [
@@ -1384,9 +1384,9 @@
 													"sources": [
 														{
 															"fileName": "pushover.ts",
-															"line": 288,
+															"line": 289,
 															"character": 13,
-															"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L288"
+															"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L289"
 														}
 													],
 													"signatures": [
@@ -1399,9 +1399,9 @@
 															"sources": [
 																{
 																	"fileName": "pushover.ts",
-																	"line": 288,
+																	"line": 289,
 																	"character": 13,
-																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L288"
+																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L289"
 																}
 															],
 															"parameters": [
@@ -1497,9 +1497,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 254,
+									"line": 255,
 									"character": 14,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L254"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L255"
 								}
 							],
 							"signatures": [
@@ -1533,9 +1533,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 254,
+											"line": 255,
 											"character": 14,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L254"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L255"
 										}
 									],
 									"parameters": [
@@ -1732,9 +1732,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 42,
+									"line": 43,
 									"character": 1,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L43"
 								}
 							],
 							"signatures": [
@@ -1755,9 +1755,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 42,
+											"line": 43,
 											"character": 1,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L43"
 										}
 									],
 									"parameters": [
@@ -1805,9 +1805,9 @@
 																	"sources": [
 																		{
 																			"fileName": "pushover.ts",
-																			"line": 42,
+																			"line": 43,
 																			"character": 50,
-																			"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
+																			"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L43"
 																		}
 																	],
 																	"type": {
@@ -1827,9 +1827,9 @@
 															"sources": [
 																{
 																	"fileName": "pushover.ts",
-																	"line": 42,
+																	"line": 43,
 																	"character": 48,
-																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
+																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L43"
 																}
 															]
 														}
@@ -1859,9 +1859,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 35,
+									"line": 36,
 									"character": 17,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L35"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L36"
 								}
 							],
 							"type": {
@@ -1880,9 +1880,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 507,
+									"line": 508,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L507"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L508"
 								}
 							],
 							"signatures": [
@@ -1903,9 +1903,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 507,
+											"line": 508,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L507"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L508"
 										}
 									],
 									"type": {
@@ -1926,9 +1926,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 412,
+									"line": 413,
 									"character": 14,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L412"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L413"
 								}
 							],
 							"signatures": [
@@ -1960,9 +1960,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 412,
+											"line": 413,
 											"character": 14,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L412"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L413"
 										}
 									],
 									"parameters": [
@@ -2059,9 +2059,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 494,
+									"line": 495,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L494"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L495"
 								}
 							],
 							"signatures": [
@@ -2093,9 +2093,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 494,
+											"line": 495,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L494"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L495"
 										}
 									],
 									"parameters": [
@@ -2137,9 +2137,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 467,
+									"line": 468,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L467"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L468"
 								}
 							],
 							"signatures": [
@@ -2171,9 +2171,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 467,
+											"line": 468,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L467"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L468"
 										}
 									],
 									"parameters": [
@@ -2227,9 +2227,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 454,
+									"line": 455,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L454"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L455"
 								}
 							],
 							"signatures": [
@@ -2261,9 +2261,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 454,
+											"line": 455,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L454"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L455"
 										}
 									],
 									"parameters": [
@@ -2311,9 +2311,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 237,
+									"line": 238,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L237"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L238"
 								}
 							],
 							"signatures": [
@@ -2345,9 +2345,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 237,
+											"line": 238,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L237"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L238"
 										}
 									],
 									"type": {
@@ -2380,9 +2380,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 513,
+									"line": 514,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L513"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L514"
 								}
 							],
 							"signatures": [
@@ -2395,9 +2395,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 513,
+											"line": 514,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L513"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L514"
 										}
 									],
 									"parameters": [
@@ -2456,9 +2456,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 582,
+									"line": 583,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L582"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L583"
 								}
 							],
 							"signatures": [
@@ -2471,9 +2471,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 582,
+											"line": 583,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L582"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L583"
 										}
 									],
 									"parameters": [
@@ -2532,9 +2532,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 546,
+									"line": 547,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L546"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L547"
 								}
 							],
 							"signatures": [
@@ -2547,9 +2547,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 546,
+											"line": 547,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L546"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L547"
 										}
 									],
 									"parameters": [
@@ -2608,9 +2608,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 532,
+									"line": 533,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L532"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L533"
 								}
 							],
 							"signatures": [
@@ -2623,9 +2623,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 532,
+											"line": 533,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L532"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L533"
 										}
 									],
 									"parameters": [
@@ -2684,9 +2684,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 564,
+									"line": 565,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L564"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L565"
 								}
 							],
 							"signatures": [
@@ -2699,9 +2699,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 564,
+											"line": 565,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L564"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L565"
 										}
 									],
 									"parameters": [
@@ -2760,9 +2760,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 245,
+									"line": 246,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L245"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L246"
 								}
 							],
 							"signatures": [
@@ -2794,9 +2794,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 245,
+											"line": 246,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L245"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L246"
 										}
 									],
 									"type": {
@@ -2817,9 +2817,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 478,
+									"line": 479,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L478"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L479"
 								}
 							],
 							"signatures": [
@@ -2851,9 +2851,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 478,
+											"line": 479,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L478"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L479"
 										}
 									],
 									"parameters": [
@@ -2907,9 +2907,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 286,
+									"line": 287,
 									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L286"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L287"
 								}
 							],
 							"signatures": [
@@ -2930,9 +2930,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 286,
+											"line": 287,
 											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L286"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L287"
 										}
 									],
 									"parameters": [
@@ -2985,9 +2985,9 @@
 													"sources": [
 														{
 															"fileName": "pushover.ts",
-															"line": 288,
+															"line": 289,
 															"character": 13,
-															"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L288"
+															"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L289"
 														}
 													],
 													"signatures": [
@@ -3000,9 +3000,9 @@
 															"sources": [
 																{
 																	"fileName": "pushover.ts",
-																	"line": 288,
+																	"line": 289,
 																	"character": 13,
-																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L288"
+																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L289"
 																}
 															],
 															"parameters": [
@@ -3087,9 +3087,9 @@
 							"sources": [
 								{
 									"fileName": "pushover.ts",
-									"line": 254,
+									"line": 255,
 									"character": 14,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L254"
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L255"
 								}
 							],
 							"signatures": [
@@ -3121,9 +3121,9 @@
 									"sources": [
 										{
 											"fileName": "pushover.ts",
-											"line": 254,
+											"line": 255,
 											"character": 14,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L254"
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L255"
 										}
 									],
 									"parameters": [
@@ -3216,9 +3216,9 @@
 					"sources": [
 						{
 							"fileName": "pushover.ts",
-							"line": 25,
+							"line": 26,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L25"
+							"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L26"
 						}
 					],
 					"extendedBy": [
@@ -4929,7 +4929,7 @@
 		}
 	],
 	"packageName": "@munirmardinli/pushover-notification",
-	"packageVersion": "0.0.14",
+	"packageVersion": "0.0.15",
 	"readme": [
 		{
 			"kind": "text",
