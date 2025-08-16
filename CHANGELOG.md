@@ -1,3 +1,5 @@
+## [1.0.1](https://github.com/munirmardinli/pushover-notification/compare/v1.0.0...v1.0.1) (2025-08-16)
+
 # 1.0.0 (2025-08-16)
 
 ### Bug Fixes
