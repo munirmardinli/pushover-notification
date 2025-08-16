@@ -4,3 +4,4 @@ dist
 docker-compose.yml
 tsconfig.json
 typedoc.json
+@munirmardinli-dev/release
