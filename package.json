@@ -1,6 +1,6 @@
 {
  "name": "@munirmardinli/pushover-notification",
- "version": "0.0.17",
+ "version": "0.0.18",
  "private": false,
  "sideEffects": false,
  "type": "module",
@@ -67,7 +67,6 @@
   "typescript": "^5.8.3"
  },
  "dependencies": {
-  "@munirmardinli-dev/release": "0.0.9",
   "cookie-parser": "^1.4.7",
   "cors": "^2.8.5",
   "dotenv": "^17.0.0",
