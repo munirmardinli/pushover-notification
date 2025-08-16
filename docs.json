@@ -49,302 +49,79 @@
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L15"
 										}
 									],
-									"parameters": [
-										{
-											"id": 5,
-											"name": "port",
-											"variant": "param",
-											"kind": 32768,
-											"flags": {},
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										},
-										{
-											"id": 6,
-											"name": "dataFile",
-											"variant": "param",
-											"kind": 32768,
-											"flags": {},
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										}
-									],
 									"type": {
 										"type": "reference",
 										"target": 2,
 										"name": "App",
 										"package": "@munirmardinli/pushover-notification"
-									}
-								}
-							]
-						},
-						{
-							"id": 14,
-							"name": "start",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {
-								"isPublic": true
-							},
-							"sources": [
-								{
-									"fileName": "index.ts",
-									"line": 84,
-									"character": 8,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L84"
-								}
-							],
-							"signatures": [
-								{
-									"id": 15,
-									"name": "start",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "index.ts",
-											"line": 84,
-											"character": 8,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L84"
-										}
-									],
-									"type": {
-										"type": "intrinsic",
-										"name": "void"
-									}
-								}
-							]
-						}
-					],
-					"groups": [
-						{
-							"title": "Constructors",
-							"children": [
-								3
-							]
-						},
-						{
-							"title": "Methods",
-							"children": [
-								14
-							]
-						}
-					],
-					"sources": [
-						{
-							"fileName": "index.ts",
-							"line": 10,
-							"character": 13,
-							"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L10"
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Classes",
-					"children": [
-						2
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "index.ts",
-					"line": 1,
-					"character": 0,
-					"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L1"
-				}
-			]
-		},
-		{
-			"id": 16,
-			"name": "pushover",
-			"variant": "declaration",
-			"kind": 2,
-			"flags": {},
-			"children": [
-				{
-					"id": 17,
-					"name": "PushoverService",
-					"variant": "declaration",
-					"kind": 128,
-					"flags": {},
-					"children": [
-						{
-							"id": 19,
-							"name": "constructor",
-							"variant": "declaration",
-							"kind": 512,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "pushover.ts",
-									"line": 42,
-									"character": 2,
-									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
-								}
-							],
-							"signatures": [
-								{
-									"id": 20,
-									"name": "PushoverService",
-									"variant": "signature",
-									"kind": 16384,
-									"flags": {},
-									"comment": {
-										"summary": [
-											{
-												"kind": "text",
-												"text": "Creates a new PushoverService instance"
-											}
-										]
 									},
-									"sources": [
-										{
-											"fileName": "pushover.ts",
-											"line": 42,
-											"character": 2,
-											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
-										}
-									],
-									"parameters": [
-										{
-											"id": 21,
-											"name": "config",
-											"variant": "param",
-											"kind": 32768,
-											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "Pushover configuration"
-													}
-												]
-											},
-											"type": {
-												"type": "intersection",
-												"types": [
-													{
-														"type": "reference",
-														"target": 117,
-														"name": "BaseConfig",
-														"package": "@munirmardinli/pushover-notification",
-														"qualifiedName": "\"pushover-types\".BaseConfig"
-													},
-													{
-														"type": "reflection",
-														"declaration": {
-															"id": 22,
-															"name": "__type",
-															"variant": "declaration",
-															"kind": 65536,
-															"flags": {},
-															"children": [
-																{
-																	"id": 23,
-																	"name": "dataFile",
-																	"variant": "declaration",
-																	"kind": 1024,
-																	"flags": {
-																		"isOptional": true
-																	},
-																	"sources": [
-																		{
-																			"fileName": "pushover.ts",
-																			"line": 42,
-																			"character": 51,
-																			"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
-																		}
-																	],
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "string"
-																	}
-																}
-															],
-															"groups": [
-																{
-																	"title": "Properties",
-																	"children": [
-																		23
-																	]
-																}
-															],
-															"sources": [
-																{
-																	"fileName": "pushover.ts",
-																	"line": 42,
-																	"character": 49,
-																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
-																}
-															]
-														}
-													}
-												]
-											}
-										}
-									],
-									"type": {
+									"overwrites": {
 										"type": "reference",
-										"target": 17,
-										"name": "PushoverService",
-										"package": "@munirmardinli/pushover-notification"
+										"target": 71,
+										"name": "PushoverService.constructor"
 									}
 								}
-							]
+							],
+							"overwrites": {
+								"type": "reference",
+								"target": 70,
+								"name": "PushoverService.constructor"
+							}
 						},
 						{
-							"id": 39,
+							"id": 13,
 							"name": "dataFile",
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {
 								"isPublic": true,
-								"isReadonly": true
+								"isReadonly": true,
+								"isInherited": true
 							},
 							"sources": [
 								{
 									"fileName": "pushover.ts",
 									"line": 35,
-									"character": 18,
+									"character": 17,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L35"
 								}
 							],
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 90,
+								"name": "PushoverService.dataFile"
 							}
 						},
 						{
-							"id": 94,
+							"id": 45,
 							"name": "clearAllNotifications",
 							"variant": "declaration",
 							"kind": 2048,
 							"flags": {
-								"isPublic": true
+								"isPublic": true,
+								"isInherited": true
 							},
 							"sources": [
 								{
 									"fileName": "pushover.ts",
 									"line": 507,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L507"
 								}
 							],
 							"signatures": [
 								{
-									"id": 95,
+									"id": 46,
 									"name": "clearAllNotifications",
 									"variant": "signature",
 									"kind": 4096,
-									"flags": {},
+									"flags": {
+										"isInherited": true
+									},
 									"comment": {
 										"summary": [
 											{
@@ -357,40 +134,53 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 507,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L507"
 										}
 									],
 									"type": {
 										"type": "intrinsic",
 										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 146,
+										"name": "PushoverService.clearAllNotifications"
 									}
 								}
-							]
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 145,
+								"name": "PushoverService.clearAllNotifications"
+							}
 						},
 						{
-							"id": 79,
+							"id": 30,
 							"name": "createNotification",
 							"variant": "declaration",
 							"kind": 2048,
 							"flags": {
-								"isPublic": true
+								"isPublic": true,
+								"isInherited": true
 							},
 							"sources": [
 								{
 									"fileName": "pushover.ts",
 									"line": 412,
-									"character": 15,
+									"character": 14,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L412"
 								}
 							],
 							"signatures": [
 								{
-									"id": 80,
+									"id": 31,
 									"name": "createNotification",
 									"variant": "signature",
 									"kind": 4096,
-									"flags": {},
+									"flags": {
+										"isInherited": true
+									},
 									"comment": {
 										"summary": [
 											{
@@ -414,13 +204,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 412,
-											"character": 15,
+											"character": 14,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L412"
 										}
 									],
 									"parameters": [
 										{
-											"id": 81,
+											"id": 32,
 											"name": "notification",
 											"variant": "param",
 											"kind": 32768,
@@ -443,7 +233,7 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": 136,
+														"target": 187,
 														"name": "PushoverTypes.NotificationData",
 														"package": "@munirmardinli/pushover-notification",
 														"qualifiedName": "\"pushover-types\".NotificationData"
@@ -489,7 +279,1764 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": 136,
+												"target": 187,
+												"name": "NotificationData",
+												"package": "@munirmardinli/pushover-notification",
+												"qualifiedName": "\"pushover-types\".NotificationData"
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 131,
+										"name": "PushoverService.createNotification"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 130,
+								"name": "PushoverService.createNotification"
+							}
+						},
+						{
+							"id": 42,
+							"name": "deleteNotification",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 494,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L494"
+								}
+							],
+							"signatures": [
+								{
+									"id": 43,
+									"name": "deleteNotification",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Removes notification by ID"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Deletion success status"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 494,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L494"
+										}
+									],
+									"parameters": [
+										{
+											"id": 44,
+											"name": "id",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Notification ID"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 143,
+										"name": "PushoverService.deleteNotification"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 142,
+								"name": "PushoverService.deleteNotification"
+							}
+						},
+						{
+							"id": 36,
+							"name": "getNotificationById",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 467,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L467"
+								}
+							],
+							"signatures": [
+								{
+									"id": 37,
+									"name": "getNotificationById",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Finds notification by ID"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Found notification or undefined"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 467,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L467"
+										}
+									],
+									"parameters": [
+										{
+											"id": 38,
+											"name": "id",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Notification ID"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 187,
+												"name": "NotificationData",
+												"package": "@munirmardinli/pushover-notification",
+												"qualifiedName": "\"pushover-types\".NotificationData"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 137,
+										"name": "PushoverService.getNotificationById"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 136,
+								"name": "PushoverService.getNotificationById"
+							}
+						},
+						{
+							"id": 33,
+							"name": "getNotifications",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 454,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L454"
+								}
+							],
+							"signatures": [
+								{
+									"id": 34,
+									"name": "getNotifications",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Retrieves all notifications for a recipient (sorted by date)"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Filtered notifications array"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 454,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L454"
+										}
+									],
+									"parameters": [
+										{
+											"id": 35,
+											"name": "recipient",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Target recipient identifier"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"target": 187,
+											"name": "NotificationData",
+											"package": "@munirmardinli/pushover-notification",
+											"qualifiedName": "\"pushover-types\".NotificationData"
+										}
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 134,
+										"name": "PushoverService.getNotifications"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 133,
+								"name": "PushoverService.getNotifications"
+							}
+						},
+						{
+							"id": 14,
+							"name": "getSounds",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 237,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L237"
+								}
+							],
+							"signatures": [
+								{
+									"id": 15,
+									"name": "getSounds",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Retrieves available notification sounds"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Mapping of sound identifiers to display names"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 237,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L237"
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 225,
+												"name": "SoundMap",
+												"package": "@munirmardinli/pushover-notification",
+												"qualifiedName": "\"pushover-types\".SoundMap"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 109,
+										"name": "PushoverService.getSounds"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 108,
+								"name": "PushoverService.getSounds"
+							}
+						},
+						{
+							"id": 47,
+							"name": "handleCreateNotification",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 513,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L513"
+								}
+							],
+							"signatures": [
+								{
+									"id": 48,
+									"name": "handleCreateNotification",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 513,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L513"
+										}
+									],
+									"parameters": [
+										{
+											"id": 49,
+											"name": "req",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Request"
+												},
+												"name": "Request",
+												"package": "@types/express",
+												"qualifiedName": "e.Request"
+											}
+										},
+										{
+											"id": 50,
+											"name": "res",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Response"
+												},
+												"name": "Response",
+												"package": "@types/express",
+												"qualifiedName": "e.Response"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 148,
+										"name": "PushoverService.handleCreateNotification"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 147,
+								"name": "PushoverService.handleCreateNotification"
+							}
+						},
+						{
+							"id": 63,
+							"name": "handleDeleteNotification",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 582,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L582"
+								}
+							],
+							"signatures": [
+								{
+									"id": 64,
+									"name": "handleDeleteNotification",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 582,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L582"
+										}
+									],
+									"parameters": [
+										{
+											"id": 65,
+											"name": "req",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Request"
+												},
+												"name": "Request",
+												"package": "@types/express",
+												"qualifiedName": "e.Request"
+											}
+										},
+										{
+											"id": 66,
+											"name": "res",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Response"
+												},
+												"name": "Response",
+												"package": "@types/express",
+												"qualifiedName": "e.Response"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 164,
+										"name": "PushoverService.handleDeleteNotification"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 163,
+								"name": "PushoverService.handleDeleteNotification"
+							}
+						},
+						{
+							"id": 55,
+							"name": "handleGetNotification",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 546,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L546"
+								}
+							],
+							"signatures": [
+								{
+									"id": 56,
+									"name": "handleGetNotification",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 546,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L546"
+										}
+									],
+									"parameters": [
+										{
+											"id": 57,
+											"name": "req",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Request"
+												},
+												"name": "Request",
+												"package": "@types/express",
+												"qualifiedName": "e.Request"
+											}
+										},
+										{
+											"id": 58,
+											"name": "res",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Response"
+												},
+												"name": "Response",
+												"package": "@types/express",
+												"qualifiedName": "e.Response"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 156,
+										"name": "PushoverService.handleGetNotification"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 155,
+								"name": "PushoverService.handleGetNotification"
+							}
+						},
+						{
+							"id": 51,
+							"name": "handleGetNotifications",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 532,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L532"
+								}
+							],
+							"signatures": [
+								{
+									"id": 52,
+									"name": "handleGetNotifications",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 532,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L532"
+										}
+									],
+									"parameters": [
+										{
+											"id": 53,
+											"name": "req",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Request"
+												},
+												"name": "Request",
+												"package": "@types/express",
+												"qualifiedName": "e.Request"
+											}
+										},
+										{
+											"id": 54,
+											"name": "res",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Response"
+												},
+												"name": "Response",
+												"package": "@types/express",
+												"qualifiedName": "e.Response"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 152,
+										"name": "PushoverService.handleGetNotifications"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 151,
+								"name": "PushoverService.handleGetNotifications"
+							}
+						},
+						{
+							"id": 59,
+							"name": "handleUpdateNotificationStatus",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 564,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L564"
+								}
+							],
+							"signatures": [
+								{
+									"id": 60,
+									"name": "handleUpdateNotificationStatus",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 564,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L564"
+										}
+									],
+									"parameters": [
+										{
+											"id": 61,
+											"name": "req",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Request"
+												},
+												"name": "Request",
+												"package": "@types/express",
+												"qualifiedName": "e.Request"
+											}
+										},
+										{
+											"id": 62,
+											"name": "res",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "@types/express",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "e.Response"
+												},
+												"name": "Response",
+												"package": "@types/express",
+												"qualifiedName": "e.Response"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 160,
+										"name": "PushoverService.handleUpdateNotificationStatus"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 159,
+								"name": "PushoverService.handleUpdateNotificationStatus"
+							}
+						},
+						{
+							"id": 16,
+							"name": "isEnabled",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 245,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L245"
+								}
+							],
+							"signatures": [
+								{
+									"id": 17,
+									"name": "isEnabled",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Checks if service is enabled"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Service status"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 245,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L245"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 111,
+										"name": "PushoverService.isEnabled"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 110,
+								"name": "PushoverService.isEnabled"
+							}
+						},
+						{
+							"id": 39,
+							"name": "markNotificationAsRead",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 478,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L478"
+								}
+							],
+							"signatures": [
+								{
+									"id": 40,
+									"name": "markNotificationAsRead",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Updates notification read status"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Updated notification or undefined"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 478,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L478"
+										}
+									],
+									"parameters": [
+										{
+											"id": 41,
+											"name": "id",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Notification ID"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 187,
+												"name": "NotificationData",
+												"package": "@munirmardinli/pushover-notification",
+												"qualifiedName": "\"pushover-types\".NotificationData"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 140,
+										"name": "PushoverService.markNotificationAsRead"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 139,
+								"name": "PushoverService.markNotificationAsRead"
+							}
+						},
+						{
+							"id": 21,
+							"name": "send",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 286,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L286"
+								}
+							],
+							"signatures": [
+								{
+									"id": 22,
+									"name": "send",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Sends notification via Pushover API"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 286,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L286"
+										}
+									],
+									"parameters": [
+										{
+											"id": 23,
+											"name": "payload",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Notification content"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": 209,
+												"name": "MessagePayload",
+												"package": "@munirmardinli/pushover-notification",
+												"qualifiedName": "\"pushover-types\".MessagePayload"
+											}
+										},
+										{
+											"id": 24,
+											"name": "callback",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Result callback (err, body, res)"
+													}
+												]
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 25,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "pushover.ts",
+															"line": 288,
+															"character": 13,
+															"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L288"
+														}
+													],
+													"signatures": [
+														{
+															"id": 26,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "pushover.ts",
+																	"line": 288,
+																	"character": 13,
+																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L288"
+																}
+															],
+															"parameters": [
+																{
+																	"id": 27,
+																	"name": "err",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"packageName": "typescript",
+																			"packagePath": "lib/lib.es5.d.ts",
+																			"qualifiedName": "Error"
+																		},
+																		"name": "Error",
+																		"package": "typescript"
+																	}
+																},
+																{
+																	"id": 28,
+																	"name": "body",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																},
+																{
+																	"id": 29,
+																	"name": "res",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"packageName": "@types/node",
+																			"packagePath": "http.d.ts",
+																			"qualifiedName": "\"http\".IncomingMessage"
+																		},
+																		"name": "IncomingMessage",
+																		"package": "@types/node",
+																		"qualifiedName": "\"http\".IncomingMessage"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 116,
+										"name": "PushoverService.send"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 115,
+								"name": "PushoverService.send"
+							}
+						},
+						{
+							"id": 18,
+							"name": "sendNotification",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 254,
+									"character": 14,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L254"
+								}
+							],
+							"signatures": [
+								{
+									"id": 19,
+									"name": "sendNotification",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Sends a notification through Pushover API"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Receipt ID or null"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 254,
+											"character": 14,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L254"
+										}
+									],
+									"parameters": [
+										{
+											"id": 20,
+											"name": "message",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Notification payload"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": 177,
+												"name": "Message",
+												"package": "@munirmardinli/pushover-notification",
+												"qualifiedName": "\"pushover-types\".Message"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": null
+													},
+													{
+														"type": "intrinsic",
+														"name": "string"
+													}
+												]
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 113,
+										"name": "PushoverService.sendNotification"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 112,
+								"name": "PushoverService.sendNotification"
+							}
+						},
+						{
+							"id": 11,
+							"name": "start",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 80,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L80"
+								}
+							],
+							"signatures": [
+								{
+									"id": 12,
+									"name": "start",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 80,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L80"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								3
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								45,
+								30,
+								42,
+								36,
+								33,
+								14,
+								47,
+								63,
+								55,
+								51,
+								59,
+								16,
+								39,
+								21,
+								18,
+								11
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								13
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 11,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L11"
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"target": 68,
+							"name": "PushoverService",
+							"package": "@munirmardinli/pushover-notification"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 67,
+			"name": "pushover",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 68,
+					"name": "PushoverService",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"children": [
+						{
+							"id": 70,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 42,
+									"character": 1,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
+								}
+							],
+							"signatures": [
+								{
+									"id": 71,
+									"name": "PushoverService",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Creates a new PushoverService instance"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 42,
+											"character": 1,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
+										}
+									],
+									"parameters": [
+										{
+											"id": 72,
+											"name": "config",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Pushover configuration"
+													}
+												]
+											},
+											"type": {
+												"type": "intersection",
+												"types": [
+													{
+														"type": "reference",
+														"target": 168,
+														"name": "BaseConfig",
+														"package": "@munirmardinli/pushover-notification",
+														"qualifiedName": "\"pushover-types\".BaseConfig"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 73,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 74,
+																	"name": "dataFile",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "pushover.ts",
+																			"line": 42,
+																			"character": 50,
+																			"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		74
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "pushover.ts",
+																	"line": 42,
+																	"character": 48,
+																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L42"
+																}
+															]
+														}
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 68,
+										"name": "PushoverService",
+										"package": "@munirmardinli/pushover-notification"
+									}
+								}
+							]
+						},
+						{
+							"id": 90,
+							"name": "dataFile",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true,
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 35,
+									"character": 17,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L35"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 145,
+							"name": "clearAllNotifications",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 507,
+									"character": 8,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L507"
+								}
+							],
+							"signatures": [
+								{
+									"id": 146,
+									"name": "clearAllNotifications",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Clears all notifications from storage"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 507,
+											"character": 8,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L507"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 130,
+							"name": "createNotification",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "pushover.ts",
+									"line": 412,
+									"character": 14,
+									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L412"
+								}
+							],
+							"signatures": [
+								{
+									"id": 131,
+									"name": "createNotification",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Creates new notification with optional Pushover delivery"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Created notification with system fields"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "pushover.ts",
+											"line": 412,
+											"character": 14,
+											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L412"
+										}
+									],
+									"parameters": [
+										{
+											"id": 132,
+											"name": "notification",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Notification data"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "typescript",
+													"packagePath": "lib/lib.es5.d.ts",
+													"qualifiedName": "Omit"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 187,
+														"name": "PushoverTypes.NotificationData",
+														"package": "@munirmardinli/pushover-notification",
+														"qualifiedName": "\"pushover-types\".NotificationData"
+													},
+													{
+														"type": "union",
+														"types": [
+															{
+																"type": "literal",
+																"value": "id"
+															},
+															{
+																"type": "literal",
+																"value": "read"
+															},
+															{
+																"type": "literal",
+																"value": "createdAt"
+															},
+															{
+																"type": "literal",
+																"value": "pushoverSent"
+															},
+															{
+																"type": "literal",
+																"value": "pushoverReceipt"
+															}
+														]
+													}
+												],
+												"name": "Omit",
+												"package": "typescript"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 187,
 												"name": "NotificationData",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".NotificationData"
@@ -502,7 +2049,7 @@
 							]
 						},
 						{
-							"id": 91,
+							"id": 142,
 							"name": "deleteNotification",
 							"variant": "declaration",
 							"kind": 2048,
@@ -513,13 +2060,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 494,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L494"
 								}
 							],
 							"signatures": [
 								{
-									"id": 92,
+									"id": 143,
 									"name": "deleteNotification",
 									"variant": "signature",
 									"kind": 4096,
@@ -547,13 +2094,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 494,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L494"
 										}
 									],
 									"parameters": [
 										{
-											"id": 93,
+											"id": 144,
 											"name": "id",
 											"variant": "param",
 											"kind": 32768,
@@ -580,7 +2127,7 @@
 							]
 						},
 						{
-							"id": 85,
+							"id": 136,
 							"name": "getNotificationById",
 							"variant": "declaration",
 							"kind": 2048,
@@ -591,13 +2138,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 467,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L467"
 								}
 							],
 							"signatures": [
 								{
-									"id": 86,
+									"id": 137,
 									"name": "getNotificationById",
 									"variant": "signature",
 									"kind": 4096,
@@ -625,13 +2172,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 467,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L467"
 										}
 									],
 									"parameters": [
 										{
-											"id": 87,
+											"id": 138,
 											"name": "id",
 											"variant": "param",
 											"kind": 32768,
@@ -659,7 +2206,7 @@
 											},
 											{
 												"type": "reference",
-												"target": 136,
+												"target": 187,
 												"name": "NotificationData",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".NotificationData"
@@ -670,7 +2217,7 @@
 							]
 						},
 						{
-							"id": 82,
+							"id": 133,
 							"name": "getNotifications",
 							"variant": "declaration",
 							"kind": 2048,
@@ -681,13 +2228,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 454,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L454"
 								}
 							],
 							"signatures": [
 								{
-									"id": 83,
+									"id": 134,
 									"name": "getNotifications",
 									"variant": "signature",
 									"kind": 4096,
@@ -715,13 +2262,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 454,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L454"
 										}
 									],
 									"parameters": [
 										{
-											"id": 84,
+											"id": 135,
 											"name": "recipient",
 											"variant": "param",
 											"kind": 32768,
@@ -744,7 +2291,7 @@
 										"type": "array",
 										"elementType": {
 											"type": "reference",
-											"target": 136,
+											"target": 187,
 											"name": "NotificationData",
 											"package": "@munirmardinli/pushover-notification",
 											"qualifiedName": "\"pushover-types\".NotificationData"
@@ -754,7 +2301,7 @@
 							]
 						},
 						{
-							"id": 57,
+							"id": 108,
 							"name": "getSounds",
 							"variant": "declaration",
 							"kind": 2048,
@@ -765,13 +2312,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 237,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L237"
 								}
 							],
 							"signatures": [
 								{
-									"id": 58,
+									"id": 109,
 									"name": "getSounds",
 									"variant": "signature",
 									"kind": 4096,
@@ -799,7 +2346,7 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 237,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L237"
 										}
 									],
@@ -812,7 +2359,7 @@
 											},
 											{
 												"type": "reference",
-												"target": 174,
+												"target": 225,
 												"name": "SoundMap",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".SoundMap"
@@ -823,7 +2370,7 @@
 							]
 						},
 						{
-							"id": 96,
+							"id": 147,
 							"name": "handleCreateNotification",
 							"variant": "declaration",
 							"kind": 2048,
@@ -834,13 +2381,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 513,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L513"
 								}
 							],
 							"signatures": [
 								{
-									"id": 97,
+									"id": 148,
 									"name": "handleCreateNotification",
 									"variant": "signature",
 									"kind": 4096,
@@ -849,13 +2396,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 513,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L513"
 										}
 									],
 									"parameters": [
 										{
-											"id": 98,
+											"id": 149,
 											"name": "req",
 											"variant": "param",
 											"kind": 32768,
@@ -873,7 +2420,7 @@
 											}
 										},
 										{
-											"id": 99,
+											"id": 150,
 											"name": "res",
 											"variant": "param",
 											"kind": 32768,
@@ -899,7 +2446,7 @@
 							]
 						},
 						{
-							"id": 112,
+							"id": 163,
 							"name": "handleDeleteNotification",
 							"variant": "declaration",
 							"kind": 2048,
@@ -910,13 +2457,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 582,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L582"
 								}
 							],
 							"signatures": [
 								{
-									"id": 113,
+									"id": 164,
 									"name": "handleDeleteNotification",
 									"variant": "signature",
 									"kind": 4096,
@@ -925,13 +2472,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 582,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L582"
 										}
 									],
 									"parameters": [
 										{
-											"id": 114,
+											"id": 165,
 											"name": "req",
 											"variant": "param",
 											"kind": 32768,
@@ -949,7 +2496,7 @@
 											}
 										},
 										{
-											"id": 115,
+											"id": 166,
 											"name": "res",
 											"variant": "param",
 											"kind": 32768,
@@ -975,7 +2522,7 @@
 							]
 						},
 						{
-							"id": 104,
+							"id": 155,
 							"name": "handleGetNotification",
 							"variant": "declaration",
 							"kind": 2048,
@@ -986,13 +2533,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 546,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L546"
 								}
 							],
 							"signatures": [
 								{
-									"id": 105,
+									"id": 156,
 									"name": "handleGetNotification",
 									"variant": "signature",
 									"kind": 4096,
@@ -1001,13 +2548,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 546,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L546"
 										}
 									],
 									"parameters": [
 										{
-											"id": 106,
+											"id": 157,
 											"name": "req",
 											"variant": "param",
 											"kind": 32768,
@@ -1025,7 +2572,7 @@
 											}
 										},
 										{
-											"id": 107,
+											"id": 158,
 											"name": "res",
 											"variant": "param",
 											"kind": 32768,
@@ -1051,7 +2598,7 @@
 							]
 						},
 						{
-							"id": 100,
+							"id": 151,
 							"name": "handleGetNotifications",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1062,13 +2609,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 532,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L532"
 								}
 							],
 							"signatures": [
 								{
-									"id": 101,
+									"id": 152,
 									"name": "handleGetNotifications",
 									"variant": "signature",
 									"kind": 4096,
@@ -1077,13 +2624,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 532,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L532"
 										}
 									],
 									"parameters": [
 										{
-											"id": 102,
+											"id": 153,
 											"name": "req",
 											"variant": "param",
 											"kind": 32768,
@@ -1101,7 +2648,7 @@
 											}
 										},
 										{
-											"id": 103,
+											"id": 154,
 											"name": "res",
 											"variant": "param",
 											"kind": 32768,
@@ -1127,7 +2674,7 @@
 							]
 						},
 						{
-							"id": 108,
+							"id": 159,
 							"name": "handleUpdateNotificationStatus",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1138,13 +2685,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 564,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L564"
 								}
 							],
 							"signatures": [
 								{
-									"id": 109,
+									"id": 160,
 									"name": "handleUpdateNotificationStatus",
 									"variant": "signature",
 									"kind": 4096,
@@ -1153,13 +2700,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 564,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L564"
 										}
 									],
 									"parameters": [
 										{
-											"id": 110,
+											"id": 161,
 											"name": "req",
 											"variant": "param",
 											"kind": 32768,
@@ -1177,7 +2724,7 @@
 											}
 										},
 										{
-											"id": 111,
+											"id": 162,
 											"name": "res",
 											"variant": "param",
 											"kind": 32768,
@@ -1203,7 +2750,7 @@
 							]
 						},
 						{
-							"id": 59,
+							"id": 110,
 							"name": "isEnabled",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1214,13 +2761,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 245,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L245"
 								}
 							],
 							"signatures": [
 								{
-									"id": 60,
+									"id": 111,
 									"name": "isEnabled",
 									"variant": "signature",
 									"kind": 4096,
@@ -1248,7 +2795,7 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 245,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L245"
 										}
 									],
@@ -1260,7 +2807,7 @@
 							]
 						},
 						{
-							"id": 88,
+							"id": 139,
 							"name": "markNotificationAsRead",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1271,13 +2818,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 478,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L478"
 								}
 							],
 							"signatures": [
 								{
-									"id": 89,
+									"id": 140,
 									"name": "markNotificationAsRead",
 									"variant": "signature",
 									"kind": 4096,
@@ -1305,13 +2852,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 478,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L478"
 										}
 									],
 									"parameters": [
 										{
-											"id": 90,
+											"id": 141,
 											"name": "id",
 											"variant": "param",
 											"kind": 32768,
@@ -1339,7 +2886,7 @@
 											},
 											{
 												"type": "reference",
-												"target": 136,
+												"target": 187,
 												"name": "NotificationData",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".NotificationData"
@@ -1350,7 +2897,7 @@
 							]
 						},
 						{
-							"id": 64,
+							"id": 115,
 							"name": "send",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1361,13 +2908,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 286,
-									"character": 9,
+									"character": 8,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L286"
 								}
 							],
 							"signatures": [
 								{
-									"id": 65,
+									"id": 116,
 									"name": "send",
 									"variant": "signature",
 									"kind": 4096,
@@ -1384,13 +2931,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 286,
-											"character": 9,
+											"character": 8,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L286"
 										}
 									],
 									"parameters": [
 										{
-											"id": 66,
+											"id": 117,
 											"name": "payload",
 											"variant": "param",
 											"kind": 32768,
@@ -1405,14 +2952,14 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": 158,
+												"target": 209,
 												"name": "MessagePayload",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".MessagePayload"
 											}
 										},
 										{
-											"id": 67,
+											"id": 118,
 											"name": "callback",
 											"variant": "param",
 											"kind": 32768,
@@ -1430,7 +2977,7 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 68,
+													"id": 119,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
@@ -1439,13 +2986,13 @@
 														{
 															"fileName": "pushover.ts",
 															"line": 288,
-															"character": 15,
+															"character": 13,
 															"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L288"
 														}
 													],
 													"signatures": [
 														{
-															"id": 69,
+															"id": 120,
 															"name": "__type",
 															"variant": "signature",
 															"kind": 4096,
@@ -1454,13 +3001,13 @@
 																{
 																	"fileName": "pushover.ts",
 																	"line": 288,
-																	"character": 15,
+																	"character": 13,
 																	"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L288"
 																}
 															],
 															"parameters": [
 																{
-																	"id": 70,
+																	"id": 121,
 																	"name": "err",
 																	"variant": "param",
 																	"kind": 32768,
@@ -1479,7 +3026,7 @@
 																	}
 																},
 																{
-																	"id": 71,
+																	"id": 122,
 																	"name": "body",
 																	"variant": "param",
 																	"kind": 32768,
@@ -1492,7 +3039,7 @@
 																	}
 																},
 																{
-																	"id": 72,
+																	"id": 123,
 																	"name": "res",
 																	"variant": "param",
 																	"kind": 32768,
@@ -1530,7 +3077,7 @@
 							]
 						},
 						{
-							"id": 61,
+							"id": 112,
 							"name": "sendNotification",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1541,13 +3088,13 @@
 								{
 									"fileName": "pushover.ts",
 									"line": 254,
-									"character": 15,
+									"character": 14,
 									"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L254"
 								}
 							],
 							"signatures": [
 								{
-									"id": 62,
+									"id": 113,
 									"name": "sendNotification",
 									"variant": "signature",
 									"kind": 4096,
@@ -1575,13 +3122,13 @@
 										{
 											"fileName": "pushover.ts",
 											"line": 254,
-											"character": 15,
+											"character": 14,
 											"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L254"
 										}
 									],
 									"parameters": [
 										{
-											"id": 63,
+											"id": 114,
 											"name": "message",
 											"variant": "param",
 											"kind": 32768,
@@ -1596,7 +3143,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": 126,
+												"target": 177,
 												"name": "Message",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".Message"
@@ -1636,33 +3183,33 @@
 						{
 							"title": "Constructors",
 							"children": [
-								19
+								70
 							]
 						},
 						{
 							"title": "Methods",
 							"children": [
-								94,
-								79,
-								91,
-								85,
-								82,
-								57,
-								96,
-								112,
-								104,
-								100,
+								145,
+								130,
+								142,
+								136,
+								133,
 								108,
-								59,
-								88,
-								64,
-								61
+								147,
+								163,
+								155,
+								151,
+								159,
+								110,
+								139,
+								115,
+								112
 							]
 						},
 						{
 							"title": "Properties",
 							"children": [
-								39
+								90
 							]
 						}
 					],
@@ -1673,6 +3220,13 @@
 							"character": 13,
 							"url": "https://github.com/munirmardinli/pushover-notification/blob/main/src/pushover.ts#L25"
 						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"target": 2,
+							"name": "App"
+						}
 					]
 				}
 			],
@@ -1680,7 +3234,7 @@
 				{
 					"title": "Classes",
 					"children": [
-						17
+						68
 					]
 				}
 			],
@@ -1694,21 +3248,21 @@
 			]
 		},
 		{
-			"id": 116,
+			"id": 167,
 			"name": "types",
 			"variant": "declaration",
 			"kind": 2,
 			"flags": {},
 			"children": [
 				{
-					"id": 117,
+					"id": 168,
 					"name": "BaseConfig",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 119,
+							"id": 170,
 							"name": "apiToken",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1727,7 +3281,7 @@
 							}
 						},
 						{
-							"id": 118,
+							"id": 169,
 							"name": "userKey",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1750,8 +3304,8 @@
 						{
 							"title": "Properties",
 							"children": [
-								119,
-								118
+								170,
+								169
 							]
 						}
 					],
@@ -1766,25 +3320,25 @@
 					"extendedBy": [
 						{
 							"type": "reference",
-							"target": 120,
+							"target": 171,
 							"name": "Config"
 						},
 						{
 							"type": "reference",
-							"target": 145,
+							"target": 196,
 							"name": "Options"
 						}
 					]
 				},
 				{
-					"id": 120,
+					"id": 171,
 					"name": "Config",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 122,
+							"id": 173,
 							"name": "apiToken",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1805,12 +3359,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 119,
+								"target": 170,
 								"name": "BaseConfig.apiToken"
 							}
 						},
 						{
-							"id": 121,
+							"id": 172,
 							"name": "userKey",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1831,7 +3385,7 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 118,
+								"target": 169,
 								"name": "BaseConfig.userKey"
 							}
 						}
@@ -1840,8 +3394,8 @@
 						{
 							"title": "Properties",
 							"children": [
-								122,
-								121
+								173,
+								172
 							]
 						}
 					],
@@ -1856,7 +3410,7 @@
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"target": 117,
+							"target": 168,
 							"name": "BaseConfig",
 							"package": "@munirmardinli/pushover-notification",
 							"qualifiedName": "\"pushover-types\".BaseConfig"
@@ -1864,14 +3418,14 @@
 					]
 				},
 				{
-					"id": 170,
+					"id": 221,
 					"name": "ImageFile",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 172,
+							"id": 223,
 							"name": "data",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1897,7 +3451,7 @@
 							}
 						},
 						{
-							"id": 171,
+							"id": 222,
 							"name": "name",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1916,7 +3470,7 @@
 							}
 						},
 						{
-							"id": 173,
+							"id": 224,
 							"name": "type",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1941,9 +3495,9 @@
 						{
 							"title": "Properties",
 							"children": [
-								172,
-								171,
-								173
+								223,
+								222,
+								224
 							]
 						}
 					],
@@ -1957,14 +3511,14 @@
 					]
 				},
 				{
-					"id": 126,
+					"id": 177,
 					"name": "Message",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 130,
+							"id": 181,
 							"name": "message",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1985,12 +3539,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 124,
+								"target": 175,
 								"name": "MessageBase.message"
 							}
 						},
 						{
-							"id": 131,
+							"id": 182,
 							"name": "title",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2011,12 +3565,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 125,
+								"target": 176,
 								"name": "MessageBase.title"
 							}
 						},
 						{
-							"id": 128,
+							"id": 179,
 							"name": "priority",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2037,7 +3591,7 @@
 							}
 						},
 						{
-							"id": 127,
+							"id": 178,
 							"name": "sound",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2058,7 +3612,7 @@
 							}
 						},
 						{
-							"id": 129,
+							"id": 180,
 							"name": "timestamp",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2083,11 +3637,11 @@
 						{
 							"title": "Properties",
 							"children": [
-								130,
-								131,
-								128,
-								127,
-								129
+								181,
+								182,
+								179,
+								178,
+								180
 							]
 						}
 					],
@@ -2102,7 +3656,7 @@
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"target": 123,
+							"target": 174,
 							"name": "MessageBase",
 							"package": "@munirmardinli/pushover-notification",
 							"qualifiedName": "\"pushover-types\".MessageBase"
@@ -2110,14 +3664,14 @@
 					]
 				},
 				{
-					"id": 123,
+					"id": 174,
 					"name": "MessageBase",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 124,
+							"id": 175,
 							"name": "message",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2136,7 +3690,7 @@
 							}
 						},
 						{
-							"id": 125,
+							"id": 176,
 							"name": "title",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2159,8 +3713,8 @@
 						{
 							"title": "Properties",
 							"children": [
-								124,
-								125
+								175,
+								176
 							]
 						}
 					],
@@ -2175,25 +3729,25 @@
 					"extendedBy": [
 						{
 							"type": "reference",
-							"target": 126,
+							"target": 177,
 							"name": "Message"
 						},
 						{
 							"type": "reference",
-							"target": 158,
+							"target": 209,
 							"name": "MessagePayload"
 						}
 					]
 				},
 				{
-					"id": 158,
+					"id": 209,
 					"name": "MessagePayload",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 168,
+							"id": 219,
 							"name": "message",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2214,12 +3768,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 124,
+								"target": 175,
 								"name": "MessageBase.message"
 							}
 						},
 						{
-							"id": 169,
+							"id": 220,
 							"name": "title",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2240,12 +3794,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 125,
+								"target": 176,
 								"name": "MessageBase.title"
 							}
 						},
 						{
-							"id": 161,
+							"id": 212,
 							"name": "device",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2266,7 +3820,7 @@
 							}
 						},
 						{
-							"id": 167,
+							"id": 218,
 							"name": "file",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2290,7 +3844,7 @@
 									},
 									{
 										"type": "reference",
-										"target": 170,
+										"target": 221,
 										"name": "ImageFile",
 										"package": "@munirmardinli/pushover-notification",
 										"qualifiedName": "\"pushover-types\".ImageFile"
@@ -2299,7 +3853,7 @@
 							}
 						},
 						{
-							"id": 164,
+							"id": 215,
 							"name": "priority",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2320,7 +3874,7 @@
 							}
 						},
 						{
-							"id": 166,
+							"id": 217,
 							"name": "sound",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2341,7 +3895,7 @@
 							}
 						},
 						{
-							"id": 165,
+							"id": 216,
 							"name": "timestamp",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2362,7 +3916,7 @@
 							}
 						},
 						{
-							"id": 159,
+							"id": 210,
 							"name": "token",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2383,7 +3937,7 @@
 							}
 						},
 						{
-							"id": 162,
+							"id": 213,
 							"name": "url",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2404,7 +3958,7 @@
 							}
 						},
 						{
-							"id": 163,
+							"id": 214,
 							"name": "url_title",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2425,7 +3979,7 @@
 							}
 						},
 						{
-							"id": 160,
+							"id": 211,
 							"name": "user",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2450,17 +4004,17 @@
 						{
 							"title": "Properties",
 							"children": [
-								168,
-								169,
-								161,
-								167,
-								164,
-								166,
-								165,
-								159,
-								162,
-								163,
-								160
+								219,
+								220,
+								212,
+								218,
+								215,
+								217,
+								216,
+								210,
+								213,
+								214,
+								211
 							]
 						}
 					],
@@ -2475,7 +4029,7 @@
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"target": 123,
+							"target": 174,
 							"name": "MessageBase",
 							"package": "@munirmardinli/pushover-notification",
 							"qualifiedName": "\"pushover-types\".MessageBase"
@@ -2483,14 +4037,14 @@
 					]
 				},
 				{
-					"id": 136,
+					"id": 187,
 					"name": "NotificationData",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 139,
+							"id": 190,
 							"name": "createdAt",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2509,7 +4063,7 @@
 							}
 						},
 						{
-							"id": 142,
+							"id": 193,
 							"name": "id",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2530,12 +4084,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 133,
+								"target": 184,
 								"name": "NotificationDataBase.id"
 							}
 						},
 						{
-							"id": 144,
+							"id": 195,
 							"name": "message",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2556,12 +4110,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 135,
+								"target": 186,
 								"name": "NotificationDataBase.message"
 							}
 						},
 						{
-							"id": 138,
+							"id": 189,
 							"name": "read",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2580,7 +4134,7 @@
 							}
 						},
 						{
-							"id": 137,
+							"id": 188,
 							"name": "recipient",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2599,7 +4153,7 @@
 							}
 						},
 						{
-							"id": 143,
+							"id": 194,
 							"name": "title",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2620,12 +4174,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 134,
+								"target": 185,
 								"name": "NotificationDataBase.title"
 							}
 						},
 						{
-							"id": 141,
+							"id": 192,
 							"name": "pushoverReceipt",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2655,7 +4209,7 @@
 							}
 						},
 						{
-							"id": 140,
+							"id": 191,
 							"name": "pushoverSent",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2680,14 +4234,14 @@
 						{
 							"title": "Properties",
 							"children": [
-								139,
-								142,
-								144,
-								138,
-								137,
-								143,
-								141,
-								140
+								190,
+								193,
+								195,
+								189,
+								188,
+								194,
+								192,
+								191
 							]
 						}
 					],
@@ -2702,7 +4256,7 @@
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"target": 132,
+							"target": 183,
 							"name": "NotificationDataBase",
 							"package": "@munirmardinli/pushover-notification",
 							"qualifiedName": "\"pushover-types\".NotificationDataBase"
@@ -2710,14 +4264,14 @@
 					]
 				},
 				{
-					"id": 132,
+					"id": 183,
 					"name": "NotificationDataBase",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 133,
+							"id": 184,
 							"name": "id",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2736,7 +4290,7 @@
 							}
 						},
 						{
-							"id": 135,
+							"id": 186,
 							"name": "message",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2755,7 +4309,7 @@
 							}
 						},
 						{
-							"id": 134,
+							"id": 185,
 							"name": "title",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2778,9 +4332,9 @@
 						{
 							"title": "Properties",
 							"children": [
-								133,
-								135,
-								134
+								184,
+								186,
+								185
 							]
 						}
 					],
@@ -2795,20 +4349,20 @@
 					"extendedBy": [
 						{
 							"type": "reference",
-							"target": 136,
+							"target": 187,
 							"name": "NotificationData"
 						}
 					]
 				},
 				{
-					"id": 145,
+					"id": 196,
 					"name": "Options",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 157,
+							"id": 208,
 							"name": "apiToken",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2829,12 +4383,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 119,
+								"target": 170,
 								"name": "BaseConfig.apiToken"
 							}
 						},
 						{
-							"id": 156,
+							"id": 207,
 							"name": "userKey",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2855,12 +4409,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": 118,
+								"target": 169,
 								"name": "BaseConfig.userKey"
 							}
 						},
 						{
-							"id": 146,
+							"id": 197,
 							"name": "debug",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2881,7 +4435,7 @@
 							}
 						},
 						{
-							"id": 152,
+							"id": 203,
 							"name": "httpOptions",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2925,14 +4479,14 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 153,
+											"id": 204,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 154,
+													"id": 205,
 													"name": "proxy",
 													"variant": "declaration",
 													"kind": 1024,
@@ -2957,7 +4511,7 @@
 												{
 													"title": "Properties",
 													"children": [
-														154
+														205
 													]
 												}
 											],
@@ -2975,7 +4529,7 @@
 							}
 						},
 						{
-							"id": 147,
+							"id": 198,
 							"name": "onerror",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2993,7 +4547,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 148,
+									"id": 199,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -3008,7 +4562,7 @@
 									],
 									"signatures": [
 										{
-											"id": 149,
+											"id": 200,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -3023,7 +4577,7 @@
 											],
 											"parameters": [
 												{
-													"id": 150,
+													"id": 201,
 													"name": "err",
 													"variant": "param",
 													"kind": 32768,
@@ -3049,7 +4603,7 @@
 													}
 												},
 												{
-													"id": 151,
+													"id": 202,
 													"name": "res",
 													"variant": "param",
 													"kind": 32768,
@@ -3079,7 +4633,7 @@
 							}
 						},
 						{
-							"id": 155,
+							"id": 206,
 							"name": "update_sounds",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3104,12 +4658,12 @@
 						{
 							"title": "Properties",
 							"children": [
-								157,
-								156,
-								146,
-								152,
-								147,
-								155
+								208,
+								207,
+								197,
+								203,
+								198,
+								206
 							]
 						}
 					],
@@ -3124,7 +4678,7 @@
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"target": 117,
+							"target": 168,
 							"name": "BaseConfig",
 							"package": "@munirmardinli/pushover-notification",
 							"qualifiedName": "\"pushover-types\".BaseConfig"
@@ -3132,14 +4686,14 @@
 					]
 				},
 				{
-					"id": 177,
+					"id": 228,
 					"name": "Response",
 					"variant": "declaration",
 					"kind": 256,
 					"flags": {},
 					"children": [
 						{
-							"id": 181,
+							"id": 232,
 							"name": "errors",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3163,7 +4717,7 @@
 							}
 						},
 						{
-							"id": 180,
+							"id": 231,
 							"name": "receipt",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3184,7 +4738,7 @@
 							}
 						},
 						{
-							"id": 179,
+							"id": 230,
 							"name": "request",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3205,7 +4759,7 @@
 							}
 						},
 						{
-							"id": 178,
+							"id": 229,
 							"name": "status",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3230,10 +4784,10 @@
 						{
 							"title": "Properties",
 							"children": [
-								181,
-								180,
-								179,
-								178
+								232,
+								231,
+								230,
+								229
 							]
 						}
 					],
@@ -3247,7 +4801,7 @@
 					],
 					"indexSignatures": [
 						{
-							"id": 182,
+							"id": 233,
 							"name": "__index",
 							"variant": "signature",
 							"kind": 8192,
@@ -3262,7 +4816,7 @@
 							],
 							"parameters": [
 								{
-									"id": 183,
+									"id": 234,
 									"name": "key",
 									"variant": "param",
 									"kind": 32768,
@@ -3281,7 +4835,7 @@
 					]
 				},
 				{
-					"id": 174,
+					"id": 225,
 					"name": "SoundMap",
 					"variant": "declaration",
 					"kind": 256,
@@ -3296,7 +4850,7 @@
 					],
 					"indexSignatures": [
 						{
-							"id": 175,
+							"id": 226,
 							"name": "__index",
 							"variant": "signature",
 							"kind": 8192,
@@ -3311,7 +4865,7 @@
 							],
 							"parameters": [
 								{
-									"id": 176,
+									"id": 227,
 									"name": "key",
 									"variant": "param",
 									"kind": 32768,
@@ -3334,17 +4888,17 @@
 				{
 					"title": "Interfaces",
 					"children": [
-						117,
-						120,
-						170,
-						126,
-						123,
-						158,
-						136,
-						132,
-						145,
+						168,
+						171,
+						221,
 						177,
-						174
+						174,
+						209,
+						187,
+						183,
+						196,
+						228,
+						225
 					]
 				}
 			],
@@ -3369,13 +4923,13 @@
 			"title": "Modules",
 			"children": [
 				1,
-				16,
-				116
+				67,
+				167
 			]
 		}
 	],
 	"packageName": "@munirmardinli/pushover-notification",
-	"packageVersion": "0.0.13",
+	"packageVersion": "0.0.14",
 	"readme": [
 		{
 			"kind": "text",
@@ -3507,657 +5061,917 @@
 			"packagePath": "src/index.ts",
 			"qualifiedName": "App"
 		},
-		"5": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/index.ts",
-			"qualifiedName": "port"
-		},
-		"6": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/index.ts",
-			"qualifiedName": "dataFile"
-		},
-		"14": {
+		"11": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "App.start"
 		},
-		"15": {
+		"12": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "App.start"
 		},
-		"16": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": ""
-		},
-		"17": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService"
-		},
-		"19": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.__constructor"
-		},
-		"20": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService"
-		},
-		"21": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "config"
-		},
-		"22": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "__type"
-		},
-		"23": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "__type.dataFile"
-		},
-		"39": {
+		"13": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.dataFile"
 		},
-		"57": {
+		"14": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.getSounds"
 		},
-		"58": {
+		"15": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.getSounds"
 		},
-		"59": {
+		"16": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.isEnabled"
 		},
-		"60": {
+		"17": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.isEnabled"
 		},
-		"61": {
+		"18": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.sendNotification"
 		},
-		"62": {
+		"19": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.sendNotification"
 		},
-		"63": {
+		"20": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "message"
 		},
-		"64": {
+		"21": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.send"
 		},
-		"65": {
+		"22": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.send"
 		},
-		"66": {
+		"23": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "payload"
 		},
-		"67": {
+		"24": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "callback"
 		},
-		"68": {
+		"25": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "__type"
 		},
-		"69": {
+		"26": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "__type"
 		},
-		"70": {
+		"27": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "err"
 		},
-		"71": {
+		"28": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "body"
 		},
-		"72": {
+		"29": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "res"
 		},
-		"79": {
+		"30": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.createNotification"
 		},
-		"80": {
+		"31": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.createNotification"
 		},
-		"81": {
+		"32": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "notification"
 		},
-		"82": {
+		"33": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.getNotifications"
 		},
-		"83": {
+		"34": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.getNotifications"
 		},
-		"84": {
+		"35": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "recipient"
 		},
-		"85": {
+		"36": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.getNotificationById"
 		},
-		"86": {
+		"37": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.getNotificationById"
 		},
-		"87": {
+		"38": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "id"
 		},
-		"88": {
+		"39": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.markNotificationAsRead"
 		},
-		"89": {
+		"40": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
 			"qualifiedName": "PushoverService.markNotificationAsRead"
+		},
+		"41": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "id"
+		},
+		"42": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.deleteNotification"
+		},
+		"43": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.deleteNotification"
+		},
+		"44": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "id"
+		},
+		"45": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.clearAllNotifications"
+		},
+		"46": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.clearAllNotifications"
+		},
+		"47": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleCreateNotification"
+		},
+		"48": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleCreateNotification"
+		},
+		"49": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
+		},
+		"50": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
+		},
+		"51": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleGetNotifications"
+		},
+		"52": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleGetNotifications"
+		},
+		"53": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
+		},
+		"54": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
+		},
+		"55": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleGetNotification"
+		},
+		"56": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleGetNotification"
+		},
+		"57": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
+		},
+		"58": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
+		},
+		"59": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleUpdateNotificationStatus"
+		},
+		"60": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleUpdateNotificationStatus"
+		},
+		"61": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
+		},
+		"62": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
+		},
+		"63": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleDeleteNotification"
+		},
+		"64": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleDeleteNotification"
+		},
+		"65": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
+		},
+		"66": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
+		},
+		"67": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": ""
+		},
+		"68": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService"
+		},
+		"70": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.__constructor"
+		},
+		"71": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService"
+		},
+		"72": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "config"
+		},
+		"73": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "__type"
+		},
+		"74": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "__type.dataFile"
 		},
 		"90": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "id"
-		},
-		"91": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.deleteNotification"
-		},
-		"92": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.deleteNotification"
-		},
-		"93": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "id"
-		},
-		"94": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.clearAllNotifications"
-		},
-		"95": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.clearAllNotifications"
-		},
-		"96": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleCreateNotification"
-		},
-		"97": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleCreateNotification"
-		},
-		"98": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "req"
-		},
-		"99": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "res"
-		},
-		"100": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleGetNotifications"
-		},
-		"101": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleGetNotifications"
-		},
-		"102": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "req"
-		},
-		"103": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "res"
-		},
-		"104": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleGetNotification"
-		},
-		"105": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleGetNotification"
-		},
-		"106": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "req"
-		},
-		"107": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/pushover.ts",
-			"qualifiedName": "res"
+			"qualifiedName": "PushoverService.dataFile"
 		},
 		"108": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleUpdateNotificationStatus"
+			"qualifiedName": "PushoverService.getSounds"
 		},
 		"109": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleUpdateNotificationStatus"
+			"qualifiedName": "PushoverService.getSounds"
 		},
 		"110": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "req"
+			"qualifiedName": "PushoverService.isEnabled"
 		},
 		"111": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "res"
+			"qualifiedName": "PushoverService.isEnabled"
 		},
 		"112": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleDeleteNotification"
+			"qualifiedName": "PushoverService.sendNotification"
 		},
 		"113": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "PushoverService.handleDeleteNotification"
+			"qualifiedName": "PushoverService.sendNotification"
 		},
 		"114": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "req"
+			"qualifiedName": "message"
 		},
 		"115": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/pushover.ts",
-			"qualifiedName": "res"
+			"qualifiedName": "PushoverService.send"
 		},
 		"116": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": ""
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.send"
 		},
 		"117": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".BaseConfig"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "payload"
 		},
 		"118": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".BaseConfig.userKey"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "callback"
 		},
 		"119": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".BaseConfig.apiToken"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "__type"
 		},
 		"120": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Config"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "__type"
 		},
 		"121": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".BaseConfig.userKey"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "err"
 		},
 		"122": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".BaseConfig.apiToken"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "body"
 		},
 		"123": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessageBase"
-		},
-		"124": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessageBase.message"
-		},
-		"125": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessageBase.title"
-		},
-		"126": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Message"
-		},
-		"127": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Message.sound"
-		},
-		"128": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Message.priority"
-		},
-		"129": {
-			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Message.timestamp"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
 		},
 		"130": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessageBase.message"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.createNotification"
 		},
 		"131": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessageBase.title"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.createNotification"
 		},
 		"132": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationDataBase"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "notification"
 		},
 		"133": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationDataBase.id"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.getNotifications"
 		},
 		"134": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationDataBase.title"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.getNotifications"
 		},
 		"135": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationDataBase.message"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "recipient"
 		},
 		"136": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationData"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.getNotificationById"
 		},
 		"137": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationData.recipient"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.getNotificationById"
 		},
 		"138": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationData.read"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "id"
 		},
 		"139": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationData.createdAt"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.markNotificationAsRead"
 		},
 		"140": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationData.pushoverSent"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.markNotificationAsRead"
 		},
 		"141": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationData.pushoverReceipt"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "id"
 		},
 		"142": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationDataBase.id"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.deleteNotification"
 		},
 		"143": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationDataBase.title"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.deleteNotification"
 		},
 		"144": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".NotificationDataBase.message"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "id"
 		},
 		"145": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Options"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.clearAllNotifications"
 		},
 		"146": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Options.debug"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.clearAllNotifications"
 		},
 		"147": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Options.onerror"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleCreateNotification"
 		},
 		"148": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleCreateNotification"
 		},
 		"149": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
 		},
 		"150": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "err"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
 		},
 		"151": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "res"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleGetNotifications"
 		},
 		"152": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Options.httpOptions"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleGetNotifications"
 		},
 		"153": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
 		},
 		"154": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "__type.proxy"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
 		},
 		"155": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Options.update_sounds"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleGetNotification"
 		},
 		"156": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".BaseConfig.userKey"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleGetNotification"
 		},
 		"157": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".BaseConfig.apiToken"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
 		},
 		"158": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
 		},
 		"159": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.token"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleUpdateNotificationStatus"
 		},
 		"160": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.user"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleUpdateNotificationStatus"
 		},
 		"161": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.device"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
 		},
 		"162": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.url"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
 		},
 		"163": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.url_title"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleDeleteNotification"
 		},
 		"164": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.priority"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "PushoverService.handleDeleteNotification"
 		},
 		"165": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.timestamp"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "req"
 		},
 		"166": {
 			"packageName": "@munirmardinli/pushover-notification",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.sound"
+			"packagePath": "src/pushover.ts",
+			"qualifiedName": "res"
 		},
 		"167": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessagePayload.file"
+			"qualifiedName": ""
 		},
 		"168": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessageBase.message"
+			"qualifiedName": "\"pushover-types\".BaseConfig"
 		},
 		"169": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".MessageBase.title"
+			"qualifiedName": "\"pushover-types\".BaseConfig.userKey"
 		},
 		"170": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".ImageFile"
+			"qualifiedName": "\"pushover-types\".BaseConfig.apiToken"
 		},
 		"171": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".ImageFile.name"
+			"qualifiedName": "\"pushover-types\".Config"
 		},
 		"172": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".ImageFile.data"
+			"qualifiedName": "\"pushover-types\".BaseConfig.userKey"
 		},
 		"173": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".ImageFile.type"
+			"qualifiedName": "\"pushover-types\".BaseConfig.apiToken"
 		},
 		"174": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".SoundMap"
+			"qualifiedName": "\"pushover-types\".MessageBase"
 		},
 		"175": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".SoundMap.__index"
+			"qualifiedName": "\"pushover-types\".MessageBase.message"
+		},
+		"176": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessageBase.title"
 		},
 		"177": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Response"
+			"qualifiedName": "\"pushover-types\".Message"
 		},
 		"178": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Response.status"
+			"qualifiedName": "\"pushover-types\".Message.sound"
 		},
 		"179": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Response.request"
+			"qualifiedName": "\"pushover-types\".Message.priority"
 		},
 		"180": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Response.receipt"
+			"qualifiedName": "\"pushover-types\".Message.timestamp"
 		},
 		"181": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
-			"qualifiedName": "\"pushover-types\".Response.errors"
+			"qualifiedName": "\"pushover-types\".MessageBase.message"
 		},
 		"182": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessageBase.title"
+		},
+		"183": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationDataBase"
+		},
+		"184": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationDataBase.id"
+		},
+		"185": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationDataBase.title"
+		},
+		"186": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationDataBase.message"
+		},
+		"187": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationData"
+		},
+		"188": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationData.recipient"
+		},
+		"189": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationData.read"
+		},
+		"190": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationData.createdAt"
+		},
+		"191": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationData.pushoverSent"
+		},
+		"192": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationData.pushoverReceipt"
+		},
+		"193": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationDataBase.id"
+		},
+		"194": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationDataBase.title"
+		},
+		"195": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".NotificationDataBase.message"
+		},
+		"196": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Options"
+		},
+		"197": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Options.debug"
+		},
+		"198": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Options.onerror"
+		},
+		"199": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"200": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"201": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "err"
+		},
+		"202": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "res"
+		},
+		"203": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Options.httpOptions"
+		},
+		"204": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"205": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.proxy"
+		},
+		"206": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Options.update_sounds"
+		},
+		"207": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".BaseConfig.userKey"
+		},
+		"208": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".BaseConfig.apiToken"
+		},
+		"209": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload"
+		},
+		"210": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.token"
+		},
+		"211": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.user"
+		},
+		"212": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.device"
+		},
+		"213": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.url"
+		},
+		"214": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.url_title"
+		},
+		"215": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.priority"
+		},
+		"216": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.timestamp"
+		},
+		"217": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.sound"
+		},
+		"218": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessagePayload.file"
+		},
+		"219": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessageBase.message"
+		},
+		"220": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".MessageBase.title"
+		},
+		"221": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".ImageFile"
+		},
+		"222": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".ImageFile.name"
+		},
+		"223": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".ImageFile.data"
+		},
+		"224": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".ImageFile.type"
+		},
+		"225": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".SoundMap"
+		},
+		"226": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".SoundMap.__index"
+		},
+		"228": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Response"
+		},
+		"229": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Response.status"
+		},
+		"230": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Response.request"
+		},
+		"231": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Response.receipt"
+		},
+		"232": {
+			"packageName": "@munirmardinli/pushover-notification",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "\"pushover-types\".Response.errors"
+		},
+		"233": {
 			"packageName": "@munirmardinli/pushover-notification",
 			"packagePath": "src/types.d.ts",
 			"qualifiedName": "\"pushover-types\".Response.__index"
@@ -4173,8 +5987,8 @@
 		},
 		"reflections": {
 			"1": 1,
-			"2": 16,
-			"3": 116,
+			"2": 67,
+			"3": 167,
 			"4": 0,
 			"5": 0
 		}
