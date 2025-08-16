@@ -246,7 +246,6 @@ jobs:
      uses: actions/setup-node@v4
      with:
       node-version: ${{ env.NPM_VERSION }}
-      registry-url: ${{ env.REGISTRY_URL }}
    - uses: actions/cache@v4
      with:
       path: |
@@ -264,9 +263,8 @@ jobs:
       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
    - name: Run Semantic Release
      env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-     run: npx munir-release --ci
+     run: npx munir-release run --ci
 
  publish-npm:
   needs:
