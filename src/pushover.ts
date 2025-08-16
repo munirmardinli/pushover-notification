@@ -15,6 +15,7 @@ import {
  type RequestOptions,
  IncomingMessage,
 } from "node:http";
+import { randomBytes } from 'node:crypto';
 import https, { request as httpsRequest } from "node:https";
 import { parse as parseUrl } from "node:url";
 import { stringify, parse as parseQuery } from "node:querystring";
@@ -40,7 +41,7 @@ export class PushoverService {
   * @param {PushoverTypes.BaseConfig & { dataFile?: string }} config - Pushover configuration
   */
  constructor(config: PushoverTypes.BaseConfig & { dataFile?: string }) {
-  this.boundary = "--" + Math.random().toString(36).substring(2);
+  this.boundary = "--" + randomBytes(16).toString('hex');
   this.token = config.apiToken;
   this.user = config.userKey;
   this.dataFile =
