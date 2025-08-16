@@ -258,7 +258,7 @@ jobs:
       echo "NODE_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
 
    - name: Install release automation
-     run: npm install @munirmardinli-dev/release --no-save --no-package-lock
+     run: npm install @munirmardinli-dev/release --save-dev --no-save
      env:
       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
    - name: Run Semantic Release
