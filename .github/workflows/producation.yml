@@ -266,7 +266,7 @@ jobs:
      env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-     run: npx @munirmardinli-dev/release --ci
+     run: npx munir-release --ci
 
  publish-npm:
   needs:
