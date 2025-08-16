@@ -247,6 +247,12 @@ jobs:
      with:
       node-version: ${{ env.NPM_VERSION }}
       registry-url: ${{ env.REGISTRY_URL }}
+   - uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Authenticate with GitHub Packages
      run: |
       export NODE_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
@@ -260,7 +266,7 @@ jobs:
      env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-     run: npx @munirmardinli-dev/release --ci
+     run: npx semantic-release
 
  publish-npm:
   needs:
