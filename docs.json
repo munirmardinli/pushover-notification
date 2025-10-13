@@ -470,15 +470,15 @@
 										"type": "union",
 										"types": [
 											{
-												"type": "intrinsic",
-												"name": "undefined"
-											},
-											{
 												"type": "reference",
 												"target": 187,
 												"name": "NotificationData",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".NotificationData"
+											},
+											{
+												"type": "intrinsic",
+												"name": "undefined"
 											}
 										]
 									},
@@ -649,15 +649,15 @@
 										"type": "union",
 										"types": [
 											{
-												"type": "intrinsic",
-												"name": "undefined"
-											},
-											{
 												"type": "reference",
 												"target": 225,
 												"name": "SoundMap",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".SoundMap"
+											},
+											{
+												"type": "intrinsic",
+												"name": "undefined"
 											}
 										]
 									},
@@ -1267,15 +1267,15 @@
 										"type": "union",
 										"types": [
 											{
-												"type": "intrinsic",
-												"name": "undefined"
-											},
-											{
 												"type": "reference",
 												"target": 187,
 												"name": "NotificationData",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".NotificationData"
+											},
+											{
+												"type": "intrinsic",
+												"name": "undefined"
 											}
 										]
 									},
@@ -1574,12 +1574,12 @@
 												"type": "union",
 												"types": [
 													{
-														"type": "literal",
-														"value": null
-													},
-													{
 														"type": "intrinsic",
 														"name": "string"
+													},
+													{
+														"type": "literal",
+														"value": null
 													}
 												]
 											}
@@ -2201,15 +2201,15 @@
 										"type": "union",
 										"types": [
 											{
-												"type": "intrinsic",
-												"name": "undefined"
-											},
-											{
 												"type": "reference",
 												"target": 187,
 												"name": "NotificationData",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".NotificationData"
+											},
+											{
+												"type": "intrinsic",
+												"name": "undefined"
 											}
 										]
 									}
@@ -2354,15 +2354,15 @@
 										"type": "union",
 										"types": [
 											{
-												"type": "intrinsic",
-												"name": "undefined"
-											},
-											{
 												"type": "reference",
 												"target": 225,
 												"name": "SoundMap",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".SoundMap"
+											},
+											{
+												"type": "intrinsic",
+												"name": "undefined"
 											}
 										]
 									}
@@ -2881,15 +2881,15 @@
 										"type": "union",
 										"types": [
 											{
-												"type": "intrinsic",
-												"name": "undefined"
-											},
-											{
 												"type": "reference",
 												"target": 187,
 												"name": "NotificationData",
 												"package": "@munirmardinli/pushover-notification",
 												"qualifiedName": "\"pushover-types\".NotificationData"
+											},
+											{
+												"type": "intrinsic",
+												"name": "undefined"
 											}
 										]
 									}
@@ -3162,12 +3162,12 @@
 												"type": "union",
 												"types": [
 													{
-														"type": "literal",
-														"value": null
-													},
-													{
 														"type": "intrinsic",
 														"name": "string"
+													},
+													{
+														"type": "literal",
+														"value": null
 													}
 												]
 											}
@@ -4198,12 +4198,12 @@
 								"type": "union",
 								"types": [
 									{
-										"type": "literal",
-										"value": null
-									},
-									{
 										"type": "intrinsic",
 										"name": "string"
+									},
+									{
+										"type": "literal",
+										"value": null
 									}
 								]
 							}
