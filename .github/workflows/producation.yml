@@ -8,14 +8,12 @@ on:
    - main
 
 env:
- GITGUARDIAN_API: ${{ secrets.GITGUARDIAN_API_KEY }}
  NPM_VERSION: "22"
  REGISTRY_URL: "https://npm.pkg.github.com"
  TRIVY_VERSION: "0.64.1"
  IMAGE_TAG: latest
  DOCKER_IMAGE_NAME: ${{ github.repository_owner }}/${{ github.event.repository.name }}
  DOCKER_REGISTRY: ghcr.io
- APPLICATION_PORT: 9095
 
 permissions:
  contents: write
@@ -99,9 +97,6 @@ jobs:
    - name: Build application
      run: |
       npx tsc
-     env:
-      NODE_ENV: production
-      PORT: ${{ env.APPLICATION_PORT }}
 
  trivy-scans-prod:
   runs-on: ubuntu-latest
@@ -139,58 +134,15 @@ jobs:
       --format table \
       --exit-code 1
    - name: Build Docker image
-     run: docker build -f .github/Dockerfile -t homelab-cli .
+     run: docker build -f .github/Dockerfile -t pushover-notification .
    - name: Scan Docker image
      run: |
-      trivy image homelab-cli \
+      trivy image pushover-notification \
       --scanners vuln \
       --severity HIGH,CRITICAL \
       --ignore-unfixed \
       --format table \
       --exit-code 1
-
- check-audit-prod:
-  needs: build-prod
-  runs-on: ubuntu-latest
-  steps:
-   - uses: actions/checkout@v5
-   - uses: actions/checkout@v5
-   - uses: actions/cache@v4
-     with:
-      path: |
-       node_modules
-       .npm
-      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-   - name: Run npm audit
-     run: npm audit --audit-level=moderate
-     working-directory: ${{ github.workspace }}
-
- deploy-docs:
-  needs: build-prod
-  runs-on: ubuntu-latest
-  if: >
-   github.event_name == 'push' &&
-   github.ref == 'refs/heads/main' &&
-   !startsWith(github.event.head_commit.message, 'chore(release):')
-  steps:
-   - uses: actions/checkout@v5
-   - name: Setup Node.js
-     uses: actions/setup-node@v5
-     with:
-      node-version: ${{ env.NPM_VERSION }}
-   - uses: actions/cache@v4
-     with:
-      path: |
-       node_modules
-       .npm
-      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-   - run: npx typedoc --options typedoc.json
-   - name: Deploy to gh-pages branch
-     uses: peaceiris/actions-gh-pages@v4
-     with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./docs
-      publish_branch: gh-pages
 
  docker-prod:
   needs: build-prod
@@ -232,47 +184,10 @@ jobs:
        IMAGE_DESCRIPTION=${{ github.event.repository.description }}
        GITHUB_SHA=${{ github.sha }}
        REPO_LICENSE=${{ github.event.repository.license }}
-       REPO_CATEGORIES=${{ github.event.repository.topics }}
- release:
-  if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-  needs: build-prod
-  runs-on: ubuntu-latest
-  steps:
-   - name: Checkout code
-     uses: actions/checkout@v5
-     with:
-      fetch-depth: 0
-   - name: Setup Node.js
-     uses: actions/setup-node@v5
-     with:
-      node-version: ${{ env.NPM_VERSION }}
-   - uses: actions/cache@v4
-     with:
-      path: |
-       node_modules
-       .npm
-      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-   - name: Authenticate with GitHub Packages
-     run: |
-      export NODE_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
-      echo "NODE_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-
-   - name: Install release automation
-     run: npm install @munirmardinli-dev/release --save-dev --no-save
-     env:
-      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-   - name: Run Semantic Release
-     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-     run: npx munir-release run --ci
-
+       
  publish-npm:
   needs:
-   - release
    - docker-prod
-   - deploy-docs
-   - check-audit-prod
    - trivy-scans-prod
   runs-on: ubuntu-latest
   steps:

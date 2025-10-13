@@ -1,13 +1,3 @@
-/**
- * @file PushoverService - Robust notification service for Pushover API
- * @module PushoverService
- * @description Handles mobile & desktop notifications via Pushover API with error handling and status tracking
- * @see {@link https://pushover.net/api|Pushover API Documentation}
- * @author Munir Mardinli {@link https://linktr.ee/munirmardinli}
- * @version 0.0.1
- * @license MIT
- * @since 0.0.1
- */
 import fs from "node:fs";
 import path from "node:path";
 import {
@@ -20,8 +10,9 @@ import https, { request as httpsRequest } from "node:https";
 import { parse as parseUrl } from "node:url";
 import { stringify, parse as parseQuery } from "node:querystring";
 import yaml from "yamljs";
-import type * as PushoverTypes from "pushover-types";
 import { type Request, type Response } from "express";
+
+import type * as PushoverTypes from "pushover-types";
 
 export class PushoverService {
  private boundary: string;

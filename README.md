@@ -3,7 +3,6 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![GitHub Version](https://img.shields.io/github/package-json/v/munirmardinli/pushover-notification?color=green&label=version)](https://github.com/munirmardinli/pushover-notification)
 [![TypeScript](https://img.shields.io/badge/lang-typescript-3178C6.svg)](https://www.typescriptlang.org/)
-[![Docs](https://img.shields.io/badge/docs-typedoc-blueviolet.svg)](https://munirmardinli.github.io/pushover-notification//)
 [![Docker Hub](https://img.shields.io/badge/docker%20-Image-blue?logo=docker&logoColor=white)](https://hub.docker.com/r/mardinlimunir/pushover-notification)
 [![Postman](https://img.shields.io/badge/Postman-API-orange?logo=postman&logoColor=white)](https://www.postman.com/munirmardinli-team/api-reference/collection/9aqkw6v/pushover-notification-api?action=share&creator=45781554)
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/munirmardinli/pushover-notification?utm_source=oss&utm_medium=github&utm_campaign=munirmardinli%2Fpushover-notification&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
@@ -141,6 +140,91 @@ npx tsx watch src/index.ts
 
 # Build production version
 npx tsc
+```
+
+## 🐳 Docker Deployment
+
+```yaml
+---
+x-logging: &default-logging
+ driver: "loki"
+ options: &default-logging-options
+  loki-url: https://loki.${SYNOLOGY_BASIC_URL:-localhost}/loki/api/v1/push
+  loki-retries: 5
+  loki-batch-size: 400
+  loki-batch-wait: 2s
+  loki-timeout: 10s
+  loki-max-backoff: 5s
+  loki-min-backoff: 1s
+  loki-tenant-id: default
+
+x-labels: &default-labels
+ com.centurylinklabs.watchtower.enable: true
+ recreat.container: true
+ container.label.group: management
+
+x-limits: &resource-limits
+ mem_limit: "256m"
+ mem_reservation: "64m"
+ cpu_shares: "512"
+ restart: always
+ networks:
+  dockerization:
+
+services:
+ pushover-notification:
+  container_name: pushover-notification
+  image: ${DOCKER_REGISTRY:-ghcr.io}/${DOCKER_PUBLISHER:-munirmardinli}/pushover-notification:${TAG:-latest}
+  hostname: pushover-notification
+  <<: *resource-limits
+  healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://localhost:${PORT:-4010}/health"
+        ]
+      interval: 30s
+      retries: 3
+      timeout: 10s
+      start_period: 5s
+  logging: # optional - if you use loki
+   <<: *default-logging
+   options:
+    <<: *default-logging-options
+    loki-external-labels: job=pushover-notification
+  ports:
+   - target: 9095
+     published: ${PORT:-9095}
+     protocol: tcp
+     mode: host
+  environment:
+   # UID: ${UID_NAS_ADMIN:-1026} # default
+   # GID: ${GID_NAS_ADMIN:-100} # default
+   # TZ: ${TZ:-Europe/Berlin} # default
+   # ASSETS_DIR: ${ASSETS_DIR:-/home/node/app/assets} # default
+   # PORT: ${PORT:-9095} # default
+   # NODE_ENV: production # default
+   PUSHOVER_API_TOKEN: ${PUSHOVER_API_TOKEN:?Token is missing}
+   PUSHOVER_USER_KEY: ${PUSHOVER_USER_KEY?:Key is missing}
+  volumes:
+   - type: bind
+     source: /etc/localtime
+     target: /etc/localtime
+     read_only: true
+   - type: bind
+     source: ./assets
+     target: /home/node/app/assets
+  labels:
+   <<: *default-labels
+   monitoring: pushover-notification # optional for grafana
+
+networks:
+ dockerization:
+  external: true
 ```
 
 ## 📄 License
