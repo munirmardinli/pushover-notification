@@ -113,7 +113,7 @@ jobs:
      run: |
       npx tsc
    - name: Install Trivy
-     uses: aquasecurity/setup-trivy@v0.2.3
+     uses: aquasecurity/setup-trivy@v0.2.4
      with:
       version: v${{ env.TRIVY_VERSION }}
    - name: Update Trivy DB
