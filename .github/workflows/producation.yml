@@ -32,7 +32,7 @@ jobs:
   steps:
    - uses: actions/checkout@v5
    - name: Set up Node.js
-     uses: actions/setup-node@v5
+     uses: actions/setup-node@v6
      with:
       node-version: ${{ env.NPM_VERSION }}
       cache: npm
@@ -193,7 +193,7 @@ jobs:
   steps:
    - uses: actions/checkout@v5
    - name: Set up Node.js
-     uses: actions/setup-node@v5
+     uses: actions/setup-node@v6
      with:
       node-version: ${{ env.NPM_VERSION }}
       registry-url: ${{ env.REGISTRY_URL }}
