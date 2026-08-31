@@ -1,0 +1,40 @@
+{
+ "name": "@munirmardinli/pushover-notification",
+ "version": "0.0.1",
+ "private": false,
+ "sideEffects": false,
+ "type": "module",
+ "files": [
+  "dist"
+ ],
+ "license": "MIT",
+ "main": "dist/src/main.js",
+ "types": "dist/src/main.d.ts",
+ "exports": {
+  ".": {
+   "import": "./dist/src/main.js",
+   "require": "./dist/src/main.js",
+   "types": "./dist/src/main.d.ts"
+  },
+  "./types": {
+   "import": "./dist/src/types.js",
+   "require": "./dist/src/types.js",
+   "types": "./dist/src/types.d.ts"
+  }
+ },
+ "publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+ },
+ "scripts": {
+  "build": "tsc",
+  "start": "node dist/src/main.js",
+  "dev": "tsx watch src/main.ts",
+  "lint": "echo 'No linting configured'",
+  "type-check": "tsc --noEmit"
+ },
+ "devDependencies": {
+  "@types/node": "26.1.1",
+  "tsx": "^4.22.4",
+  "typescript": "^5.8.3"
+ }
+}
