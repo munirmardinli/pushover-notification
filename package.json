@@ -33,7 +33,7 @@
   "type-check": "tsc --noEmit"
  },
  "devDependencies": {
-  "@types/node": "26.1.1",
+  "@types/node": "26.6.6",
   "tsx": "^4.22.4",
   "typescript": "^5.8.3"
  }
